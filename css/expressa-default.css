@@ -219,3 +219,5 @@ li.active a {
 .header-cart-wrap .commerce-line-item-views-form td {padding: 2px 6px;}
 
 .show {display: block;}
+
+#breadcrumbs {background: pink;}

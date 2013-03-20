@@ -118,6 +118,8 @@
 	        </ul>
 	      <?php endif; ?>
 	      
+	      <div id="breadcrumbs"><?php print $breadcrumb . $title; ?></div>
+	      
 			  <?php if (isset($page['content'])) : ?>
 			    <?php print render($page['content']); ?>
 			  <?php endif; ?>  
