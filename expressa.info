@@ -1,0 +1,42 @@
+name = Expressa
+description = A Multi-Purpose Drupal 7 Theme. 
+core = 7.x
+engine = phptemplate
+version = 1.x ALPHA
+
+stylesheets[all][] = /bootstrap/css/bootstrap.min.css
+stylesheets[all][] = /bootstrap/css/bootstrap-responsive.min.css
+stylesheets[all][] = /css/font-awesome/font-awesome.min.css
+stylesheets[all][] = /css/expressa-default.css
+stylesheets[all][] = /css/colors/default.css
+
+scripts[] = bootstrap/js/bootstrap.min.js
+scripts[] = js/jquery.js
+scripts[] = js/superfish.js
+scripts[] = js/hoverIntent.js
+scripts[] = js/jquery.isotope.js
+scripts[] = js/expressa.js
+
+; Define header block regions.
+regions[header] = Header
+
+regions[header_right_top_left] = Header Right Top Left
+regions[header_right_top_right] = Header Right Top Right
+regions[header_right_bottom] = Header Right Bottom
+regions[branding] = Branding
+regions[menu] = Menu
+
+; Define content block regions.
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+; Define footer block regions.
+regions[footer_col_1] = Footer Column 1
+regions[footer_col_2] = Footer Column 2
+regions[footer_col_3] = Footer Column 3
+regions[footer_col_4] = Footer Column 4
+regions[footer] = Footer 
+
+; Define theme settings default values.
+settings[breadcrumbs] = '1'
