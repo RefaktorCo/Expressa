@@ -33,8 +33,33 @@ jQuery(document).ready(function ($) {
 	      }
 	    }
 	  });
-
-    
+	  
+	  $('#store-carousel-list-wrap').carouFredSel({
+	    width: '100%',
+	    responsive: true,
+	    circular : false,
+	    infinite : false,
+	    auto: false,
+	    next : {
+	      button : "#store-next",
+	      key	: "right"
+	    },
+	    prev : {
+	      button : "#store-prev",
+	      key	: "left"
+	    },
+	    swipe: {
+	      onMouse: true,
+	      onTouch: false
+	    },
+	    items: {
+	      
+	      visible: {
+	        min: 1,
+	        max: 4
+	      }
+	    }
+	  });
 });
 
 $(window).load(function(){
