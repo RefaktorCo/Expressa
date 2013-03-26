@@ -7,6 +7,7 @@ version = 1.x ALPHA
 stylesheets[all][] = /bootstrap/css/bootstrap.min.css
 stylesheets[all][] = /bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = /css/font-awesome/font-awesome.min.css
+stylesheets[all][] = /css/flexslider.css
 stylesheets[all][] = /css/expressa-default.css
 stylesheets[all][] = /css/colors/default.css
 
@@ -19,6 +20,7 @@ scripts[] = js/easing.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
 scripts[] = js/jquery.isotope.js
+scripts[] = js/jquery.flexslider-min.js
 scripts[] = js/expressa.js
 
 ; Define header block regions.

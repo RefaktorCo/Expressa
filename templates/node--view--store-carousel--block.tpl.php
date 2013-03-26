@@ -17,6 +17,7 @@
 	    </div> 
     </div>  
    <div class="carousel_item_description">
-    <h3><a href="<?php print $node_url;?>"><?php print $title; ?></a></h3>
+
+    <?php print render($content['field_reference']); ?>
    </div>  
  </li>

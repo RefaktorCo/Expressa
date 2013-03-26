@@ -91,9 +91,7 @@
 		
 			  
 			  <nav id="menu">
-				  <?php if (isset($page['menu'])) : ?>
-				    <?php print render($page['menu']); ?>
-				  <?php endif; ?>
+				  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav>
 	     
 	    </div>
@@ -101,7 +99,7 @@
 	</header>
 	
 	  <div class="row">
-	    <div class="span12">
+	    <div class="<?php if ($page['sidebar_first']) { echo "span8";} else { echo "span12"; } ?>">
 	    
 	      <?php print render($title_prefix); ?>
         <?php print render($title_suffix); ?>
@@ -125,6 +123,12 @@
 			  <?php endif; ?>  
 	  
 	    </div>
+	    <?php if (isset($page['sidebar_first'])) : ?>
+	    <div class="span4">
+	    <?php print render($page['sidebar_first']); ?>
+	    </div>
+	    <?php endif; ?>
+	    
 	  </div>  
 	
 
