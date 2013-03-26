@@ -44,13 +44,7 @@
  * @ingroup themeable
  */
 ?>
-<!--
-THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
-See http://api.drupal.org/api/function/theme_field/7 for details.
-After copying this file to your theme's folder and customizing it, remove this
-HTML comment.
--->
 
 <?php foreach ($items as $delta => $item): ?>
-  <li><?php print $item_attributes[$delta]; ?><?php print render($item); ?></li>
+  <li><?php print render($item); ?></li>
 <?php endforeach; ?>

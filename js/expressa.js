@@ -65,6 +65,7 @@ jQuery(document).ready(function ($) {
 $(window).load(function(){
 
   $('.flexslider').flexslider({
+    controlNav: false, 
     animation: "slide"
   });
      
