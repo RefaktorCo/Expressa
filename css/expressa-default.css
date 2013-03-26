@@ -221,3 +221,102 @@ li.active a {
 .show {display: block;}
 
 #breadcrumbs {background: pink;}
+
+/* Projects Carousel */
+.projects_carousel {
+	 margin-left: -20px !important;
+}
+.carousel_item_wrapper {
+	text-align: center;
+	position: relative;
+	clear: both;
+}
+
+.carousel_item_content {
+	opacity: 1;
+}
+
+.carousel_item_description {
+	background: #F8F8F8;
+	border-bottom: 1px solid #E8E8E8;
+	margin-bottom: 20px;
+	margin-top: -6px;
+	text-align: center;
+	padding: 1px 0px;
+	position: relative;
+}
+
+.carousel_item_hover {
+	display: block;
+	color: #fff;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	position: absolute;
+	padding:45px 15px;
+
+}
+
+.six .carousel_item_hover {
+  padding: 150px 15px;
+}
+
+.four .carousel_item_hover {
+  padding: 80px 15px;
+}
+
+.carousel_item_hover i {
+	margin: 4px;
+	font-size: 22px;
+	color: #fff;
+	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel_item_hover p {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.carousel_navigation {
+  margin-left: 20px;
+  margin-top: -45px;
+  font-size: 25px;
+  float: right;
+  background: white;
+  padding: 10px 0px 10px 10px;
+}
+
+.carousel_navigation i {
+	color: #333;
+	 -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.carousel_navigation i:hover {
+	color: #64ADB5;
+}
+
+#recent_projects {
+  margin: 0px 0px 20px 0px;
+}
+
+#recent_projects li {
+	width: 250px;
+	float: left;
+	margin-left: 20px;
+	list-style: none;
+	cursor: pointer !important;
+	
+}
+
+.caroufredsel_wrapper {
+  min-height: 250px;
+}
+

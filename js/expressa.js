@@ -6,6 +6,34 @@ jQuery(document).ready(function ($) {
   $('.view-cart').click(function(){
     $('.header-cart-wrap .commerce-line-item-views-form').slideToggle();
   });
+  
+  $('#recent_projects').carouFredSel({
+	    width: '100%',
+	    responsive: true,
+	    circular : false,
+	    infinite : false,
+	    auto: false,
+	    next : {
+	      button : "#next",
+	      key	: "right"
+	    },
+	    prev : {
+	      button : "#prev",
+	      key	: "left"
+	    },
+	    swipe: {
+	      onMouse: true,
+	      onTouch: false
+	    },
+	    items: {
+	      
+	      visible: {
+	        min: 1,
+	        max: 4
+	      }
+	    }
+	  });
+
     
 });
 

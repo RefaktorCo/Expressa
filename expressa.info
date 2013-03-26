@@ -12,6 +12,10 @@ stylesheets[all][] = /css/colors/default.css
 
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/jquery.js
+scripts[] = js/jquery.carouFredSel-6.1.0.js
+scripts[] = js/mobile-map.js
+scripts[] = js/jquery.ui.totop.js
+scripts[] = js/easing.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
 scripts[] = js/jquery.isotope.js
