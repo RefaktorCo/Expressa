@@ -1,6 +1,13 @@
 body {
 	background: #ccc;
 	background-image: url('../images/backgrounds/agsquare.png');
+	font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+article p {
+	font-size: 15.5px;
 }
 
 footer {

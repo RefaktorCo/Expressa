@@ -6,7 +6,7 @@ version = 1.x ALPHA
 
 stylesheets[all][] = /bootstrap/css/bootstrap.min.css
 stylesheets[all][] = /bootstrap/css/bootstrap-responsive.min.css
-stylesheets[all][] = /css/font-awesome/font-awesome.min.css
+stylesheets[all][] = /css/font-awesome.css
 stylesheets[all][] = /css/flexslider.css
 stylesheets[all][] = /css/expressa-default.css
 stylesheets[all][] = /css/colors/default.css
