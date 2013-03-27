@@ -98,6 +98,12 @@
 	  </div>  
 	</header>
 	
+	<div class="row">
+	  <div class="span12">
+	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?></div>
+	  </div>
+	</div>       
+	
 	  <div class="row">
 	    <div class="<?php if ($page['sidebar_first']) { echo "span8";} else { echo "span12"; } ?>">
 	    
@@ -115,9 +121,7 @@
 	          <?php print render($action_links); ?>
 	        </ul>
 	      <?php endif; ?>
-	      
-	      <div id="breadcrumbs"><?php print $breadcrumb . $title; ?></div>
-	      
+
 			  <?php if (isset($page['content'])) : ?>
 			    <?php print render($page['content']); ?>
 			  <?php endif; ?>  

@@ -58,9 +58,16 @@ function expressa_field($variables) {
   if (!$variables['label_hidden']) {
     $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';  
   }
- 
- 
-  if ($variables['element']['#field_name'] == 'field_portfolio_category') {
+  
+  elseif ($variables['element']['#field_name'] == 'field_tags') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(', ', $rendered_tags);
+  }
+
+  elseif ($variables['element']['#field_name'] == 'field_portfolio_category') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
@@ -102,5 +109,29 @@ function expressa_breadcrumb($variables) {
   }
   return $crumbs;
 }
+
+/**
+ * Alter the default Drupal search form.
+ */  
+function expressa_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+    $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
+    $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
+    $form['search_block_form']['#size'] = 40;  // define size of the textfield
+    $form['search_block_form']['#default_value'] = t('Explore here'); // Set a default value for the textfield
+    $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
+   
+
+    // Add extra attributes to the text box
+    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
+    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+    // Prevent user from searching the default text
+    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
+
+    // Alternative (HTML5) placeholder attribute instead of using the javascript
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+  }
+} 
+
 
 ?>
