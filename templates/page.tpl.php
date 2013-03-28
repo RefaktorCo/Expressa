@@ -4,8 +4,17 @@
  * Expressa's theme implementation to display a single Drupal page.
  */
 ?>
-  <div id="content-wrap">
-<div id="page-wrap" class="container">
+
+<?php global $user; if (!$user->uid) { //Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
+<div id="scroll-menu">
+  <nav id="menu">
+	  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
+	</nav> 
+</div>
+<?php } ?>
+
+<div id="content-wrap">
+  <div id="page-wrap" class="container">
 
 	<header>
 	
