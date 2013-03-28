@@ -7,8 +7,6 @@ body {
 	font-size: 15px;
 }
 
-
-
 footer {
 	
 	height: 250px;
@@ -78,11 +76,15 @@ header form {
   z-index: 9999; 
   position: fixed; 
   left: 0; 
-  top: 0; 
+  top: -45px; 
   width: 100%; 
   border-bottom: 1px solid #666;
 } 
 
+
+#scroll-menu #menu {
+	margin: 0px;
+}
 
 #menu.row {margin-left: 0px !important; margin-top: -30px; margin-bottom: -1px;}
 #menu_wrap {padding-top: 10px; margin-left: 10px;}
@@ -117,7 +119,6 @@ ul.menu {margin: 0; padding: 10px 0px;}
 .menu ul ul {z-index: 1001; margin: 0; left: 15.15em; top: -46px;}
 
 ul.menu li { margin: 0; }
-
 
 
 li.active a {

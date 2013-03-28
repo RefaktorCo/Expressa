@@ -97,8 +97,6 @@
 	  <div class="row">
 	    <div class="span12">    
 		       
-		
-			  
 			  <nav id="menu">
 				  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav>
@@ -112,6 +110,9 @@
 	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?></div>
 	  </div>
 	</div>       
+	
+	<div class="before-content"></div>
+	
 	
 	  <div class="row">
 	    <div class="<?php if ($page['sidebar_first']) { echo "span8";} else { echo "span12"; } ?>">
