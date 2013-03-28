@@ -1,4 +1,15 @@
 jQuery(document).ready(function ($) {
+
+var nav = $('#menu');
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 120) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+    });
+  
   $('ul.menu').superfish();
   
   $('.header-cart-wrap .commerce-line-item-views-form').hide();
