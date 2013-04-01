@@ -59,7 +59,7 @@ function expressa_field($variables) {
     $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';  
   }
   
-  elseif ($variables['element']['#field_name'] == 'field_tags') {
+  if ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
@@ -67,7 +67,7 @@ function expressa_field($variables) {
     $output .= implode(', ', $rendered_tags);
   }
 
-  elseif ($variables['element']['#field_name'] == 'field_portfolio_category') {
+  if ($variables['element']['#field_name'] == 'field_portfolio_category') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);

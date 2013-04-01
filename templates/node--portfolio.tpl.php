@@ -20,7 +20,7 @@
     
   <div class="flexslider">
     <ul class="slides">
-    <?php print render($content['field_portfolio_image']); ?>
+    <?php print render($content['field_portfolio_slider']); ?>
     </ul>
   </div>  
 
