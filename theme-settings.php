@@ -4,13 +4,14 @@
  */
 function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
 
+drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js'); 
+
    // Default path for image
   $bg_path = theme_get_setting('bg_path');
   if (file_uri_scheme($bg_path) == 'public') {
     $bg_path = file_uri_target($bg_path);
   }
-
-
+  
   // Main settings wrapper
   $form['options'] = array(
     '#type' => 'vertical_tabs',
@@ -32,6 +33,13 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       '#type' => 'checkbox',
       '#title' => 'Breadcrumbs',
       '#default_value' => theme_get_setting('breadcrumbs'),
+    );
+    
+    // Scroll Menu
+    $form['options']['general']['scroll_menu'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'Scroll Menu',
+      '#default_value' => theme_get_setting('scroll_menu'),
     );
         
     // SEO
@@ -62,7 +70,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       );
   
   // Submit Button
-  $form['#submit'][] = 'blocks_settings_submit';
+  // $form['#submit'][] = 'blocks_settings_submit';
 
 }
 

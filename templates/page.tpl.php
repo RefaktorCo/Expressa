@@ -5,16 +5,16 @@
  */
 ?>
 
-<?php global $user; if (!$user->uid) { //Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
+<?php global $user; if (!$user->uid && theme_get_setting('scroll_menu') == '1') { // Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
 <div id="scroll-menu">
   <div id="scroll-menu-wrap">
-  <div class="row">
-    <div class="span12">
-		  <nav id="menu">
-			  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
-			</nav> 
+    <div class="row">
+      <div class="span12">
+		    <nav id="menu">
+			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
+			  </nav> 
+      </div>
     </div>
-  </div>
   </div>
 </div>
 <?php } ?>
