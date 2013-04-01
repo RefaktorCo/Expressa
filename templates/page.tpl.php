@@ -7,9 +7,15 @@
 
 <?php global $user; if (!$user->uid) { //Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
 <div id="scroll-menu">
-  <nav id="menu">
-	  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
-	</nav> 
+  <div id="scroll-menu-wrap">
+  <div class="row">
+    <div class="span12">
+		  <nav id="menu">
+			  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
+			</nav> 
+    </div>
+  </div>
+  </div>
 </div>
 <?php } ?>
 

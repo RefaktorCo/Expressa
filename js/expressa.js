@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
   var flag = true;
 
 	$(window).bind('load resize',function() {
-		if($(window).width() > 480) {	
+		if($(window).width() > 768) {	
 			$(window).scroll(function() {
 				var vPos = $(window).scrollTop();
 				var totalH = $('.before-content').offset().top;
@@ -12,22 +12,19 @@ jQuery(document).ready(function ($) {
 				
 				console.log("if failed!");
 				
-				if(finalSize <= 50) {
+				if(finalSize <= 10) {
 					if(flag){
 					$('#scroll-menu').animate({'top':'0'},150);
 					$('nav.main').hide();
 					}	
 					flag=false;	
-				} else if(finalSize > 50) {
+				} else if(finalSize > 10) {
 					if(!flag){
 					$('#scroll-menu').animate({'top':'-45'},150);
 					$('nav.main').show();
 					}
 					flag=true;
 				}
-				
-				
-			
 			});
 		} else {
 			$(window).unbind('scroll');
