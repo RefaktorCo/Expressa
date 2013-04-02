@@ -4,12 +4,12 @@ core = 7.x
 engine = phptemplate
 version = 1.x ALPHA
 
-stylesheets[all][] = /bootstrap/css/bootstrap.min.css
-stylesheets[all][] = /bootstrap/css/bootstrap-responsive.min.css
-stylesheets[all][] = /css/font-awesome.css
-stylesheets[all][] = /css/flexslider.css
-stylesheets[all][] = /css/expressa-default.css
-stylesheets[all][] = /css/colors/default.css
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
+stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/flexslider.css
+stylesheets[all][] = css/expressa-default.css
+stylesheets[all][] = css/colors/default.css
 
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/jquery.js
