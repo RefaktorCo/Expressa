@@ -59,20 +59,20 @@ function expressa_field($variables) {
     $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';  
   }
   
-  if ($variables['element']['#field_name'] == 'field_tags') {
-    // For tags, concatenate into a single, comma-delimitated string.
-    foreach ($variables['items'] as $delta => $item) {
-      $rendered_tags[] = drupal_render($item);
-    }
-    $output .= implode(', ', $rendered_tags);
-  }
-
   if ($variables['element']['#field_name'] == 'field_portfolio_category') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
     }
     $output .= implode(' ',$rendered_tags);
+  }
+  
+  elseif ($variables['element']['#field_name'] == 'field_tags') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(', ', $rendered_tags);
   }
      
   else {
@@ -132,7 +132,6 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
 } 
-
 function pn_node($node, $mode = 'n') {
   if (!function_exists('prev_next_nid')) {
     return NULL;
@@ -158,7 +157,7 @@ function pn_node($node, $mode = 'n') {
 		
     switch($n_node->type) {	
       case 'portfolio': 
-        $html = l('"'.$n_node->title .'"', 'node/'.$n_node->nid); 
+        $html = l($link_text, 'node/'.$n_node->nid); 
       return $html; 
     }
   }
