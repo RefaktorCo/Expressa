@@ -28,6 +28,13 @@ drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js');
     '#title' => 'General',
   );
   
+  
+    $form['options']['general']['test_color'] = array(
+		  '#type' => 'jquery_colorpicker',
+		  '#title' => 'Color',
+		  '#default_value' => theme_get_setting('test_color'),
+    );
+  
     // Breadcrumbs
     $form['options']['general']['breadcrumbs'] = array(
       '#type' => 'checkbox',
