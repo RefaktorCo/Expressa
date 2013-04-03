@@ -116,18 +116,16 @@
 	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>
 	    
 	    <?php
-$fid = theme_get_setting('image_2');	    
-$file = file_load($fid);
-$image = image_load($file->uri);
-$content = array(
-  'file' => array(
-    '#theme' => 'image_style',
-    '#style_name' => 'large',
-    '#path' => $image->source,
-     ),
-);
-echo drupal_render($content);
-?>
+		    $content = array(
+		    	'file' => array(
+		    		'#theme' => 'image_style',
+		    		'#style_name' => 'large',
+		    		'#path' => image_load(file_load(theme_get_setting('image_2'))->uri)->source,
+		    		),
+		    	);
+		   echo drupal_render($content);
+		   ?>
+		   
 	  </div>
 	</div>       
 	
