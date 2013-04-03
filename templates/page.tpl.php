@@ -114,6 +114,22 @@
 	<div class="row">
 	  <div class="span12">
 	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>
+	    
+	    <?php
+$fid = theme_get_setting('image_example_image_fid');	    
+$file = file_load($fid);
+$image = image_load($file->uri);
+$content = array(
+  'file' => array(
+    '#theme' => 'image_style',
+    '#style_name' => 'large',
+    '#path' => $image->source,
+    '#width' => $image->info['width'],
+    '#height' => $image->info['height'],
+  ),
+);
+echo drupal_render($content);
+?>
 	  </div>
 	</div>       
 	
