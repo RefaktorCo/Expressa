@@ -116,7 +116,7 @@
 	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>
 	    
 	    <?php
-$fid = theme_get_setting('image_example_image_fid');	    
+$fid = theme_get_setting('image_2');	    
 $file = file_load($fid);
 $image = image_load($file->uri);
 $content = array(
@@ -124,9 +124,7 @@ $content = array(
     '#theme' => 'image_style',
     '#style_name' => 'large',
     '#path' => $image->source,
-    '#width' => $image->info['width'],
-    '#height' => $image->info['height'],
-  ),
+     ),
 );
 echo drupal_render($content);
 ?>

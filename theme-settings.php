@@ -36,12 +36,36 @@ drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js');
     );
     
     $form['options']['general']['image_example_image_fid'] = array(
-  '#title' => t('Image'),
-  '#type' => 'managed_file',
-  '#description' => t('The uploaded image will be displayed on this page using the image style choosen below.'),
-  '#default_value' => theme_get_setting('image_example_image_fid'),
-  '#upload_location' => 'public://image_example_images/',
-);
+		  '#title' => t('Image'),
+		  '#type' => 'managed_file',
+		  '#description' => t('The uploaded image will be displayed on this page using the image style choosen below.'),
+		  '#default_value' => theme_get_setting('image_example_image_fid'),
+		  '#upload_location' => 'public://image_example_images/',
+    );
+    
+       $form['options']['general']['image_1'] = array(
+		  '#title' => t('Image'),
+		  '#type' => 'managed_file',
+		  '#description' => t('The uploaded image will be displayed on this page using the image style choosen below.'),
+		  '#default_value' => theme_get_setting('image_1'),
+		  '#upload_location' => 'public://image_example_images/',
+    );
+    
+       $form['options']['general']['image_2'] = array(
+		  '#title' => t('Image'),
+		  '#type' => 'managed_file',
+		  '#description' => t('The uploaded image will be displayed on this page using the image style choosen below.'),
+		  '#default_value' => theme_get_setting('image_2'),
+		  '#upload_location' => 'public://image_example_images/',
+    );
+    
+       $form['options']['general']['image_3'] = array(
+		  '#title' => t('Image'),
+		  '#type' => 'managed_file',
+		  '#description' => t('The uploaded image will be displayed on this page using the image style choosen below.'),
+		  '#default_value' => theme_get_setting('image_3'),
+		  '#upload_location' => 'public://image_example_images/',
+    );
   
     // Breadcrumbs
     $form['options']['general']['breadcrumbs'] = array(
