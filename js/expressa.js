@@ -33,6 +33,13 @@ jQuery(document).ready(function ($) {
   
   $('ul.menu').superfish();
   
+  $('#ei-slider').eislideshow({
+				animation			: 'center',
+				autoplay			: true,
+				slideshow_interval	: 3000,
+				titlesFactor		: 0
+		  });
+  
   $('.header-cart-wrap .commerce-line-item-views-form').hide();
   
   $('.view-cart').click(function(){
