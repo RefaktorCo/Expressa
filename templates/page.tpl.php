@@ -113,19 +113,7 @@
 	
 	<div class="row">
 	  <div class="span12">
-	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>
-	    
-	    <?php
-		    $content = array(
-		    	'file' => array(
-		    		'#theme' => 'image_style',
-		    		'#style_name' => 'large',
-		    		'#path' => image_load(file_load(theme_get_setting('image_2'))->uri)->source,
-		    		),
-		    	);
-		   echo drupal_render($content);
-		   ?>
-		   
+	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>		   
 	  </div>
 	</div>       
 	
