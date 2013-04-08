@@ -76,11 +76,15 @@ function expressa_field($variables) {
   }
      
   else {
+    $output .= '<div class="field-items"' . $variables['content_attributes'] . '>';
     // Default rendering taken from theme_field().
     foreach ($variables['items'] as $delta => $item) {
       $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
       $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
     }
+    $output .= '</div>';
+    // Render the top-level DIV.
+    $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
   }
   
   // Render the top-level DIV.
