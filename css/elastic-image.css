@@ -14,7 +14,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index:999;
+  z-index:100;
   background: rgba(0,0,0,0.9);
   color: #fff;
   text-align: center;
@@ -75,7 +75,7 @@
   margin: 0 auto;
   position: relative;
   margin-top: -15px;
-  z-index: 9999;
+  z-index: 99;
 }
  
 .ei-slider-thumbs li {
