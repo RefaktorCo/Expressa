@@ -30,9 +30,6 @@
   	<a class="btn" href="<?php print $node_url;?>">Read More</a>
   </div>	
   <?php endif;?>
-  
-
-
 
   </div>
   <div class="span4">
@@ -46,12 +43,14 @@
       hide($content['field_tags']);
       print render($content);
       
-      
     ?>
+    
+    <?php if($page && module_exists('prev_next')): ?>
     <ul>
-  <li><?php print pn_node($node, 'n'); ?></li>
-  <li><?php print pn_node($node, 'p'); ?></li>	
-</ul>
+      <li><?php print expressa_pagination($node, 'n'); ?></li>
+      <li><?php print expressa_pagination($node, 'p'); ?></li>	
+    </ul>
+    <?php endif; ?>
    
   </div>
 

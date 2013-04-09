@@ -136,7 +136,8 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
 } 
-function pn_node($node, $mode = 'n') {
+
+function expressa_pagination($node, $mode = 'n') {
   if (!function_exists('prev_next_nid')) {
     return NULL;
   }

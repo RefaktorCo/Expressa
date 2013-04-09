@@ -41,16 +41,16 @@
   
   <?php if($teaser): ?>
   <div class="read-more"> 
-  	<a class="btn" href="<?php print $node_url;?>">Read More</a>
+  	<a class="btn" href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>
   </div>	
   <?php endif;?>
   
-  <?php if($page): ?>
-      <ul>
-  <li><?php print pn_node($node, 'n'); ?></li>
-  <li><?php print pn_node($node, 'p'); ?></li>	
-</ul>
-<?php endif; ?>
+  <?php if($page && module_exists('prev_next')): ?>
+  <ul>
+    <li><?php print expressa_pagination($node, 'n'); ?></li>
+    <li><?php print expressa_pagination($node, 'p'); ?></li>	
+  </ul>
+  <?php endif; ?>
   
   <?php if (render($content['field_tags'])): ?>  
   <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
