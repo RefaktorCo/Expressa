@@ -163,6 +163,10 @@ function pn_node($node, $mode = 'n') {
       case 'portfolio': 
         $html = l($link_text, 'node/'.$n_node->nid); 
       return $html; 
+      
+      case 'article': 
+        $html = l($link_text, 'node/'.$n_node->nid); 
+      return $html;
     }
   }
 }

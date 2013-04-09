@@ -45,6 +45,13 @@
   </div>	
   <?php endif;?>
   
+  <?php if($page): ?>
+      <ul>
+  <li><?php print pn_node($node, 'n'); ?></li>
+  <li><?php print pn_node($node, 'p'); ?></li>	
+</ul>
+<?php endif; ?>
+  
   <?php if (render($content['field_tags'])): ?>  
   <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
   <?php endif; ?>
