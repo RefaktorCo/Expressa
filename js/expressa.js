@@ -32,7 +32,9 @@ jQuery(document).ready(function ($) {
 	});
   
   $('ul.menu').superfish();
-  
+
+  $("a[rel^='prettyPhoto']").prettyPhoto();
+
   $('#ei-slider').eislideshow({
 				animation			: 'center',
 				autoplay			: true,

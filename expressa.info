@@ -9,6 +9,7 @@ stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/flexslider.css
 stylesheets[all][] = css/elastic-image.css
+stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 stylesheets[all][] = css/colors/default.css
 
@@ -18,6 +19,7 @@ scripts[] = js/jquery.carouFredSel-6.1.0.js
 scripts[] = js/mobile-map.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/jquery.eislideshow.js
+scripts[] = js/jquery.prettyPhoto.js
 scripts[] = js/easing.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
