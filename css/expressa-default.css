@@ -469,3 +469,9 @@ article p {
 	-o-filter: blur(2px) contrast(.3);
 	-ms-filter: blur(2px) contrast(.3);
 }
+
+.cart-empty-block:before {
+	content: "\f07a";
+	font-family: FontAwesome;
+	margin-right: 5px;
+}

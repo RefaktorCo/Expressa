@@ -145,12 +145,10 @@ function expressa_pagination($node, $mode = 'n') {
   switch($mode) {
     case 'p':
       $n_nid = prev_next_nid($node->nid, 'prev');
-        $link_text = 'previous';
-      break;
+    break;
 		
     case 'n':
       $n_nid = prev_next_nid($node->nid, 'next');
-      $link_text = 'next';
     break;
 		
     default:
@@ -162,8 +160,8 @@ function expressa_pagination($node, $mode = 'n') {
 		
     switch($n_node->type) {	
       case 'portfolio': 
-        $html = l($link_text, 'node/'.$n_node->nid); 
-      return $html; 
+        $id =  $n_node->nid; 
+      return $id; 
       
       case 'article': 
         $html = l($link_text, 'node/'.$n_node->nid); 
