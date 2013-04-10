@@ -470,6 +470,18 @@ article p {
 	-ms-filter: blur(2px) contrast(.3);
 }
 
+.portfolio-pagination {
+	text-align: right;
+	padding: 15px 0px 0px 0px;
+}
+
+.portfolio-pagination-links li {
+	list-style: none;
+	display: inline;
+	margin-right: 2px;
+	font-size: 28px;
+}
+
 .cart-empty-block:before {
 	content: "\f07a";
 	font-family: FontAwesome;

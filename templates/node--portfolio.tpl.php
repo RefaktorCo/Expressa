@@ -3,7 +3,7 @@
  * @file
  * Expressa's theme implementation to display a single Drupal node.
  */
- 
+global $base_url; 
 $next = expressa_pagination($node, 'n');
 $prev = expressa_pagination($node, 'p');
 
@@ -19,11 +19,23 @@ if ($prev != NULL) {
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <div class="row">
-  <div class="span12">
+  <div class="span6">
     <?php print render($title_prefix); ?>
       <h2 class="node-title"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php print render($title_suffix); ?>
   </div>
+  <div class="portfolio-pagination span6">
+  <?php if($page && module_exists('prev_next')): ?>
+    <ul class="portfolio-pagination-links">
+      <?php if ($prev != NULL): ?>
+        <li><a href="<?php echo $prev_url; ?>"><i class="icon-circle-arrow-left"></i></a></li>
+      <?php endif; ?>
+        <li><a href="<?php echo $base_url; ?>/portfolio"><i class="icon-th"></i></a></li>
+      <?php if ($next != NULL): ?>
+        <li><a href="<?php echo $next_url; ?>"><i class="icon-circle-arrow-right"></i></a></li>
+      <?php endif; ?>
+    </ul>
+    <?php endif; ?>
 </div>
 <div class="row">
   <div class="span8">
@@ -56,16 +68,7 @@ if ($prev != NULL) {
       
     ?>
     
-    <?php if($page && module_exists('prev_next')): ?>
-    <ul>
-      <?php if ($prev != NULL): ?>
-        <li><a href="<?php echo $prev_url; ?>"><i class="icon-circle-arrow-left"></i></a></li>
-      <?php endif; ?>
-      <?php if ($next != NULL): ?>
-        <li><a href="<?php echo $next_url; ?>"><i class="icon-circle-arrow-right"></i></a></li>
-      <?php endif; ?>
-    </ul>
-    <?php endif; ?>
+    
    
   </div>
 
