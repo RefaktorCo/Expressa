@@ -28,11 +28,11 @@ if ($prev != NULL) {
   <?php if($page && module_exists('prev_next')): ?>
     <ul class="portfolio-pagination-links">
       <?php if ($prev != NULL): ?>
-        <li><a href="<?php echo $prev_url; ?>"><i class="icon-circle-arrow-left"></i></a></li>
+        <li><a href="<?php echo $prev_url; ?>"><i class="icon-caret-left"></i></a></li>
       <?php endif; ?>
         <li><a href="<?php echo $base_url; ?>/portfolio"><i class="icon-th"></i></a></li>
       <?php if ($next != NULL): ?>
-        <li><a href="<?php echo $next_url; ?>"><i class="icon-circle-arrow-right"></i></a></li>
+        <li><a href="<?php echo $next_url; ?>"><i class="icon-caret-right"></i></a></li>
       <?php endif; ?>
     </ul>
     <?php endif; ?>
@@ -40,13 +40,13 @@ if ($prev != NULL) {
 <div class="row">
   <div class="span8">
 
+  <?php if (render($content['field_portfolio_slider'])): ?>  
   <div class="flexslider">
     <ul class="slides">
     <?php print render($content['field_portfolio_slider']); ?>
     </ul>
   </div>  
-
-
+  <?php endif; ?>
   
   <?php if($teaser): ?>
   <div class="read-more"> 
@@ -63,13 +63,17 @@ if ($prev != NULL) {
       hide($content['comments']);
   
       hide($content['field_portfolio_image']);
+      hide($content['field_portfolio_url']);
       hide($content['field_tags']);
       print render($content);
       
     ?>
     
+    <?php if (render($content['field_portfolio_url'])): ?>  
+    <br /><br />
+    <a class="btn btn-large" href="<?php print render($content['field_portfolio_url']); ?>"><?php print t('Launch Project')?></a>
+    <?php endif; ?>
     
-   
   </div>
 
   </div>

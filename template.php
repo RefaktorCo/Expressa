@@ -67,6 +67,14 @@ function expressa_field($variables) {
     $output .= implode(' ',$rendered_tags);
   }
   
+  elseif ($variables['element']['#field_name'] == 'field_portfolio_url') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(' ',$rendered_tags);
+  }
+  
   elseif ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
