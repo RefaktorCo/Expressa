@@ -36,7 +36,8 @@ if ($prev != NULL) {
       <?php endif; ?>
     </ul>
     <?php endif; ?>
-</div>
+  </div>
+</div>  
 <div class="row">
   <div class="span8">
 
