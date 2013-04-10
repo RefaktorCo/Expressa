@@ -401,3 +401,75 @@ article p {
 	  display: none;
   }
 }
+
+/*BLUR*/
+
+.portfolio-item {
+	overflow: hidden;
+}
+
+.portfolio-item figure {
+	margin: 0;
+}
+
+.portfolio-item img{
+  -webkit-transition: all .5s ease-in;
+     -moz-transition: all .5s ease-in;
+       -o-transition: all .5s ease-in;
+      -ms-transition: all .5s ease-in;
+          transition: all .5s ease-in;
+  filter: blur(0px) contrast(1);
+	-webkit-filter: blur(0px) contrast(1);
+	-moz-filter: blur(0px) contrast(1);
+	-o-filter: blur(0px) contrast(1);
+	-ms-filter: blur(0px) contrast(1);
+	
+	max-width: 100%;
+    position: relative;
+    z-index: 900;
+}
+
+.portfolio-item figure a {
+	position: relative;
+	display: block;
+	line-height: 0px;
+	text-decoration: none;
+}
+
+.portfolio-item figure a:before {
+	content: "+";
+	display: block;
+	font-size: 40px;
+	line-height: 1em;
+	height: 1em;
+	width: 1em;
+	text-align: center;
+	
+	color: black;
+	font-weight: bold;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	
+	margin: -0.5em 0 0 -0.5em;
+}
+
+.portfolio-item figure a.enlarge:before {
+	content: "+";
+}
+
+.portfolio-item figure a:hover img {
+	opacity: 0.8; 
+	filter: alpha(opacity=40); /* IE6-IE8 */
+}
+
+ 
+.portfolio-item img:hover {
+  filter: blur(2px) contrast(.3);
+	-webkit-filter: blur(2px) contrast(.3);
+	-moz-filter: blur(2px) contrast(.3);
+	-o-filter: blur(2px) contrast(.3);
+	-ms-filter: blur(2px) contrast(.3);
+}

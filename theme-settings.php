@@ -85,7 +85,7 @@ drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js');
           'purple' => t('Purple'),
           'orange' => t('Orange'),
           'red' => t('Red'),
-          'custom' => t('custom'),
+          'custom' => t('Custom'),
         ),
       );
       

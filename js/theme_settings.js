@@ -1,12 +1,6 @@
 jQuery(document).ready(function ($) {
 
-  $("#edit-seo .fieldset-wrapper").hide();
-  $("#edit-seo .fieldset-legend").click(function(){
-	$("#edit-seo .fieldset-wrapper").slideToggle("slow");
-	$(this).toggleClass("active");
-	$('#edit-seo .plus').toggleClass('minus');
-  });
-  
+
   $("#edit-branding .fieldset-wrapper").hide();
   $("#edit-branding .fieldset-legend").click(function(){
 	$("#edit-branding .fieldset-wrapper").slideToggle("slow");
