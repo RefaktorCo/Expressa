@@ -487,3 +487,36 @@ article p {
 	font-family: FontAwesome;
 	margin-right: 5px;
 }
+
+/* Search styles */
+.search-api-ranges-widget .text-range, .search-api-ranges-widget .form-submit {
+  display: none;
+}
+
+label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
+
+.search-api-ranges-widget .form-item-range-from .form-text, .search-api-ranges-widget .form-item-range-to .form-text {
+	width: 60px;
+	border: none;
+	box-shadow: none;
+}
+
+.yui3-u.range-slider-box {
+	width: 350px;
+	margin-left: 8px;
+}
+
+.search-api-ranges-widget .form-item-range-to .form-text {
+	text-align: right;
+}
+
+.yui3-u.range-box.range-box-left {
+	width: 150px;
+	float: left;
+}
+
+.yui3-u.range-box.range-box-right {
+	width: 150px;
+	float: right;
+	text-align: right;
+}
