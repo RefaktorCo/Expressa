@@ -16,7 +16,7 @@
 	      <p><a href="<?php echo file_create_url($node->field_portfolio_image['und'][0]['uri']); ?>" rel="lightbox" title="<?php print $title; ?>"><i class="general foundicon-search"></i></a><a href="<?php print $node_url;?>" > <i class="general foundicon-paper-clip"></i></a></p>
 	    </div> 
     </div>  
-   <div class="carousel_item_description">
+   <div class="carousel_item_description store-item">
 
     <?php print render($content['field_reference']); ?>
    </div>  

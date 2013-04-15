@@ -520,3 +520,8 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	float: right;
 	text-align: right;
 }
+
+.store-item .attribute-widgets, .store-item .form-item-quantity {
+	display: none;
+}
+
