@@ -15,6 +15,12 @@ function expressa_preprocess_page(&$vars, $hook) {
   }
 }
 
+function expressa_preprocess_node(&$vars) {
+  if (request_path() == 'store') {
+    $vars['theme_hook_suggestions'][] = 'node__store';
+  }
+}
+
 /**
  * Define some variables for use in theme templates.
  */
@@ -120,6 +126,17 @@ function expressa_breadcrumb($variables) {
   
   }
   return $crumbs;
+  
+}
+
+/**
+ * remove [all items] from the current search block
+ */
+function expressa_block_view_alter(&$data, $block) {
+  if ($block->delta != 'standard' || $block->module != 'current_search') return;
+  foreach($data['content']['active_items']['#items'] as $key => $item) {
+    if ($item == '[all items]') unset($data['content']['active_items']['#items'][$key]);
+  }
 }
 
 /**
