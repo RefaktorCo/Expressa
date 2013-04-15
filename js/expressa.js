@@ -105,6 +105,10 @@ jQuery(document).ready(function ($) {
 
 $(window).load(function(){
 
+  $('.search-api-sorts li a').addClass('btn');
+  
+  $('.search-api-sort-active a:last').removeClass('btn');
+
   $('.flexslider').flexslider({
     controlNav: false, 
     animation: "slide"

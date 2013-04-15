@@ -502,7 +502,7 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 }
 
 .yui3-u.range-slider-box {
-	width: 350px;
+
 	margin-left: 8px;
 }
 
@@ -511,12 +511,12 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 }
 
 .yui3-u.range-box.range-box-left {
-	width: 150px;
+	width: 100px;
 	float: left;
 }
 
 .yui3-u.range-box.range-box-right {
-	width: 150px;
+	width: 100px;
 	float: right;
 	text-align: right;
 }
@@ -525,3 +525,21 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	display: none;
 }
 
+.search-api-sorts {
+	margin: 0;
+}
+
+.search-api-sorts li {
+	list-style: none;
+	display: inline;
+	margin-left: 0px !important;
+	margin-right: 10px !important;
+}
+
+.search-api-sorts li.last a {
+	padding-right: 20px;
+}
+
+.search-api-sort-active img{
+  margin-left: -22px;
+}

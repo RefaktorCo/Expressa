@@ -121,7 +121,7 @@
 	
 	
 	  <div class="row">
-	    <div class="<?php if ($page['sidebar_first']) { echo "span8";} else { echo "span12"; } ?>">
+	    <div class="<?php if ($page['sidebar_first']) { echo "span9";} else { echo "span12"; } ?>">
 	    
 	      <?php print render($title_prefix); ?>
         <?php print render($title_suffix); ?>
@@ -144,7 +144,7 @@
 	  
 	    </div>
 	    <?php if (isset($page['sidebar_first'])) : ?>
-	    <div class="span4">
+	    <div class="span3">
 	    <?php print render($page['sidebar_first']); ?>
 	    </div>
 	    <?php endif; ?>
