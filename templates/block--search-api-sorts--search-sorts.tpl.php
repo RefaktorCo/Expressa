@@ -8,7 +8,7 @@
 
   <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
-  <?php print $block->subject ?>
+  <div class="sorts-block-title"><?php print $block->subject ?></div>
 <?php endif;?>
   <?php print render($title_suffix); ?>
 

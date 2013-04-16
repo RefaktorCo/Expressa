@@ -7,6 +7,8 @@
 
   <?php print render($content['product:commerce_price']); ?>
   
+  <?php print render($content['field_rating']); ?>
+  
   <?php print render($content['field_reference']); ?>
 
 </div>

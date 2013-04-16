@@ -525,21 +525,40 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	display: none;
 }
 
+.sorts-block-title {
+	float: left ;
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
 .search-api-sorts {
 	margin: 0;
+}
+
+.search-api-sorts .last {
+	display: none;
 }
 
 .search-api-sorts li {
 	list-style: none;
 	display: inline;
 	margin-left: 0px !important;
-	margin-right: 10px !important;
+	margin-right: 5px !important;
 }
 
-.search-api-sorts li.last a {
+.search-api-sorts li a {
 	padding-right: 20px;
 }
 
 .search-api-sort-active img{
   margin-left: -22px;
+}
+
+.form-submit btn:before {
+		content: "\f07a";
+	font-family: FontAwesome;
+
 }
