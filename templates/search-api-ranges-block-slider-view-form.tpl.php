@@ -11,6 +11,8 @@
    <div class="yui3-u range-box range-box-right">
     <?php print drupal_render($form['range-to']); ?>
   </div>
+  
+  <div class="clearfix"></div>
   <div class="yui3-u range-slider-box">
     <?php print drupal_render($form['range-slider']); ?>
   </div>

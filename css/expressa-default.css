@@ -29,6 +29,10 @@ footer {
 
 }
 
+.region-sidebar-first h2 {
+	font-size: 24px;
+}
+
 #content-wrap {
 	padding: 20px 20px 0px 20px;
 		background: #FDFDFD;
@@ -234,7 +238,7 @@ li.active a {
 	list-style: none;
 }
 
-.header-cart-wrap .commerce-line-item-views-form {position: absolute;  z-index: 3000; background: white; border: 1px solid black; padding: 10px; margin-left: -55px; width: 256px;}
+.header-cart-wrap .commerce-line-item-views-form {position: absolute;  border-radius: 5px; z-index: 3000; background: white; border: 1px solid #999; padding: 10px; margin-left: -200px; width: 256px; }
 
 .header-cart-wrap .commerce-line-item-views-form table {margin-bottom: 10px; padding: 5px 0px; 	border-bottom: 1px solid #ccc;}
 
@@ -521,8 +525,45 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	text-align: right;
 }
 
+.yui3-g .form-item {
+	margin: 0px;
+}
+
+.store-item {
+	margin-bottom: 25px;
+}
+
+.store-item-content {
+	background-color: #F4F4F4;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.facetapi-facetapi-checkbox-links li {
+	list-style: none !important;
+	margin-left: 0px !important;
+}
+
+.facetapi-facetapi-checkbox-links input[type="checkbox"] {
+  margin: 0px 8px 0px 0px;
+}
+
+.store-item-content form {
+	margin: 0px;
+}
+
+.store-item-content input[type="submit"].btn {
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
 .store-item .attribute-widgets, .store-item .form-item-quantity {
 	display: none;
+}
+
+.store-item-price-rating {
+	padding: 5px 60px;
+	margin: 3px 0px;
 }
 
 .sorts-block-title {

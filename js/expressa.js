@@ -48,6 +48,8 @@ jQuery(document).ready(function ($) {
     $('.header-cart-wrap .commerce-line-item-views-form').slideToggle();
   });
   
+
+  
   $('#recent_projects').carouFredSel({
 	    width: '100%',
 	    responsive: true,
@@ -104,6 +106,8 @@ jQuery(document).ready(function ($) {
 });
 
 $(window).load(function(){
+
+
 
   $('.search-api-sorts li a').addClass('btn');
   

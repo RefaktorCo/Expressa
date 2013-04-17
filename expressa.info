@@ -13,8 +13,8 @@ stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 stylesheets[all][] = css/colors/default.css
 
-scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/jquery.js
+scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/jquery.carouFredSel-6.1.0.js
 scripts[] = js/mobile-map.js
 scripts[] = js/jquery.ui.totop.js
