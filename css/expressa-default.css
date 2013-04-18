@@ -68,12 +68,17 @@ footer {
 	float: right;
 	background: transparent;
 	border-top: none;
-	padding: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 5px;
 }
 
 #header-right input[type="submit"].btn {
-  background: url(../images/search-button.png) no-repeat center top;
   padding: 4px 17px;
+  background-color: #e6e6e6; 
+  background-image: url('../images/search.png') center center no-repeat;
+  background: url('../images/search.png') center center no-repeat, -moz-linear-gradient(top, #FFF, #e6e6e6); 
+  background: url('../images/search.png') center center no-repeat, -webkit-linear-gradient(top, #FFF, #e6e6e6); 
+  background: url('../images/search.png') center center no-repeat, -o-linear-gradient(top, #FFF, #e6e6e6); 
+  background: url('../images/search.png') center center no-repeat, linear-gradient(to bottom, #FFF, #e6e6e6); 
 }
 
 
