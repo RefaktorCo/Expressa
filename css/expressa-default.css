@@ -129,19 +129,30 @@ transition: background .1s linear; }
 #menu .menu li:last-child {border-right: none;}
 #menu li a {color: #FFF;  padding:16px 25px 14px 25px; font-size: 12px; }
 #menu .menu li.first {margin-left: 0px; border-left: none;}
-#menu .menu ul li {padding: 0px; margin: 0; clear: both; border-left: none;}
+#menu .menu ul li {
+  padding: 0px; 
+  margin: 0; 
+  clear: both; 
+  border-right: none;
+  border-left: none;
+  display: block;
+}
+
 .menu ul { opacity: .95;}
+
 .menu ul li {
-	background: blue;
+	background: #393737;
 }
-.menu ul li:hover {
-	background: pink;
+
+#menu .menu ul li:hover {
+  background: #4e4c4c; 
 }
-.menu ul li a {
+
+#menu .menu ul li a {
 
 }
-.menu ul li a:hover {
-	padding-left: 5px;
+#menu .menu ul li a:hover {
+
 }
 .menu ul li a {color: #fff;}
 ul.menu {margin: 0; padding: 10px 0px;}
