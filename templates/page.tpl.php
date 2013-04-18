@@ -10,7 +10,7 @@
   <div id="scroll-menu-wrap">
     <div class="row">
     
-      <div class="span8">
+      <div class="span7">
 		    <nav id="menu">
 			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav> 
@@ -19,7 +19,7 @@
       <div id="header-right" class="span3" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 6px;">
         <?php print render($page['header_right_bottom']); ?>
       </div>
-       <div id="header-right" class="span1" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
+       <div id="header-right" class="span2" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
         <?php print render($page['header_right_top_right']); ?>
       </div>
       
@@ -120,11 +120,13 @@
 	  </div>  
 	</header>
 	
+	<?php if ($breadcrumb): ?>
 	<div class="row">
 	  <div class="span12">
 	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>		   
 	  </div>
 	</div>       
+	<?php endif; ?>
 	
 	<div class="before-content"></div>
 	

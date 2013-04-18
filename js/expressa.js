@@ -32,6 +32,8 @@ jQuery(document).ready(function ($) {
 	});
   
   $('ul.menu').superfish({delay	: 100});
+  
+  $(".cart-empty-block").html("<button class='btn btn-small'><i class='icon-shopping-cart'></i>0 Items</div>");
 
   $("a[rel^='prettyPhoto']").prettyPhoto();
 
@@ -42,10 +44,16 @@ jQuery(document).ready(function ($) {
 				titlesFactor		: 0
 		  });
   
-  $('.header-cart-wrap .commerce-line-item-views-form').hide();
+  $('header .header-cart-wrap .commerce-line-item-views-form').hide();
   
-  $('.view-cart').click(function(){
-    $('.header-cart-wrap .commerce-line-item-views-form').slideToggle();
+  $('header .view-cart').click(function(){
+    $('header .header-cart-wrap .commerce-line-item-views-form').slideToggle();
+  });
+  
+   $('#scroll-menu .header-cart-wrap .commerce-line-item-views-form').hide();
+  
+  $('#scroll-menu .view-cart').click(function(){
+    $('#scroll-menu .header-cart-wrap .commerce-line-item-views-form').slideToggle();
   });
   
 
