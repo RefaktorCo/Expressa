@@ -60,14 +60,19 @@
   font-family: 'Raleway', sans-serif; 
   font-style: italic;
   color: #fff;
+  background: #f45721;
+  padding: 10px;
 }
 
 .ei-title h3 {
   font-size: 20px;
-  line-height: 70px;
+  line-height: 40px;
   font-family: 'Raleway', sans-serif; 
   text-transform: uppercase;
   color: #fff;
+  background: #393737;
+  padding: 10px;
+  display: inline-block;
 }
 
 .ei-slider-thumbs {
