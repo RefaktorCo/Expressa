@@ -9,10 +9,17 @@
 <div id="scroll-menu">
   <div id="scroll-menu-wrap">
     <div class="row">
-      <div class="span12">
+      <div class="span8">
 		    <nav id="menu">
 			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav> 
+      </div>
+     
+      <div id="header-right" class="span3" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 6px;">
+      <?php print render($page['header_right_bottom']); ?>
+      </div>
+       <div class="span1" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
+      <?php print render($page['header_right_top_right']); ?>
       </div>
     </div>
   </div>

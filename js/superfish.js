@@ -86,11 +86,11 @@
 		pathClass	: 'overideThisToUse',
 		pathLevels	: 1,
 		delay		: 200,
-		animation	: {opacity:'show'},
+		animation	: {height:'show'},
 		speed		: 'fast',
 		autoArrows	: true,
 		dropShadows : true,
-		disableHI	: false,		// true disables hoverIntent detection
+		disableHI	: true,		// true disables hoverIntent detection
 		onInit		: function(){}, // callback functions
 		onBeforeShow: function(){},
 		onShow		: function(){},

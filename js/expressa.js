@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
   
-  $('ul.menu').superfish();
+  $('ul.menu').superfish({delay	: 100});
 
   $("a[rel^='prettyPhoto']").prettyPhoto();
 
