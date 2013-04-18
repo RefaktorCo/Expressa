@@ -65,8 +65,17 @@ footer {
 }
 
 #header-right .form-wrapper{
-	display: none;
+	float: right;
+	background: transparent;
+	border-top: none;
+	padding: 0px 0px 0px 10px;
 }
+
+#header-right input[type="submit"].btn {
+  background: url(../images/search-button.png) no-repeat center top;
+  padding: 4px 17px;
+}
+
 
 header form {
 	margin: 0;
@@ -165,6 +174,11 @@ li.active a {
 
 #highlight-button {
 	
+}
+
+#header-right-top {
+	margin: 2px 0 10px 10px;
+
 }
 
 /* Start: Recommended Isotope styles */

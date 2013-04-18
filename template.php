@@ -148,8 +148,8 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
     $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
     $form['search_block_form']['#size'] = 40;  // define size of the textfield
-    $form['search_block_form']['#default_value'] = t('Explore here'); // Set a default value for the textfield
-    $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
+    $form['search_block_form']['#default_value'] = t(''); // Set a default value for the textfield
+    $form['actions']['submit']['#value'] = t(''); // Change the text on the submit button
    
 
     // Add extra attributes to the text box
@@ -166,6 +166,7 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
     $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Add to Cart');
   }
 } 
+
 
 function expressa_pagination($node, $mode = 'n') {
   if (!function_exists('prev_next_nid')) {
