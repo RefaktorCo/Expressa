@@ -71,7 +71,7 @@ footer {
 	padding: 0px 0px 0px 5px;
 }
 
-#header-right input[type="submit"].btn {
+.region-header-right-bottom input[type="submit"].btn {
   padding: 4px 17px;
   background-color: #e6e6e6; 
   background-image: url('../images/search.png') center center no-repeat;
@@ -81,6 +81,9 @@ footer {
   background: url('../images/search.png') center center no-repeat, linear-gradient(to bottom, #FFF, #e6e6e6); 
 }
 
+.view-header.btn-small { 
+  font-size: 13px !important;
+}
 
 header form {
 	margin: 0;
@@ -114,13 +117,16 @@ header form {
 #menu.row {margin-left: 0px !important; margin-top: -30px; margin-bottom: -1px;}
 #menu_wrap {padding-top: 10px; margin-left: 10px;}
 #main-menu {min-height: 45px; margin: 0px -18px -1px -18px; -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);}
-#menu li {list-style: none; display: inline; }
+#menu li {list-style: none; display: inline; -webkit-transition: background .1s linear;
+-moz-transition: background .1s linear;
+transition: background .1s linear; }
+#menu li:hover {background: #393737; }
 #menu li a.active {color: #2a2a2a;}
 #menu li a:hover {color: #d3d3d3; text-decoration: none;}
 #menu li li a.active {color: #ccc;}
-#menu .menu li {position: relative; padding:4px 0px 5px 0px; border-right: 1px solid #393737;}
+#menu .menu li {position: relative; padding:13px 0px 14px 0px; border-right: 1px solid #393737; margin-left: -4px;}
 #menu .menu li:last-child {border-right: none;}
-#menu li a {color: #FFF;  padding:14px 25px 13px 25px; font-size: 12px; }
+#menu li a {color: #FFF;  padding:16px 25px 14px 25px; font-size: 12px; }
 #menu .menu li.first {margin-left: 0px; border-left: none;}
 #menu .menu ul li {padding: 0px; margin: 0; clear: both; border-left: none;}
 .menu ul {background-color: #333 !important; opacity: .95;}
