@@ -109,14 +109,23 @@
 	    </div>
 	  </div>
 	  
+	  
 	  <div class="row">
-	    <div class="span12">    
-		       
-			  <nav id="menu">
-				  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
-			  </nav>
-	     
-	    </div>
+	    <div class="span12">
+	      <div class="menu-wrap">
+	        <div class="row">
+				    <div class="span9">    
+						  <nav id="menu">
+							  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
+						  </nav>
+				    </div>
+				    
+				    <div class="span3">
+				      <?php if (isset($page['menu_social'])) { print render($page['menu_social']); } ?>
+				    </div>
+	        </div>
+	      </div>    
+	    </div>  
 	  </div>  
 	</header>
 	

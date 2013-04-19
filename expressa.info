@@ -35,6 +35,7 @@ regions[header_right_top_right] = Header Right Top Right
 regions[header_right_bottom] = Header Right Bottom
 regions[branding] = Branding
 regions[menu] = Menu
+regions[menu_social] = Menu Social
 
 ; Define content block regions.
 regions[content] = Content

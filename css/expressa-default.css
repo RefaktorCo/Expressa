@@ -769,6 +769,12 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	border-bottom: 1px dotted #393737;
 }
 
+.pane-portfolio-carousel .pane-title:before {
+	content: "\f0b1";
+	font-family: FontAwesome;
+	margin-right: 8px;
+}
+
 .pane-store-carousel .pane-title:before {
 	content: "\f07a";
 	font-family: FontAwesome;
@@ -809,4 +815,25 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   background: #f45721;
   border: none;
   color: white;
+}
+
+.menu-wrap {
+	height: 42px;
+}
+
+.menu-social-icons {
+	text-align: right;
+	padding: 10px 8px 0px 0px;
+}
+
+.menu-social-icons i {
+	color: white;
+	font-size: 22px;
+		margin-left: 2px;
+}
+
+.menu-social-icons li {
+	list-style: none;
+	display: inline;
+
 }
