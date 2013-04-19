@@ -475,7 +475,7 @@ li.active a {
 	margin-bottom: 5px;
 }
 
-.carousel_navigation, .store-carousel-navigation {
+.portfolio-carousel-navigation, .store-carousel-navigation {
 	margin-left: 20px;
 	margin-top: -55px;
 	font-size: 14px;
@@ -502,7 +502,7 @@ li.active a {
 }
 
 .caroufredsel_wrapper {
-  min-height: 285px;
+  min-height: 310px;
 }
 
 article {
@@ -687,10 +687,12 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 .store-item {
 	margin-bottom: 25px;
+	border: 1px dotted #393737;
+
 }
 
 .store-item-content {
-	background-color: #F4F4F4;
+
 	text-align: center;
 	padding: 10px 0px;
 }
@@ -773,12 +775,12 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	margin-right: 8px;
 } 
 
-.store-carousel-navigation a {
+.store-carousel-navigation a, .portfolio-carousel-navigation a {
 	padding: 10px 12px 8px 12px;
 	color: white;
 }
 
-.store-carousel-navigation a:hover {
+.store-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
 	text-decoration: none;
 	color: whitesmoke;
 }
@@ -791,14 +793,14 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
    transition: all 0.3s ease-in-out;
 }
 
-.store-carousel-navigation a {
+.store-carousel-navigation a, .portfolio-carousel-navigation a {
    -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
 
-.store-carousel-navigation a:hover {
+.store-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
 	background: #393737;
 }
 

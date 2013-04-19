@@ -51,7 +51,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-  <div class="carousel_navigation">
+  <div class="portfolio-carousel-navigation">
 		        <a id="prev" class="prev" href="#"><i class="icon-chevron-left"></i></a>
 					  <a id="next" class="next" href="#"><i class="icon-chevron-right"></i></a>
           </div>

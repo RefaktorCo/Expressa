@@ -121,6 +121,8 @@ $(window).load(function(){
   
   $('header input[type="submit"]').addClass('btn');
   
+  $('#scroll-menu input[type="submit"]').addClass('btn');
+  
   $('.search-api-sort-active a:last').removeClass('btn');
 
   $('.flexslider').flexslider({

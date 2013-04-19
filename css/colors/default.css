@@ -4,6 +4,6 @@
 
 
 
-.store-carousel-navigation a {
+.store-carousel-navigation a, .portfolio-carousel-navigation a {
 	background: #f45721;
 }

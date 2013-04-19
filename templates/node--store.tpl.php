@@ -1,4 +1,5 @@
-<div class="span3 store-item">
+<div class="span3">
+  <div class="store-item">
   <div class="store--item-picture">
     <?php print render($content['product:field_image']); ?>
   </div>
@@ -17,5 +18,6 @@
     </div>
     <div class="clearfix"></div>
     <?php print render($content['field_reference']); ?>
+  </div>
   </div>
 </div>
