@@ -7,8 +7,11 @@ body {
 	font-size: 15px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal !important;
+}
+
 footer {
-	
 	height: 250px;
 	color: white;
 }
@@ -269,6 +272,7 @@ li.active a {
 
 #highlight {
 	margin-top: -1.4em !important;
+	margin-bottom: 30px;
 }
 
 /* Highlight */
@@ -472,25 +476,17 @@ li.active a {
 }
 
 .carousel_navigation, .store-carousel-navigation {
-  margin-left: 20px;
-  margin-top: -45px;
-  font-size: 25px;
-  float: right;
-  background: white;
-  padding: 10px 0px 10px 10px;
+	margin-left: 20px;
+	margin-top: -55px;
+	font-size: 14px;
+	float: right;
+	background: white;
+	padding: 10px 0px 10px 10px;
+	margin-right: -13px;
+	width: 85px;
 }
 
-.carousel_navigation i, .store-carousel-navigation i {
-	color: #333;
-	 -moz-transition: all 0.3s ease-in-out;
-   -webkit-transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-}
 
-.carousel_navigation i:hover, .store-carousel-navigation i:hover {
-	color: #64ADB5;
-}
 
 #recent_projects, #store-carousel-list-wrap {
   margin: 0px 0px 20px 0px;
@@ -759,7 +755,56 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 }
 
 .form-submit btn:before {
-		content: "\f07a";
+	content: "\f07a";
 	font-family: FontAwesome;
 
+}
+
+.front-page .pane-title {
+  color: #393737;
+	font-size: 20px;
+	margin-bottom: 13px;
+	border-bottom: 1px dotted #393737;
+}
+
+.pane-store-carousel .pane-title:before {
+	content: "\f07a";
+	font-family: FontAwesome;
+	margin-right: 8px;
+} 
+
+.store-carousel-navigation a {
+	padding: 10px 12px 8px 12px;
+	color: white;
+}
+
+.store-carousel-navigation a:hover {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.carousel_navigation i, .store-carousel-navigation i {
+	 color: white;
+	 -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.store-carousel-navigation a {
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.store-carousel-navigation a:hover {
+	background: #393737;
+}
+
+.store-item input[type="submit"] {
+	width: auto;
+  background: #f45721;
+  border: none;
+  color: white;
 }

@@ -29,7 +29,7 @@
 <?php } ?>
 
 <div id="content-wrap">
-  <div id="page-wrap" class="container">
+  <div id="page-wrap" class="container <?php if (drupal_is_front_page()) { echo "front-page"; } ?>">
 
 	<header>
 	

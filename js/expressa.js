@@ -119,7 +119,7 @@ $(window).load(function(){
 
   $('.search-api-sorts li a').addClass('btn');
   
-  $('input[type="submit"]').addClass('btn');
+  $('header input[type="submit"]').addClass('btn');
   
   $('.search-api-sort-active a:last').removeClass('btn');
 
