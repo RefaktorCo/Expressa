@@ -2,7 +2,9 @@
 	background: #f45721;
 }
 
-
+.view-popular-tags a:hover {
+  background-color: #f45721; 
+}
 
 .store-carousel-navigation a, .portfolio-carousel-navigation a {
 	background: #f45721;
