@@ -829,7 +829,15 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 .menu-social-icons i {
 	color: white;
 	font-size: 22px;
-		margin-left: 2px;
+	margin-left: 2px;
+	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-social-icons i:hover {
+	color: #393737;
 }
 
 .menu-social-icons li {

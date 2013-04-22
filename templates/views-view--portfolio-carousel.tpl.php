@@ -52,18 +52,16 @@
 
   <?php if ($rows): ?>
   <div class="portfolio-carousel-navigation">
-		        <a id="prev" class="prev" href="#"><i class="icon-chevron-left"></i></a>
-					  <a id="next" class="next" href="#"><i class="icon-chevron-right"></i></a>
-          </div>
-      <div class="projects_carousel">  
-          <ul id="recent_projects">
-   
+    <a id="prev" class="prev" href="#"><i class="icon-chevron-left"></i></a>
+	  <a id="next" class="next" href="#"><i class="icon-chevron-right"></i></a>
+  </div>
+  
+  <div class="projects_carousel">  
+    <ul id="recent_projects">
       <?php print $rows; ?>
-      
-          </ul>
-      </div>
+    </ul>
+  </div>
    
-    </div>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
