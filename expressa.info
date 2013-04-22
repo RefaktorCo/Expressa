@@ -20,6 +20,7 @@ scripts[] = js/mobile-map.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/jquery.eislideshow.js
 scripts[] = js/jquery.prettyPhoto.js
+scripts[] = js/mobile-menu.js
 scripts[] = js/easing.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js

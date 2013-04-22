@@ -832,6 +832,7 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 .menu-social-icons {
 	text-align: right;
 	padding: 10px 8px 0px 0px;
+	margin: 0;
 }
 
 .menu-social-icons i {
@@ -862,4 +863,18 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	margin-left: 5px;
 	list-style: none;
 	display: inline;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+@media screen and (max-width: 767px) { 
+  .region-menu {
+	  display: none;
+  }
+  
+  .mobile-menu {
+	  display: block;
+  }
 }

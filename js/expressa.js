@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+  $('#menu').mobileMenu();
+
   var flag = true;
 
 	$(window).bind('load resize',function() {
