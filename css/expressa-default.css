@@ -12,19 +12,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-	height: 250px;
 	color: white;
 }
 
 #footer-wrap {
-	max-width: 1200px;
-	background: #393737;
-	padding: 20px;
+	max-width: 1240px;
+
 	margin: 0 auto;
 	margin-bottom: 20px;
 		-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#primary-footer {
+	background: #4e4c4c;
+	padding: 20px;
+}
+
+#secondary-footer {
+	background: #393737;
+	padding: 10px 20px;
 }
 
 #page-wrap {
@@ -843,5 +851,15 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 .menu-social-icons li {
 	list-style: none;
 	display: inline;
+}
 
+.payment-icons {
+	margin: 0;
+	text-align: right;
+}
+
+.payment-icons li {
+	margin-left: 5px;
+	list-style: none;
+	display: inline;
 }

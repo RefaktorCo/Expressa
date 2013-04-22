@@ -1,4 +1,9 @@
 <?php 
+/**
+ * Define $root global variable.
+ */
+global $root, $theme_path;
+$root = base_path() . path_to_theme();
 
 /**
  * Assign theme hook suggestions for custom templates.
