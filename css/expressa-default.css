@@ -33,6 +33,7 @@ footer {
 #primary-footer h2 {
 	font-size: 18px;
 	text-transform: uppercase;
+	margin-top: -5px;
 }
 
 #primary-footer p {
@@ -467,19 +468,12 @@ li.active a {
 .projects_carousel, .store-carousel {
 	 margin-left: -20px !important;
 }
-.carousel_item_wrapper {
-	text-align: center;
-	position: relative;
-	clear: both;
+
+.portfolio-item {
+	border: 1px solid #C5BFBF;
 }
 
-.carousel_item_content {
-	opacity: 1;
-}
-
-.carousel_item_description {
-	background: #F8F8F8;
-	border-bottom: 1px solid #E8E8E8;
+.portfolio-item-description {
 	margin-bottom: 20px;
 	margin-top: -6px;
 	text-align: center;
@@ -487,40 +481,20 @@ li.active a {
 	position: relative;
 }
 
-.carousel_item_hover {
-	display: block;
-	color: #fff;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	height: 100%;
-	width: 100%;
-	top: 0%;
-	position: absolute;
-	padding:45px 15px;
-
+.portfolio-project-button {
+	background: #f45721;
+  padding: 10px;
+  color: white;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
 
-.six .carousel_item_hover {
-  padding: 150px 15px;
-}
-
-.four .carousel_item_hover {
-  padding: 80px 15px;
-}
-
-.carousel_item_hover i {
-	margin: 4px;
-	font-size: 22px;
-	color: #fff;
-	-moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.carousel_item_hover p {
-	font-size: 20px;
-	margin-bottom: 5px;
+.portfolio-project-button:hover {
+  background: #393737;
+	color: white;
+	text-decoration: none;
 }
 
 .portfolio-carousel-navigation, .store-carousel-navigation {
@@ -738,7 +712,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 }
 
 .store-item-content {
-
 	text-align: center;
 	padding: 10px 0px;
 }
@@ -911,18 +884,19 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 #flickr_widget {
 	margin: 0;
+	margin-left:-20px;
 }
 
 #flickr_widget li {
 	list-style: none;
 	float: left;
-	margin-right: 30px;
+	margin-left: 20px;
 	margin-bottom: 20px;
 }
 
 #flickr_widget li img {
-  height: 60px;
-  width: 60px;
+  height: 75px;
+  width: 75px;
 }
 
 .tweet_list {
