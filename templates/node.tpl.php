@@ -3,6 +3,16 @@
  * @file
  * Expressa's theme implementation to display a single Drupal node.
  */
+ 
+  if ($items = field_get_items('node', $node, 'field_image')) {
+	  if (count($items) == 1) {
+	    $image_slide = 'false';
+	  }
+	  elseif (count($items) > 1) {
+	    $image_slide = 'true';
+	  }
+  }
+ 
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -14,19 +24,29 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      Posted by <?php print $name; ?> on <?php print format_date($node->created, 'custom', 'M d, Y'); ?>
-    </div>
+  <?php if (render($content['field_image'])) : ?> 
+  
+	  <?php if ($image_slide == 'true'): ?>
+	  <div class="flexslider">
+	    <ul class="slides">
+	      <?php print render($content['field_image']); ?>
+	    </ul>
+	  </div>  
+	  <?php endif; ?>
+	  
+	  <?php if ($image_slide == 'false'): ?>
+	    <div class="node-image">
+	     <?php print render($content['field_image']); ?>
+	    </div>  
+	  <?php endif; ?>
+  
   <?php endif; ?>
   
-  <div class="flexslider">
-    <ul class="slides">
-    <?php print render($content['field_image']); ?>
-    </ul>
-  </div>  
-
-
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <?php echo t('Posted by'); ?> <?php print $name; ?> <?php echo t('on'); ?> <?php print format_date($node->created, 'custom', 'M d, Y'); ?>
+    </div>
+  <?php endif; ?>
 
   <div class="node-content"<?php print $content_attributes; ?>>
     <?php

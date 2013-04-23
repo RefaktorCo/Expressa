@@ -52,6 +52,11 @@ footer {
 
 .region-sidebar-first h2 {
 	font-size: 24px;
+	clear: both;
+}
+
+.node-image li {
+	list-style: none;
 }
 
 #content-wrap {

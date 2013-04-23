@@ -170,9 +170,10 @@
 	    <?php endif; ?>
 	    
 	  </div><!-- end page content row -->  
-
-</div>
+  <?php print $messages; ?>
   </div>
+  </div>
+
   <div id="footer-wrap">
 	  <footer>  
 	    <div id="primary-footer">
