@@ -241,7 +241,6 @@ header form {
 }
 
 #menu .menu ul { 
-  opacity: .95;
   border: solid 1px #1e1e1e; 
   padding: 0; 
   position: absolute; 

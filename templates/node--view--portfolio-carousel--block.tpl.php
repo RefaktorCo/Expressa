@@ -6,7 +6,7 @@
   
   <div class="portfolio-item-description">
     <h4><?php print $title; ?></h4>
-    <a class="portfolio-project-button" href="<?php print $node_url;?>">Launch Project</a>
+    <a class="portfolio-project-button" href="<?php print $node_url;?>"><?php echo t('View Project'); ?></a>
   </div>  
   </div>  
 </li>

@@ -169,7 +169,7 @@
 	    </div>
 	    <?php endif; ?>
 	    
-	  </div>  
+	  </div><!-- end page content row -->  
 
 </div>
   </div>
