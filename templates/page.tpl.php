@@ -132,7 +132,7 @@
 	<?php if ($breadcrumb): ?>
 	<div class="row">
 	  <div class="span12">
-	    <div id="breadcrumbs"><?php print $breadcrumb . $title; ?> </div>		   
+	    <div id="breadcrumbs"><?php print $breadcrumb; ?> </div>		   
 	  </div>
 	</div>       
 	<?php endif; ?>

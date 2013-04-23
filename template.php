@@ -115,24 +115,19 @@ function expressa_field($variables) {
  * Put Breadcrumbs in a ul li structure and add descending z-index style to each <a href> tag.
  */
 function expressa_breadcrumb($variables) {
-  $count = '100';
-  $breadcrumb = $variables['breadcrumb'];
-  $crumbs = '';
-
-  if (!empty($breadcrumb)) {
-   
-    foreach($breadcrumb as $value) {
-      $count = $count - 1;
-      $style = ' style="z-index:'.$count.';"';
-      $pos = strpos( $value, ">"); 
-      $temp1=substr($value,0,$pos);
-      $temp2=substr($value,$pos,$pos);
-      $crumbs = $value.'/ ';
-    }
-  
-  }
-  return $crumbs;
-  
+ $breadcrumb = $variables['breadcrumb'];
+ $title = drupal_get_title();
+ 
+ if (!empty($breadcrumb)) {
+   $crumbs = '<ul class="breadcrumb">';
+   foreach($breadcrumb as $value) {
+     $crumbs .= '<li>'.$value.'</li>';
+   }
+   $crumbs .= '<li><a href="#" class="current">'.$title.'</a></li>';
+   $crumbs .= '</ul>';
+    
+ }
+ return $crumbs;
 }
 
 /**
