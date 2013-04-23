@@ -119,11 +119,11 @@ function expressa_breadcrumb($variables) {
  $title = drupal_get_title();
  
  if (!empty($breadcrumb)) {
-   $crumbs = '<ul class="breadcrumb">';
+   $crumbs = '<ul class="breadcrumbs">';
    foreach($breadcrumb as $value) {
      $crumbs .= '<li>'.$value.'</li>';
    }
-   $crumbs .= '<li><a href="#" class="current">'.$title.'</a></li>';
+   $crumbs .= '<li><a href="#" class="current">'. $title.'</a></li>';
    $crumbs .= '</ul>';
     
  }
