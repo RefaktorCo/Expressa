@@ -51,19 +51,18 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-  <div class="store-carousel-navigation">
-		        <a id="store-prev" class="store-prev" href="#"><i class="icon-chevron-left"></i></a>
-					  <a id="store-next" class="store-next" href="#"><i class="icon-chevron-right"></i></a>
-          </div>
-      <div class="store-carousel">  
-          <ul id="store-carousel-list-wrap">
-   
-      <?php print $rows; ?>
-      
-          </ul>
-      </div>
-   
+    <div class="store-carousel-navigation">
+		  <a id="store-prev" class="store-prev" href="#"><i class="icon-chevron-left"></i></a>
+			<a id="store-next" class="store-next" href="#"><i class="icon-chevron-right"></i></a>
     </div>
+    
+    <div class="store-carousel">  
+      <ul id="store-carousel-list-wrap">   
+        <?php print $rows; ?>
+      </ul>
+    </div>
+   
+
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
