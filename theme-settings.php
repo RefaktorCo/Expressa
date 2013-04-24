@@ -28,17 +28,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('General'),
   );
           
-     $form['options']['general']['image_1'] = array(
-			  '#title' => t('Image'),
-			  '#type' => 'managed_file',
-			  '#description' => t('The uploaded image will be displayed on this page using the image style chosen below.'),
-			  '#default_value' => theme_get_setting('image_1'),
-			  '#upload_location' => 'public://image_example_images/',
-			  '#upload_validators' => array(
-	        'file_validate_extensions' => array('gif png jpg jpeg'),
-	      ),
-      );
-  
+       
     // Breadcrumbs
     $form['options']['general']['breadcrumbs'] = array(
       '#type' => 'checkbox',
@@ -59,10 +49,10 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Layout'),
   );
   
-    // Color Scheme
+    // Site Layout
     $form['options']['layout']['site_layout'] = array(
       '#type' => 'select',
-      '#title' => 'Color Scheme',
+      '#title' => 'Body Layout',
       '#default_value' => theme_get_setting('site_layout'),
       '#options' => array(
         'boxed' => t('Boxed (default)'),
@@ -70,34 +60,31 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       ),
     );
     
-      // Background Color
-      $form['options']['layout']['body_background_color'] =array(
-        '#type' => 'jquery_colorpicker',
-		    '#title' => t('Body Background Color'),
-		    '#default_value' => theme_get_setting('body_background_color'),
-		    '#states' => array (
+      //Headings
+    $form['options']['layout']['background'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<h3 class="options_heading">Background</h3>',
+      '#states' => array (
           'visible' => array(
             'select[name=site_layout]' => array('value' => 'boxed')
           )
         )
-
-      );    
-      
-     // Enable background pattern
-      $form['options']['layout']['enable_background_pattern'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable background pattern',
-        '#default_value' => theme_get_setting('enable_background_pattern'),
-        '#states' => array (
-          'visible' => array(
-            'select[name=site_layout]' => array('value' => 'boxed')
-          )
-        )
-
-      );
+    );
     
-      // Background
-    $form['options']['layout']['background_select'] = array(
+    // Body Background 
+    $form['options']['layout']['background']['body_background'] = array(
+      '#type' => 'select',
+      '#title' => 'Body Background',
+      '#default_value' => theme_get_setting('body_background'),
+      '#options' => array(
+        'expressa_backgrounds' => t('Expressa Background (default)'),
+        'custom_background_image' => t('Custom Background Image'),
+        'custom_background_color' => t('Custom Background Color'),
+      ),
+    );
+    
+    // Background
+    $form['options']['layout']['background']['background_select'] = array(
       '#type' => 'radios',
       '#title' => 'Select a background pattern:',
       '#default_value' => theme_get_setting('background_select'),
@@ -111,16 +98,41 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         'illusion' => 'item',
         'nistri' => 'item',
       ),
-      
       '#states' => array (
-          'invisible' => array(
-            'input[name="enable_background_pattern"]' => array('checked' => FALSE)
+          'visible' => array(
+            'select[name=body_background]' => array('value' => 'expressa_backgrounds')
           )
         )
+      );  
 
-    );  
-  
-  
+    $form['options']['layout']['background']['custom_background_image'] = array(
+		  '#title' => t('Image'),
+		  '#type' => 'managed_file',
+		  '#description' => t('The uploaded image will be displayed on this page using the image style chosen below.'),
+		  '#default_value' => theme_get_setting('custom_background_image'),
+		  '#upload_location' => 'public://image_example_images/',
+		  '#upload_validators' => array(
+        'file_validate_extensions' => array('gif png jpg jpeg'),
+      ),
+      '#states' => array (
+          'visible' => array(
+            'select[name=body_background]' => array('value' => 'custom_background_image')
+          )
+        )
+      );
+
+      // Background Color
+      $form['options']['layout']['background']['body_background_color'] =array(
+        '#type' => 'jquery_colorpicker',
+		    '#title' => t('Body Background Color'),
+		    '#default_value' => theme_get_setting('body_background_color'),
+	      '#states' => array (
+	        'visible' => array(
+	          'select[name=body_background]' => array('value' => 'custom_background_color')
+	        )
+        )
+      );    
+
   // Color
   $form['options']['color'] = array(
     '#type' => 'fieldset',
@@ -130,7 +142,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
   // Colors
     $form['options']['color']['colors'] = array(
       '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Color Scheme</h3>',
+      '#title' => '<h3 class="options_heading">Color Scheme</h3>',
     );
   
       // Color Scheme
@@ -171,7 +183,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
     //Headings
     $form['options']['typography']['headings'] = array(
       '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Headings</h3>',
+      '#title' => '<h3 class="options_heading">Headings</h3>',
     );
         
       //H1

@@ -60,3 +60,10 @@ settings[scroll_menu] = '1'
 settings[body_background_color] = 'ECECEC'
 
 settings[site_layout] = 'boxed'
+
+settings[h1] = '38.5px'
+settings[h2] = '31.5px'
+settings[h3] = '24.5px'
+settings[h4] = '17.5px'
+settings[h5] = '14px'
+settings[h6] = '11.9px'
