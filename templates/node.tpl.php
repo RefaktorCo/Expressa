@@ -79,7 +79,6 @@ if ($items = field_get_items('node', $node, 'field_image')) {
   <?php endif; ?>
   
   <div class="comments-meta"></div>
-  
 
   <?php print render($content['comments']); ?>
 

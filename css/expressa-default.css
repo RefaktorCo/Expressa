@@ -53,6 +53,17 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 1200px;
 }
 
+a {
+	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 /* 
 ' HEADER
 */
@@ -814,6 +825,10 @@ article p {
 	font-size: 22px;
 }
 
+.node-title a:hover {
+	color: #666;
+}
+
 .read-more {
   float: right;
 }
@@ -845,6 +860,10 @@ article p {
 
 .submitted a {
 	color: #666;
+}
+
+.submitted a:hover {
+	color: #999;
 }
 
 .read-more, .tags, .comments-meta {
