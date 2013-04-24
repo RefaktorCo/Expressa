@@ -57,7 +57,52 @@ drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js');
   $form['options']['layout'] = array(
     '#type' => 'fieldset',
     '#title' => t('Layout'),
-  );  
+  );
+  
+  // Background
+    $form['options']['layout']['background'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Background</h3>',
+    );
+    
+      // Background Color
+      $form['options']['layout']['background']['body_background_color'] =array(
+        '#type' => 'jquery_colorpicker',
+		    '#title' => t('Body Background Color'),
+		    '#default_value' => theme_get_setting('body_background_color'),
+      );    
+      
+     // Enable background pattern
+      $form['options']['layout']['background']['enable_background_pattern'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable background pattern',
+        '#default_value' => theme_get_setting('enable_background_pattern'),
+      );
+    
+      // Background
+    $form['options']['layout']['background']['background_select'] = array(
+      '#type' => 'radios',
+      '#title' => 'Select a background pattern:',
+      '#default_value' => theme_get_setting('background_select'),
+      '#options' => array(
+        'retina_wood' => 'item',
+        'debut_dark' => 'item',
+        'noisy_grid' => 'item',
+        'dark_wood' => 'item',
+        'cartographer' => 'item',
+        'bedge' => 'item',
+        'illusion' => 'item',
+        'nistri' => 'item',
+      ),
+      
+      '#states' => array (
+          'invisible' => array(
+            'input[name="enable_background_pattern"]' => array('checked' => FALSE)
+          )
+        )
+
+    );  
+  
   
   // Color
   $form['options']['color'] = array(

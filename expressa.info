@@ -57,3 +57,4 @@ regions[footer_bottom_right] = Footer Bottom Right
 settings[breadcrumbs] = '1'
 
 settings[scroll_menu] = '1'
+settings[body_background_color] = 'ECECEC'
