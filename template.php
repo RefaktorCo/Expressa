@@ -226,7 +226,8 @@ function expressa_pagination($node, $mode = 'n') {
  * Add various META tags to HTML head..
  */
 function expressa_preprocess_html(&$vars){
-
+  global $root;
+  
   $headings = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>h1 {font-size:" .theme_get_setting('h1')." ;} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
@@ -235,13 +236,13 @@ function expressa_preprocess_html(&$vars){
   
   $box_layout = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#main_wrapper, #footer { max-width: 1120px; margin: 0 auto; } header {left: 0; right: 0; max-width: 1120px; margin: 0 auto;} #heading_wrapper { box-shadow: none; }</style> ",
+    '#markup' => "<style type='text/css'>#content-wrap { max-width: 1200px; margin: 0 auto; margin-top: 20px; } </style> ",
     '#weight' => 2,
   );
   
   $wide_layout = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#main_wrapper, #footer { max-width: 1120px; margin: 0 auto; } header {left: 0; right: 0; max-width: 1120px; margin: 0 auto;} #heading_wrapper { box-shadow: none; }</style> ",
+    '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; }</style> ",
     '#weight' => 3,
   );
 
@@ -256,8 +257,15 @@ function expressa_preprocess_html(&$vars){
     '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
     '#weight' => 5,
   );
-
   
+  if (theme_get_setting('site_layout') == "boxed") {
+    drupal_add_html_head( $box_layout, 'box_layout' );
+  }
+  
+  if (theme_get_setting('site_layout') == "wide") {
+    drupal_add_html_head( $wide_layout, 'wide_layout' );
+  }
+
   drupal_add_html_head( $headings, 'headings');
   drupal_add_html_head( $background_color, 'background_color');
 
