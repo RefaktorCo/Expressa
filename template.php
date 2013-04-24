@@ -110,6 +110,21 @@ function expressa_field($variables) {
   return $output;
 }
 
+/**
+* Override breadcrumb because Facet API adds a [all items] in the breadcrumb
+*/
+function expressa_preprocess_breadcrumb(&$variables) {
+  $new_breadcrumb = '';
+  
+  foreach ($variables['breadcrumb'] as $key => $breadcrumb) {
+    $pos = strpos($breadcrumb, '[all items]');
+    if ($pos !== false) {
+     break;
+    }
+    $new_breadcrumb[] = $breadcrumb;
+  }
+  $variables['breadcrumb'] = $new_breadcrumb;
+}
 
 /**
  * Put Breadcrumbs in a ul li structure and add descending z-index style to each <a href> tag.
@@ -117,6 +132,7 @@ function expressa_field($variables) {
 function expressa_breadcrumb($variables) {
  $breadcrumb = $variables['breadcrumb'];
  $title = drupal_get_title();
+ $crumbs = '';
  
  if (!empty($breadcrumb)) {
    $crumbs = '<ul class="breadcrumbs">';
@@ -130,19 +146,6 @@ function expressa_breadcrumb($variables) {
  return $crumbs;
 }
 
-/**
-* Override breadcrumb because Facet API adds a [all items] in the breadcrumb
-*/
-function expressa_preprocess_breadcrumb(&$variables) {
-   foreach ($variables['breadcrumb'] as $key => $breadcrumb) {
-    $pos = strpos($breadcrumb, '[all items]');
-    if ($pos !== false) {
-     break;
-    }
-    $new_breadcrumb[] = $breadcrumb;
-  }
-  $variables['breadcrumb'] = $new_breadcrumb;
-}
 
 /**
  * remove [all items] from the current search block
