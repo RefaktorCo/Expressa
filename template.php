@@ -222,5 +222,45 @@ function expressa_pagination($node, $mode = 'n') {
   }
 }
 
+/**
+ * Add various META tags to HTML head..
+ */
+function expressa_preprocess_html(&$vars){
+
+  $headings = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>h1 {font-size:" .theme_get_setting('h1')." ;} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
+    '#weight' => 1,
+  );
+  
+  $box_layout = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>#main_wrapper, #footer { max-width: 1120px; margin: 0 auto; } header {left: 0; right: 0; max-width: 1120px; margin: 0 auto;} #heading_wrapper { box-shadow: none; }</style> ",
+    '#weight' => 2,
+  );
+  
+  $wide_layout = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>#main_wrapper, #footer { max-width: 1120px; margin: 0 auto; } header {left: 0; right: 0; max-width: 1120px; margin: 0 auto;} #heading_wrapper { box-shadow: none; }</style> ",
+    '#weight' => 3,
+  );
+
+  $background_color = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>body {background:".theme_get_setting('body_background').";}</style> ",
+    '#weight' => 4,
+  );
+
+  $background_image = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
+    '#weight' => 5,
+  );
+
+  
+  drupal_add_html_head( $headings, 'headings');
+  drupal_add_html_head( $background_color, 'background_color');
+
+}
 
 ?>
