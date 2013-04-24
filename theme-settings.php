@@ -77,9 +77,8 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title' => 'Body Background',
       '#default_value' => theme_get_setting('body_background'),
       '#options' => array(
-        'expressa_backgrounds' => t('Expressa Background (default)'),
-        'custom_background_image' => t('Custom Background Image'),
-        'custom_background_color' => t('Custom Background Color'),
+        'expressa_backgrounds' => t('Background Image (default)'),
+        'custom_background_color' => t('Background Color'),
       ),
     );
     
@@ -105,23 +104,6 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         )
       );  
     
-    // Custom Background
-    $form['options']['layout']['background']['custom_background_image'] = array(
-		  '#title' => t('Image'),
-		  '#type' => 'managed_file',
-		  '#description' => t('The uploaded image will be displayed on this page using the image style chosen below.'),
-		  '#default_value' => theme_get_setting('custom_background_image'),
-		  '#upload_location' => 'public://image_example_images/',
-		  '#upload_validators' => array(
-        'file_validate_extensions' => array('gif png jpg jpeg'),
-      ),
-      '#states' => array (
-          'visible' => array(
-            'select[name=body_background]' => array('value' => 'custom_background_image')
-          )
-        )
-      );
-
       // Custom Background Color
       $form['options']['layout']['background']['body_background_color'] =array(
         '#type' => 'jquery_colorpicker',
