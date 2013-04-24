@@ -681,6 +681,106 @@ article p {
 	float: right;
 }
 
+/* Comments */
+
+.comment {
+	margin-bottom: 15px;
+}
+
+.comment_content p {
+	clear: none;
+}
+
+.comment_meta {
+	margin: 0px 0px 5px 0px; 
+}
+
+.comment_meta li {
+	list-style: none; 
+	display: inline; 
+	margin-right: 10px;
+}
+
+.comments_title {
+	text-align: left; 
+	margin-bottom: 12px;
+}
+
+.comment_avatar {
+	float: left; 
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+
+ul.links.inline {
+	margin: 0px;
+}
+
+.user-picture {
+	width: 60px;
+}
+
+.comment_content {
+	margin-top: 7px;
+}
+
+.indented {
+margin-left: 80px !important;
+}
+
+#comment-form-wrapper .form-actions, #sidebar_wrap .form-actions {
+  background-color: transparent;
+  border-top: none;
+  padding: 0px;
+}
+
+#comments .meta {
+  margin-bottom: 5px;
+}
+
+.comment_avatar {
+  float: left;
+  margin-right: 15px;
+}
+
+.ie8 .comment_avatar {
+  float: none;
+}
+
+.comment_body {
+  margin-left: 80px; 
+  padding-bottom: 10px; 
+  border-bottom: 1px solid #ECECEC;
+}
+
+.ie8 .comment_body {
+  margin-top: -60px;
+}
+
+.comment_avatar img {
+  width: 60px; 
+  height: 60px;
+}
+
+.comment {
+  margin-bottom: 20px; 
+}
+
+.comment_reply {
+  margin-left: 80px; margin-bottom: 20px;
+}
+
+.comment_reply_reply {
+  margin-left: 160px; 
+  margin-bottom: 20px;
+}
+
+.comment_text {
+  width: 80%; 
+  height: 150px;
+}
+
+
 @media screen and (max-width: 767px) { 
   #scroll-menu {
 	  display: none;
