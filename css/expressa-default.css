@@ -474,6 +474,54 @@ li.active a {
 
 .show {display: block;}
 
+/* Accordion */
+ul.accordion { 
+  list-style: none; 
+  margin-left: 0px; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+ul.accordion li { 
+  list-style: none; 
+  border-bottom: 1px solid #ECECEC; 
+  margin-bottom: 15px; 
+}
+
+h2.accordion-head { 
+  padding: 0px 0px 0px 0px; 
+  line-height: 21px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+div.accordion-content { 
+  padding: 0px 0px 20px 37px; 
+  overflow: hidden; 
+}
+
+div.accordion-head p { 
+  margin-bottom: 0px; 
+}
+
+span.accordion-head-image{ 
+  width: 24px; 
+  height: 24px; 
+  float: left; 
+  margin-right: 13px; 
+  cursor: pointer; 
+  display: block; 
+}
+
+span.accordion-head-image.active {
+  background: url('../images/minus.png');
+}
+
+span.accordion-head-image {
+  background: url('../images/plus.png');
+}
+
+
 .breadcrumbs{
 	overflow: hidden;
 	width: 100%;
@@ -490,7 +538,7 @@ li.active a {
 	
 .breadcrumbs li{
   float: left;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 15px 0px 0px;
 }
 
 .breadcrumbs a{
@@ -780,6 +828,14 @@ margin-left: 80px !important;
   height: 150px;
 }
 
+.the-icons {
+		margin-left: 0; 
+		list-style: none;
+}
+.the-icons li {
+  float: left; width: 25%; 
+  line-height: 25px;
+}
 
 @media screen and (max-width: 767px) { 
   #scroll-menu {
