@@ -4,7 +4,7 @@
  */
 function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
 
-drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js'); 
+
 
    // Default path for image
   $bg_path = theme_get_setting('bg_path');
