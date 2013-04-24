@@ -131,12 +131,28 @@ function expressa_breadcrumb($variables) {
 }
 
 /**
+* Override breadcrumb because Facet API adds a [all items] in the breadcrumb
+*/
+function expressa_preprocess_breadcrumb(&$variables) {
+   foreach ($variables['breadcrumb'] as $key => $breadcrumb) {
+    $pos = strpos($breadcrumb, '[all items]');
+    if ($pos !== false) {
+     break;
+    }
+    $new_breadcrumb[] = $breadcrumb;
+  }
+  $variables['breadcrumb'] = $new_breadcrumb;
+}
+
+/**
  * remove [all items] from the current search block
  */
 function expressa_block_view_alter(&$data, $block) {
   if ($block->delta != 'standard' || $block->module != 'current_search') return;
-  foreach($data['content']['active_items']['#items'] as $key => $item) {
-    if ($item == '[all items]') unset($data['content']['active_items']['#items'][$key]);
+  if ( isset($data['content']['active_items']['#items']) ) {
+    foreach($data['content']['active_items']['#items'] as $key => $item) {
+      if ($item == '['.t('all items').']') unset($data['content']['active_items']['#items'][$key]);
+    }
   }
 }
 
