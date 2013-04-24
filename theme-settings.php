@@ -59,28 +59,45 @@ drupal_add_js(drupal_get_path('theme', 'expressa') .'/js/theme_settings.js');
     '#title' => t('Layout'),
   );
   
-  // Background
-    $form['options']['layout']['background'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Background</h3>',
+    // Color Scheme
+    $form['options']['layout']['site_layout'] = array(
+      '#type' => 'select',
+      '#title' => 'Color Scheme',
+      '#default_value' => theme_get_setting('site_layout'),
+      '#options' => array(
+        'boxed' => t('Boxed (default)'),
+        'wide' => t('Wide'),
+      ),
     );
     
       // Background Color
-      $form['options']['layout']['background']['body_background_color'] =array(
+      $form['options']['layout']['body_background_color'] =array(
         '#type' => 'jquery_colorpicker',
 		    '#title' => t('Body Background Color'),
 		    '#default_value' => theme_get_setting('body_background_color'),
+		    '#states' => array (
+          'visible' => array(
+            'select[name=site_layout]' => array('value' => 'boxed')
+          )
+        )
+
       );    
       
      // Enable background pattern
-      $form['options']['layout']['background']['enable_background_pattern'] = array(
+      $form['options']['layout']['enable_background_pattern'] = array(
         '#type' => 'checkbox',
         '#title' => 'Enable background pattern',
         '#default_value' => theme_get_setting('enable_background_pattern'),
+        '#states' => array (
+          'visible' => array(
+            'select[name=site_layout]' => array('value' => 'boxed')
+          )
+        )
+
       );
     
       // Background
-    $form['options']['layout']['background']['background_select'] = array(
+    $form['options']['layout']['background_select'] = array(
       '#type' => 'radios',
       '#title' => 'Select a background pattern:',
       '#default_value' => theme_get_setting('background_select'),
