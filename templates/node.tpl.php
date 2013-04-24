@@ -4,14 +4,26 @@
  * Expressa's theme implementation to display a single Drupal node.
  */
  
-  if ($items = field_get_items('node', $node, 'field_image')) {
-	  if (count($items) == 1) {
-	    $image_slide = 'false';
-	  }
-	  elseif (count($items) > 1) {
-	    $image_slide = 'true';
-	  }
+if ($items = field_get_items('node', $node, 'field_image')) {
+  if (count($items) == 1) {
+    $image_slide = 'false';
   }
+  elseif (count($items) > 1) {
+    $image_slide = 'true';
+  }
+}
+
+$next = expressa_pagination($node, 'n');
+$prev = expressa_pagination($node, 'p');
+
+if ($next != NULL) { 
+  $next_url = url('node/' . $next, array('absolute' => TRUE));
+}
+
+if ($prev != NULL) { 
+  $prev_url = url('node/' . $prev, array('absolute' => TRUE));
+}
+
  
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -73,8 +85,12 @@
   
   <?php if($page && module_exists('prev_next')): ?>
   <ul>
-    <li><?php print expressa_pagination($node, 'n'); ?></li>
-    <li><?php print expressa_pagination($node, 'p'); ?></li>	
+    <?php if ($prev != NULL): ?>
+	    <li><a href="<?php echo $prev_url; ?>"><i class="icon-caret-left"></i></a></li>
+	  <?php endif; ?>
+	  <?php if ($next != NULL): ?>
+	    <li><a href="<?php echo $next_url; ?>"><i class="icon-caret-right"></i></a></li>
+	  <?php endif; ?>
   </ul>
   <?php endif; ?>
   

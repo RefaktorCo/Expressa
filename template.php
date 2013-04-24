@@ -195,8 +195,8 @@ function expressa_pagination($node, $mode = 'n') {
       return $id; 
       
       case 'article': 
-        $html = l($link_text, 'node/'.$n_node->nid); 
-      return $html;
+        $id =  $n_node->nid; 
+      return $id;
     }
   }
 }
