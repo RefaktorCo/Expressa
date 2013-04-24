@@ -248,7 +248,7 @@ function expressa_preprocess_html(&$vars){
 
   $background_color = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>body {background:".theme_get_setting('body_background').";}</style> ",
+    '#markup' => "<style type='text/css'>body {background:".theme_get_setting('custom_background_color').";}</style> ",
     '#weight' => 4,
   );
 
@@ -265,6 +265,10 @@ function expressa_preprocess_html(&$vars){
   if (theme_get_setting('site_layout') == "wide") {
     drupal_add_html_head( $wide_layout, 'wide_layout' );
   }
+  
+  if (theme_get_setting('body_background') == "expressa_backgrounds") {
+    drupal_add_html_head( $background_image, 'background_image');
+  } 
 
   drupal_add_html_head( $headings, 'headings');
   drupal_add_html_head( $background_color, 'background_color');

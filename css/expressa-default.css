@@ -26,8 +26,7 @@ RESPONSIVE STYLES
 ' BASE
 */
 body {
-	background: #ccc;
-	background-image: url('../images/backgrounds/brushed_alu.png');
+	background-color: #ccc;
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
