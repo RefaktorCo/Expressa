@@ -12,18 +12,6 @@ if ($items = field_get_items('node', $node, 'field_image')) {
     $image_slide = 'true';
   }
 }
-
-$next = expressa_pagination($node, 'n');
-$prev = expressa_pagination($node, 'p');
-
-if ($next != NULL) { 
-  $next_url = url('node/' . $next, array('absolute' => TRUE));
-}
-
-if ($prev != NULL) { 
-  $prev_url = url('node/' . $prev, array('absolute' => TRUE));
-}
-
  
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -84,17 +72,11 @@ if ($prev != NULL) {
   <?php endif;?>
   
   <?php if($page && module_exists('prev_next')): ?>
-  <ul>
-    <?php if ($prev != NULL): ?>
-	    <li><a href="<?php echo $prev_url; ?>"><i class="icon-caret-left"></i></a></li>
-	  <?php endif; ?>
-	  <?php if ($next != NULL): ?>
-	    <li><a href="<?php echo $next_url; ?>"><i class="icon-caret-right"></i></a></li>
-	  <?php endif; ?>
+  <ul class="node-pagination">
+    <?php if (expressa_pagination($node, 'n') != NULL): ?><li class="next-node"><?php print expressa_pagination($node, 'n'); ?> &rarr;</li><?php endif; ?>
+    <?php if (expressa_pagination($node, 'p') != NULL): ?><li class="previous-node">&larr; <?php print expressa_pagination($node, 'p'); ?></li><?php endif; ?>
   </ul>
   <?php endif; ?>
-  
- 
   
   <div class="comments-meta"></div>
   
