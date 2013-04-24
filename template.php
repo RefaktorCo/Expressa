@@ -246,15 +246,15 @@ function expressa_preprocess_html(&$vars){
     '#weight' => 3,
   );
 
-  $background_color = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>body {background:".theme_get_setting('custom_background_color').";}</style> ",
-    '#weight' => 4,
-  );
-
   $background_image = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
+    '#weight' => 4,
+  );
+  
+  $background_color = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>body {background-color: #".theme_get_setting('body_background_color')." !important;}</style> ",
     '#weight' => 5,
   );
   
