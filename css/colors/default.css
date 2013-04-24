@@ -9,3 +9,15 @@
 .store-carousel-navigation a, .portfolio-carousel-navigation a {
 	background: #f45721;
 }
+
+#menu .menu ul li:hover {
+  background: #f45721; 
+}
+
+.portfolio-project-button {
+	background: #f45721;
+}
+
+.store-item input[type="submit"] {
+  background: #f45721;
+}

@@ -11,7 +11,11 @@ HEADER
 FOOTER
 PANELS
 SIDEBAR
+POPULAR TAGS
+HIGHLIGHT
 ISOTOPE FILTERS
+ACCORDION
+BREADCRUMBS
 PORTFOLIO
 STORE
 FLICKR/TWITTER WIDGET
@@ -252,10 +256,6 @@ header form {
 
 #menu .menu ul li {
 	background: #393737;
-}
-
-#menu .menu ul li:hover {
-  background: #f45721; 
 }
 
 #menu .menu ul li.last a {
@@ -728,7 +728,6 @@ span.accordion-head-image {
 }
 
 .portfolio-project-button {
-	background: #f45721;
   padding: 10px;
   color: white;
   -moz-transition: all 0.3s ease-in-out;
@@ -1179,7 +1178,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 .store-item input[type="submit"] {
 	width: auto;
-  background: #f45721;
   border: none;
   color: white;
 }
