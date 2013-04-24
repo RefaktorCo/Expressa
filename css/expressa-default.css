@@ -652,6 +652,10 @@ span.accordion-head-image {
 .breadcrumbs li{
   float: left;
   margin: 0px 15px 0px 0px;
+  	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs a{
@@ -663,10 +667,14 @@ span.accordion-head-image {
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
   position: relative;
   font-size: 12px;	
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs a:hover{
-  background: #99db76;
+  background: #ECECEC;
 }
 
 .breadcrumbs a::before{
@@ -678,10 +686,14 @@ span.accordion-head-image {
   border-style: solid;
   border-color: #ddd #ddd #ddd transparent;
   left: -1em;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs a:hover::before{
-  border-color: #99db76 #99db76 #99db76 transparent;
+  border-color: #ECECEC #ECECEC #ECECEC transparent;
 }
 
 .breadcrumbs a::after{
@@ -693,10 +705,14 @@ span.accordion-head-image {
   border-bottom: 1.5em solid transparent;
   border-left: 1em solid #ddd;
   right: -1em;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs a:hover::after{
-  border-left-color: #99db76;
+  border-left-color: #ECECEC;
 }
 
 .breadcrumbs .current, .breadcrumbs .current:hover{
