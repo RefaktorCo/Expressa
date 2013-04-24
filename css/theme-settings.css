@@ -14,6 +14,10 @@
 	font-size: 30px;
 }
 
+label[for=edit-background-select-brushed-alu] {
+	background-image: url('../images/backgrounds/brushed_alu.png');
+}
+
 label[for=edit-background-select-gplaypattern] {
 	background-image: url('../images/backgrounds/gplaypattern.png');
 }

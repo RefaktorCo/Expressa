@@ -60,7 +60,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       ),
     );
     
-      //Headings
+    //Background
     $form['options']['layout']['background'] = array(
       '#type' => 'fieldset',
       '#title' => '<h3 class="options_heading">Background</h3>',
@@ -83,14 +83,14 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       ),
     );
     
-    // Background
+    // Expressa Background Choices
     $form['options']['layout']['background']['background_select'] = array(
       '#type' => 'radios',
       '#title' => 'Select a background pattern:',
       '#default_value' => theme_get_setting('background_select'),
       '#options' => array(
+        'brushed_alu' => 'item',
         'retina_wood' => 'item',
-        'debut_dark' => 'item',
         'noisy_grid' => 'item',
         'dark_wood' => 'item',
         'cartographer' => 'item',
@@ -104,7 +104,8 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
           )
         )
       );  
-
+    
+    // Custom Background
     $form['options']['layout']['background']['custom_background_image'] = array(
 		  '#title' => t('Image'),
 		  '#type' => 'managed_file',
@@ -121,7 +122,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         )
       );
 
-      // Background Color
+      // Custom Background Color
       $form['options']['layout']['background']['body_background_color'] =array(
         '#type' => 'jquery_colorpicker',
 		    '#title' => t('Body Background Color'),
@@ -139,7 +140,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Color'),
   );  
   
-  // Colors
+    // Colors
     $form['options']['color']['colors'] = array(
       '#type' => 'fieldset',
       '#title' => '<h3 class="options_heading">Color Scheme</h3>',
@@ -152,17 +153,18 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('color_scheme'),
         '#options' => array(
           'black' => t('Black'),
-          'blue' => t('Blue (default)'),
+          'blue' => t('Blue'),
           'teal' => t('Teal'),
           'green' => t('Green'),
           'yellow' => t('Yellow'),
           'purple' => t('Purple'),
-          'orange' => t('Orange'),
+          'orange' => t('Orange (default)'),
           'red' => t('Red'),
           'custom' => t('Custom'),
         ),
       );
       
+      // Custom Color
       $form['options']['color']['colors']['custom_color'] = array(
 		    '#type' => 'jquery_colorpicker',
 		    '#title' => t('Color'),
@@ -227,7 +229,6 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => t('h6 Size'),
         '#default_value' => theme_get_setting('h6'),
       );
-
   
   // SEO
   $form['options']['seo'] = array(

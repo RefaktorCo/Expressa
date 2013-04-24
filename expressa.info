@@ -60,6 +60,8 @@ settings[scroll_menu] = '1'
 settings[body_background_color] = 'ECECEC'
 
 settings[site_layout] = 'boxed'
+settings[background_select] = 'brushed_alu'
+settings[color_scheme] = 'orange'
 
 settings[h1] = '38.5px'
 settings[h2] = '31.5px'
