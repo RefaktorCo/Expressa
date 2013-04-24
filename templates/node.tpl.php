@@ -26,14 +26,16 @@
   
   
   <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <i class="icon-user"></i> <?php print $name; ?> <i class="icon-calendar"></i>  <?php print format_date($node->created, 'custom', 'M d, Y'); ?><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comment<?php if ($comment_count != '1') { echo "s"; } ?></a>  <?php if (render($content['field_tags'])): ?>  
-  <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
-  <?php endif; ?>
-    </div>
+    <ul class="submitted">
+      <li><i class="icon-user"></i> <?php print $name; ?></li>
+      <li><i class="icon-calendar"></i>  <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
+      <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comment<?php if ($comment_count != '1') { echo "s"; } ?></a></li>  
+      <?php if (render($content['field_tags'])): ?>  
+      <li><div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div></li>
+      <?php endif; ?>
+    </ul>
   <?php endif; ?>
 
-  
   <?php if (render($content['field_image'])) : ?> 
   
 	  <?php if ($image_slide == 'true'): ?>
