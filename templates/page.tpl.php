@@ -172,58 +172,58 @@
 	  </div><!-- end page content row -->  
   <?php print $messages; ?>
   </div>
-  </div>
+</div> <!-- End Content Wrap -->
 
-  <div id="footer-wrap">
-	  <footer>  
-	    <div id="primary-footer">
-	    
-			  <div class="row">
-			  
-			    <div class="span3">
-			      <?php if (isset($page['footer_col_1'])) : ?>
-					    <?php print render($page['footer_col_1']); ?>
-					  <?php endif; ?>
-			    </div>
-			    
-			    <div class="span3">
-			      <?php if (isset($page['footer_col_2'])) : ?>
-					    <?php print render($page['footer_col_2']); ?>
-					  <?php endif; ?>
-			    </div>
-			    
-			    <div class="span3">
-			      <?php if (isset($page['footer_col_3'])) : ?>
-					    <?php print render($page['footer_col_3']); ?>
-					  <?php endif; ?>
-			    </div>
-			    
-			    <div class="span3">
-			      <?php if (isset($page['footer_col_4'])) : ?>
-					    <?php print render($page['footer_col_4']); ?>
-					  <?php endif; ?>
-			    </div>
-			    
-			  </div>  
-	    </div>
-	  <div id="secondary-footer">  
-	  
-	  <div class="row">
-	    <div class="span6">
-	    
-			  <?php if (isset($page['footer_bottom_left'])) : ?>
-			    <?php print render($page['footer_bottom_left']); ?>
-			  <?php endif; ?>
-	  
-	    </div>
-	    <div class="span6">
-	    
-			  <?php if (isset($page['footer_bottom_right'])) : ?>
-			    <?php print render($page['footer_bottom_right']); ?>
-			  <?php endif; ?>
-	  
-	    </div>
-	  </div>  
+<div id="footer-wrap">
+  <footer>  
+    <div id="primary-footer" class="container">
+    
+		  <div class="row">
+		  
+		    <div class="span3">
+		      <?php if (isset($page['footer_col_1'])) : ?>
+				    <?php print render($page['footer_col_1']); ?>
+				  <?php endif; ?>
+		    </div>
+		    
+		    <div class="span3">
+		      <?php if (isset($page['footer_col_2'])) : ?>
+				    <?php print render($page['footer_col_2']); ?>
+				  <?php endif; ?>
+		    </div>
+		    
+		    <div class="span3">
+		      <?php if (isset($page['footer_col_3'])) : ?>
+				    <?php print render($page['footer_col_3']); ?>
+				  <?php endif; ?>
+		    </div>
+		    
+		    <div class="span3">
+		      <?php if (isset($page['footer_col_4'])) : ?>
+				    <?php print render($page['footer_col_4']); ?>
+				  <?php endif; ?>
+		    </div>
+		    
+		  </div>  
+    </div>
+  <div id="secondary-footer">  
+  <div class="container">
+  <div class="row">
+    <div class="span6">
+    
+		  <?php if (isset($page['footer_bottom_left'])) : ?>
+		    <?php print render($page['footer_bottom_left']); ?>
+		  <?php endif; ?>
+  
+    </div>
+    <div class="span6">
+    
+		  <?php if (isset($page['footer_bottom_right'])) : ?>
+		    <?php print render($page['footer_bottom_right']); ?>
+		  <?php endif; ?>
+  
+    </div>
+  </div>  
 
 	</footer>
-  </div>
+</div>
