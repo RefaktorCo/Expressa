@@ -635,14 +635,14 @@ article p {
 	font-size: 14px;
 }
 
-.tags i, .comments-meta i {
+.submitted i {
 	margin-right: 5px;
 	color: #555;
-	font-size: 18px;
+
 }
 
 .read-more, .tags, .comments-meta {
-	float: left;
+	display: inline;
 }
 
 .post-hr {

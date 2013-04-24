@@ -24,6 +24,16 @@
  
   <?php print render($title_suffix); ?>
   
+  
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <i class="icon-user"></i> <?php print $name; ?> <i class="icon-calendar"></i>  <?php print format_date($node->created, 'custom', 'M d, Y'); ?><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comment<?php if ($comment_count != '1') { echo "s"; } ?></a>  <?php if (render($content['field_tags'])): ?>  
+  <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
+  <?php endif; ?>
+    </div>
+  <?php endif; ?>
+
+  
   <?php if (render($content['field_image'])) : ?> 
   
 	  <?php if ($image_slide == 'true'): ?>
@@ -42,12 +52,6 @@
   
   <?php endif; ?>
   
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php echo t('Posted by'); ?> <?php print $name; ?> <?php echo t('on'); ?> <?php print format_date($node->created, 'custom', 'M d, Y'); ?>
-    </div>
-  <?php endif; ?>
-
   <div class="node-content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -72,11 +76,9 @@
   </ul>
   <?php endif; ?>
   
-  <?php if (render($content['field_tags'])): ?>  
-  <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
-  <?php endif; ?>
+ 
   
-  <div class="comments-meta"><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comment<?php if ($comment_count != '1') { echo "s"; } ?></a></div>
+  <div class="comments-meta"></div>
   
 
   <?php print render($content['comments']); ?>
