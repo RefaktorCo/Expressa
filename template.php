@@ -269,6 +269,19 @@ function expressa_preprocess_html(&$vars){
     ),
   );
   
+    $custom_color = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>.menu-wrap, #menu, #highlight, #scroll-menu,
+.view-popular-tags a:hover,
+.store-carousel-navigation a, 
+.portfolio-carousel-navigation a,
+#menu .menu ul li:hover,
+.portfolio-project-button,
+.store-item input[type='submit'],
+.ei-title h2 {background: #".theme_get_setting('custom_color')." !important;}</style> ",
+    '#weight' => 7,
+  );
+  
   if (theme_get_setting('site_layout') == "boxed") {
     drupal_add_html_head( $box_layout, 'box_layout' );
   }
@@ -285,6 +298,10 @@ function expressa_preprocess_html(&$vars){
   drupal_add_html_head( $background_color, 'background_color');
   
   drupal_add_html_head( $color, 'color_style' );
+  
+  if (theme_get_setting('color_scheme') == "custom") {
+    drupal_add_html_head( $custom_color, 'custom_color' );
+  }
 
 }
 
