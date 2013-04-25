@@ -4,7 +4,8 @@
 .portfolio-carousel-navigation a,
 #menu .menu ul li:hover,
 .portfolio-project-button,
-.store-item input[type="submit"] {
-	background: #f45721;
+.store-item input[type="submit"],
+.ei-title h2 {
+	background: rgb(129, 85, 61);
 }
 

@@ -258,6 +258,17 @@ function expressa_preprocess_html(&$vars){
     '#weight' => 5,
   );
   
+  $color = array(
+    '#tag' => 'link', 
+    '#weight' => 6,
+    '#attributes' => array( 
+      'href' => ''.$root.'/css/colors/'.theme_get_setting('color_scheme').'.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
+  
   if (theme_get_setting('site_layout') == "boxed") {
     drupal_add_html_head( $box_layout, 'box_layout' );
   }
@@ -272,6 +283,8 @@ function expressa_preprocess_html(&$vars){
 
   drupal_add_html_head( $headings, 'headings');
   drupal_add_html_head( $background_color, 'background_color');
+  
+  drupal_add_html_head( $color, 'color_style' );
 
 }
 

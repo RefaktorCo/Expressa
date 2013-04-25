@@ -11,7 +11,7 @@ stylesheets[all][] = css/flexslider.css
 stylesheets[all][] = css/elastic-image.css
 stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
-stylesheets[all][] = css/colors/default.css
+
 
 scripts[] = js/jquery.js
 scripts[] = bootstrap/js/bootstrap.min.js
