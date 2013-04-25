@@ -271,14 +271,7 @@ function expressa_preprocess_html(&$vars){
   
     $custom_color = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>.menu-wrap, #menu, #highlight, #scroll-menu,
-.view-popular-tags a:hover,
-.store-carousel-navigation a, 
-.portfolio-carousel-navigation a,
-#menu .menu ul li:hover,
-.portfolio-project-button,
-.store-item input[type='submit'],
-.ei-title h2 {background: #".theme_get_setting('custom_color')." !important;}</style> ",
+    '#markup' => "<style type='text/css'>.menu-wrap, #menu, #highlight, #scroll-menu, .view-popular-tags a:hover, .store-carousel-navigation a, .portfolio-carousel-navigation a, #menu .menu ul li:hover, .portfolio-project-button, .store-item input[type='submit'], .ei-title h2 {background: #".theme_get_setting('custom_color')." !important;}</style> ",
     '#weight' => 7,
   );
   
