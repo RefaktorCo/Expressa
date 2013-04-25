@@ -228,39 +228,67 @@ function expressa_pagination($node, $mode = 'n') {
 function expressa_preprocess_html(&$vars){
   global $root;
   
+  $meta_title = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#weight' => 1,
+    '#attributes' => array(
+      'name' => 'title',
+      'content' => theme_get_setting('seo_title')
+    )
+  );
+  $meta_description = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#weight' => 2,
+    '#attributes' => array(
+      'name' => 'description',
+      'content' => theme_get_setting('seo_description')
+    )
+  );
+  $meta_keywords = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#weight' => 3,
+    '#attributes' => array(
+      'name' => 'keywords',
+      'content' => theme_get_setting('seo_keywords')
+    )
+  );
+
   $headings = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>h1 {font-size:" .theme_get_setting('h1')." ;} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
-    '#weight' => 1,
+    '#weight' => 4,
   );
   
   $box_layout = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>#content-wrap { max-width: 1200px; margin: 0 auto; margin-top: 20px; padding: 20px 20px 0px 20px; } #footer-wrap {max-width: 1240px;} </style> ",
-    '#weight' => 2,
+    '#weight' => 5,
   );
   
   $wide_layout = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; padding: 0px; } #footer-wrap {max-width: 100%;}</style> ",
-    '#weight' => 3,
+    '#weight' => 6,
   );
 
   $background_image = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
-    '#weight' => 4,
+    '#weight' => 7,
   );
   
   $background_color = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {background-color: #".theme_get_setting('body_background_color')." !important;}</style> ",
-    '#weight' => 5,
+    '#weight' => 8,
   );
   
   $color = array(
     '#tag' => 'link', 
-    '#weight' => 6,
+    '#weight' => 9,
     '#attributes' => array( 
       'href' => ''.$root.'/css/colors/'.theme_get_setting('color_scheme').'.css', 
       'rel' => 'stylesheet',
@@ -269,11 +297,21 @@ function expressa_preprocess_html(&$vars){
     ),
   );
   
-    $custom_color = array(
+  $custom_color = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>.menu-wrap, #menu, #highlight, #scroll-menu, .view-popular-tags a:hover, .store-carousel-navigation a, .portfolio-carousel-navigation a, #menu .menu ul li:hover, .portfolio-project-button, .store-item input[type='submit'], .ei-title h2 {background: #".theme_get_setting('custom_color')." !important;}</style> ",
-    '#weight' => 7,
+    '#weight' => 10,
   );
+  
+  if (theme_get_setting('seo_title') != "") {
+    drupal_add_html_head( $meta_title, 'meta_title' );
+  }
+   if (theme_get_setting('seo_description') != "") {
+    drupal_add_html_head( $meta_description, 'meta_description' );
+  }
+  if (theme_get_setting('seo_keywords') != "") {
+    drupal_add_html_head( $meta_keywords, 'meta_keywords' );
+  }
   
   if (theme_get_setting('site_layout') == "boxed") {
     drupal_add_html_head( $box_layout, 'box_layout' );
