@@ -303,14 +303,26 @@ function expressa_preprocess_html(&$vars){
     '#weight' => 10,
   );
   
+  $tracking_code = array(
+    '#type' => 'markup',
+    '#markup' => "<script type='text/javascript'>".theme_get_setting('tracking_code')."</script> ",
+    '#weight' => 11,
+  );
+  
   if (theme_get_setting('seo_title') != "") {
     drupal_add_html_head( $meta_title, 'meta_title' );
   }
+  
    if (theme_get_setting('seo_description') != "") {
     drupal_add_html_head( $meta_description, 'meta_description' );
   }
+  
   if (theme_get_setting('seo_keywords') != "") {
     drupal_add_html_head( $meta_keywords, 'meta_keywords' );
+  }
+  
+  if (theme_get_setting('tracking_code') != "") {
+    drupal_add_html_head( $tracking_code, 'tracking_code' );
   }
   
   if (theme_get_setting('site_layout') == "boxed") {
