@@ -1273,10 +1273,19 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   #highlight-content {
     font-size: 29px;
   }
+  
+  .caroufredsel_wrapper { 
+    min-height: 275px;
+  }
 }
 
 @media screen and (max-width: 979px) {   
-   #scroll-menu {
+
+  #site-slogan {
+	  font-size: 11px;
+  }
+  
+  #scroll-menu {
 	  display: none;
   }
   
@@ -1288,6 +1297,15 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	  padding: 15px;
 		font-size: 15px;		
 	}
+	
+	.caroufredsel_wrapper { 
+    min-height: 275px;
+  }
+  
+  #flickr_widget li img {
+    height: 72px;
+    width: 72px;
+  }
 }
 
 @media screen and (max-width: 767px) { 
