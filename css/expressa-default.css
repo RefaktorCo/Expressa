@@ -1307,4 +1307,22 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   .header-right-content-wrap {
     float: none !important;
   }
+  
+  #block-commerce-cart-cart {
+	  margin-bottom: 15px;
+  }
+  
+  .region-header-right-bottom input[type="submit"].btn {
+    margin-right: 20px;
+    margin-left: -33px;
+  }
+  
+  #highlight-content {
+    padding: 20px 40px 0px 40px;
+    font-size: 26px;
+  }
+  
+  .caroufredsel_wrapper { 
+    min-height: 225px;
+  }
 }

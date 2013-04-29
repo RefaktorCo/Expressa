@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
 	  });
 
 
-  $('#menu').mobileMenu();
+  $('header #menu').mobileMenu();
 
   var flag = true;
 
