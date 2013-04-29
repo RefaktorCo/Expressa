@@ -8,21 +8,19 @@
 <?php global $user; if (!$user->uid && theme_get_setting('scroll_menu') == '1') { // Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
 <div id="scroll-menu">
   <div id="scroll-menu-wrap">
+    <div class="container">
     <div class="row">
     
-      <div class="span7">
+      <div class="span10">
 		    <nav id="menu">
 			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav> 
       </div>
      
-      <div id="header-right" class="span3" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 6px;">
-        <?php print render($page['header_right_bottom']); ?>
-      </div>
-       <div id="header-right" class="span2" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
+            <div id="header-right" class="span2" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
         <?php print render($page['header_right_top_right']); ?>
       </div>
-      
+    </div>
     </div>
   </div>
 </div>

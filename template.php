@@ -228,6 +228,15 @@ function expressa_pagination($node, $mode = 'n') {
 function expressa_preprocess_html(&$vars){
   global $root;
   
+  $viewport = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport',
+      'content' =>  'width=device-width, initial-scale=1, maximum-scale=1',
+    )
+  );
+
   $meta_title = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
@@ -336,7 +345,8 @@ function expressa_preprocess_html(&$vars){
   if (theme_get_setting('body_background') == "expressa_backgrounds") {
     drupal_add_html_head( $background_image, 'background_image');
   } 
-
+  
+  drupal_add_html_head( $viewport, 'viewport');
   drupal_add_html_head( $headings, 'headings');
   drupal_add_html_head( $background_color, 'background_color');
   

@@ -178,9 +178,6 @@ header form {
 	padding: 0px 20px;
 }
 
-#scroll-menu #menu {
-	margin: 0px 0px 0px 20px;
-}
 
 /* 
 ' MAIN MENU
@@ -1271,6 +1268,20 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 /* 
 ' RESPONSIVE STYLES
 */
+
+@media screen and (max-width: 1000px) {   
+    input[type="text"] {
+	  width: 160px !important;
+  }
+}
+
+
+@media screen and (max-width: 800px) {   
+   #scroll-menu {
+	  display: none;
+  }
+}
+
 @media screen and (max-width: 767px) { 
   .region-menu {
 	  display: none;
@@ -1280,9 +1291,7 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	  display: block;
   }
   
-   #scroll-menu {
-	  display: none;
-  }
+  
 }
 
 @media screen and (max-width: 480px) { 
@@ -1324,5 +1333,9 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   
   .caroufredsel_wrapper { 
     min-height: 225px;
+  }
+  
+  #footer {
+	  text-align: center;
   }
 }
