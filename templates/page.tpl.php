@@ -78,14 +78,14 @@
 	      <div class="row">
 	        <div class="span8">
 	        
-	          <div style="float: right;">
+	          <div class="header-right-content-wrap">
 	    
 			      <?php if (isset($page['header_right_top_left'])) : ?>
 					    <?php print render($page['header_right_top_left']); ?>
 					  <?php endif; ?>
 					  
 	          </div>
-	          <div style="float: right;">
+	          <div class="header-right-content-wrap">
 	    
 			      <?php if (isset($page['header_right_top_right'])) : ?>
 					    <?php print render($page['header_right_top_right']); ?>

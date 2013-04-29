@@ -101,6 +101,10 @@ header form {
 	padding: 0px 0px 0px 5px;
 }
 
+.header-right-content-wrap {
+	float: right;
+}
+
 /* 
 ' HEADER ADD TO CART
 */
@@ -1278,5 +1282,29 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   
    #scroll-menu {
 	  display: none;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  header {
+	  text-align: center;
+  }
+  
+  #site-slogan {
+	  margin-bottom: 10px;
+  }
+  
+  #header-right {
+	  text-align: center;
+  }
+    
+  #header-right-top {
+		font-size: 14px;
+		margin: 0px 0px 10px 0px;
+		float: none !important;
+  }
+  
+  .header-right-content-wrap {
+    float: none !important;
   }
 }
