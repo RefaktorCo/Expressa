@@ -322,7 +322,7 @@ ul.menu li {
 	margin: 0;
 }
 
-li.active a {
+ul.menu li.active a {
   background: #393737;
 	color: #FDFDFD !important;
 }
@@ -740,6 +740,10 @@ span.accordion-head-image {
 	 margin-left: -20px !important;
 }
 
+.view-portfolio-filters {
+	margin-top: 15px;
+}
+
 .portfolio-item {
 	border: 1px solid #C5BFBF;
 }
@@ -750,6 +754,13 @@ span.accordion-head-image {
 	text-align: center;
 	padding: 1px 0px;
 	position: relative;
+}
+
+.portfolio-item-description h4 {
+	font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 15px 0px;
 }
 
 .portfolio-project-button {
