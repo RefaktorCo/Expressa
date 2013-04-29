@@ -1269,17 +1269,25 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 ' RESPONSIVE STYLES
 */
 
-@media screen and (max-width: 1000px) {   
-    input[type="text"] {
-	  width: 160px !important;
+@media screen and (max-width: 1200px) {   
+  #highlight-content {
+    font-size: 29px;
   }
 }
 
-
-@media screen and (max-width: 800px) {   
+@media screen and (max-width: 979px) {   
    #scroll-menu {
 	  display: none;
   }
+  
+   #highlight-content {
+    font-size: 21px;
+  }
+  
+  .button-wrap {
+	  padding: 15px;
+		font-size: 15px;		
+	}
 }
 
 @media screen and (max-width: 767px) { 
@@ -1291,10 +1299,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	  display: block;
   }
   
-  
-}
-
-@media screen and (max-width: 480px) { 
   header {
 	  text-align: center;
   }
@@ -1332,10 +1336,17 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   }
   
   .caroufredsel_wrapper { 
-    min-height: 225px;
+    min-height: 275px;
   }
   
   #footer {
 	  text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 480px) { 
+  .caroufredsel_wrapper { 
+    min-height: 225px;
   }
 }
