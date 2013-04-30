@@ -1,3 +1,22 @@
+/* 
+' SLIDER
+*/
+
+.flex-caption {
+	width: 275px;
+	position: absolute;
+	bottom: 0;
+	margin: 0px 0px 20px 20px;
+	padding: 20px;
+	background: #393737;
+	opacity: .9;
+	color: white;
+}
+
+.flex-caption h3 {
+	margin-top: 0px;
+}
+
 /* ==
 
 ### CONTENT ###
