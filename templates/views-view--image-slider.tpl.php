@@ -28,8 +28,8 @@
  */
 ?>
 
-    <div class="wrapper">
-       <div id="ei-slider" class="ei-slider">
+   <div class="flexslider">
+	   
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
@@ -56,7 +56,7 @@
   <?php if ($rows): ?>
   
  
-         <ul class="ei-slider-large">
+          <ul class="slides">
      
 	         <?php print $rows; ?>
 	         

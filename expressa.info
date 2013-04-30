@@ -8,7 +8,6 @@ stylesheets[all][] = bootstrap/css/bootstrap.min.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/flexslider.css
-stylesheets[all][] = css/elastic-image.css
 stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 
@@ -18,7 +17,6 @@ scripts[] = js/mobile-map.js
 scripts[] = js/jflickrfeed.min.js
 scripts[] = js/jquery.tweet.js
 scripts[] = js/jquery.ui.totop.js
-scripts[] = js/jquery.eislideshow.js
 scripts[] = js/jquery.prettyPhoto.js
 scripts[] = js/mobile-menu.js
 scripts[] = js/easing.js

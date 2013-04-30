@@ -116,13 +116,6 @@ jQuery(document).ready(function ($) {
 
   $("a[rel^='prettyPhoto']").prettyPhoto();
 
-  $('#ei-slider').eislideshow({
-				animation			: 'center',
-				autoplay			: true,
-				slideshow_interval	: 3000,
-				titlesFactor		: 0
-		  });
-  
   $('header .header-cart-wrap .commerce-line-item-views-form').hide();
   
   $('header .view-cart').click(function(){

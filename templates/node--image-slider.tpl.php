@@ -1,6 +1,6 @@
 <li>
   <?php print render($content['field_slider_image']); ?>
-  <div class="ei-title">
-	  <?php print render($content['field_slider_caption']); ?>     
-	</div>
+
+	  <p class="flex-caption"><?php print render($content['field_slider_caption']); ?> </p>    
+
 </li>
