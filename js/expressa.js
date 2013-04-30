@@ -1,5 +1,62 @@
 jQuery(document).ready(function ($) {
 
+  $(window).load(function(){
+
+
+
+  $('.search-api-sorts li a').addClass('btn');
+  
+  $('header input[type="submit"]').addClass('btn');
+  
+  $('#scroll-menu input[type="submit"]').addClass('btn');
+  
+  $('.search-api-sort-active a:last').removeClass('btn');
+
+  $('.flexslider').flexslider({
+    controlNav: false, 
+    animation: "slide"
+  });
+     
+  var $container = $('#isotope_test');
+
+  $container.isotope({
+    itemSelector : '.switch'
+  });
+  
+  var $optionSets = $('#options .option-set'),
+      $optionLinks = $optionSets.find('a');
+
+  $optionLinks.click(function(){
+    var $this = $(this);
+    // don't proceed if already selected
+    if ( $this.hasClass('selected') ) {
+      return false;
+    }
+    var $optionSet = $this.parents('.option-set');
+    $optionSet.find('.selected').removeClass('selected');
+    $this.addClass('selected');
+
+    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+    var options = {},
+        key = $optionSet.attr('data-option-key'),
+        value = $this.attr('data-option-value');
+    // parse 'false' as false boolean
+    value = value === 'false' ? false : value;
+    options[ key ] = value;
+    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+      // changes in layout modes need extra logic
+      changeLayoutMode( $this, options )
+    } else {
+      // otherwise, apply new options
+      $container.isotope( options );
+    }
+    
+    return false;
+  });
+});  
+
+
+
   jQuery("ul.accordion li").each(function(){
 	    if(jQuery(this).index() > 0){
 	    jQuery(this).children(".accordion-content").css('display','none');
@@ -134,59 +191,4 @@ jQuery(document).ready(function ($) {
 	    }
 	  });
 });
-
-$(window).load(function(){
-
-
-
-  $('.search-api-sorts li a').addClass('btn');
-  
-  $('header input[type="submit"]').addClass('btn');
-  
-  $('#scroll-menu input[type="submit"]').addClass('btn');
-  
-  $('.search-api-sort-active a:last').removeClass('btn');
-
-  $('.flexslider').flexslider({
-    controlNav: false, 
-    animation: "slide"
-  });
-     
-  var $container = $('#isotope_test');
-
-  $container.isotope({
-    itemSelector : '.switch'
-  });
-  
-  var $optionSets = $('#options .option-set'),
-      $optionLinks = $optionSets.find('a');
-
-  $optionLinks.click(function(){
-    var $this = $(this);
-    // don't proceed if already selected
-    if ( $this.hasClass('selected') ) {
-      return false;
-    }
-    var $optionSet = $this.parents('.option-set');
-    $optionSet.find('.selected').removeClass('selected');
-    $this.addClass('selected');
-
-    // make option object dynamically, i.e. { filter: '.my-filter-class' }
-    var options = {},
-        key = $optionSet.attr('data-option-key'),
-        value = $this.attr('data-option-value');
-    // parse 'false' as false boolean
-    value = value === 'false' ? false : value;
-    options[ key ] = value;
-    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-      // changes in layout modes need extra logic
-      changeLayoutMode( $this, options )
-    } else {
-      // otherwise, apply new options
-      $container.isotope( options );
-    }
-    
-    return false;
-  });
-});  
 
