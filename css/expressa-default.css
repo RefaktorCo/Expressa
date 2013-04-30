@@ -15,6 +15,7 @@
 
 .flex-caption h3 {
 	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 .flex-control-nav {
@@ -127,6 +128,10 @@ header form {
 
 .header-right-content-wrap {
 	float: right;
+}
+
+.block-region {
+  color: black;
 }
 
 /* 
@@ -1386,6 +1391,10 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   }
   
   .flex-caption {
+	  display: none;
+  }
+  
+  .menu-social-icons {
 	  display: none;
   }
   
