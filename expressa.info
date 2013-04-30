@@ -12,8 +12,6 @@ stylesheets[all][] = css/elastic-image.css
 stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 
-
-scripts[] = js/jquery.js
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/jquery.carouFredSel-6.1.0.js
 scripts[] = js/mobile-map.js
