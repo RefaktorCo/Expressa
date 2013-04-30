@@ -12,8 +12,12 @@ jQuery(document).ready(function ($) {
   
   $('.search-api-sort-active a:last').removeClass('btn');
 
-  $('.flexslider').flexslider({
+  $('.node-wrap .flexslider').flexslider({
     controlNav: false, 
+    animation: "slide"
+  });
+  
+   $('.flexslider').flexslider({
     animation: "slide"
   });
      

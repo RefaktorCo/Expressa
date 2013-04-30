@@ -14,7 +14,7 @@ if ($items = field_get_items('node', $node, 'field_image')) {
 }
  
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix node-wrap"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 

@@ -17,6 +17,11 @@
 	margin-top: 0px;
 }
 
+.flex-control-nav {
+  bottom: 0px;
+  margin-top: -15px;
+}
+
 /* ==
 
 ### CONTENT ###
@@ -1378,6 +1383,10 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   
   #footer {
 	  text-align: center;
+  }
+  
+  .flex-caption {
+	  display: none;
   }
   
 }
