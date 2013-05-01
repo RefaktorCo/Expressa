@@ -180,9 +180,22 @@ header form {
   display: inline-block;
 }
 
+.product-display-cart-line {
+	margin-top: -20px;
+}
+
+.commerce-add-to-cart {
+	margin-bottom: 10px;
+}
+
 .commerce-add-to-cart input[type="submit"] {
 	padding: 5px;
   margin-top: -8px;
+}
+
+.commerce-add-to-cart select {
+	width: 150px;
+	margin-right: 15px;
 }
 
 .product-display-node .commerce-product-field-commerce-price {
