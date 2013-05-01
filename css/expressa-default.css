@@ -188,7 +188,7 @@ header form {
 	margin-bottom: 10px;
 }
 
-.commerce-add-to-cart input[type="submit"] {
+.product-display-node .commerce-add-to-cart input[type="submit"] {
 	padding: 5px;
   margin-top: -8px;
 }
@@ -1317,12 +1317,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 .store-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
 	background: #393737;
-}
-
-.store-item input[type="submit"] {
-	width: auto;
-  border: none;
-  color: white;
 }
 
 /* 

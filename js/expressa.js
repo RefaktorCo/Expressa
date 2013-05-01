@@ -2,8 +2,6 @@ jQuery(document).ready(function ($) {
 
   $(window).load(function(){
 
-
-
   $('.search-api-sorts li a').addClass('btn');
   
   $('header input[type="submit"]').addClass('btn');
@@ -57,9 +55,12 @@ jQuery(document).ready(function ($) {
     
     return false;
   });
+  
+  
+  
 });  
 
-
+  
 
   jQuery("ul.accordion li").each(function(){
 	    if(jQuery(this).index() > 0){
@@ -113,6 +114,8 @@ jQuery(document).ready(function ($) {
 			$(window).unbind('scroll');
 		}
 	});
+  
+  $('input[type="submit"]').addClass('btn');
   
   $('ul.menu').superfish({delay	: 100});
   
