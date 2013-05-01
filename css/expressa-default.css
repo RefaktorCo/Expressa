@@ -130,6 +130,10 @@ header form {
 	float: right;
 }
 
+.region-sidebar-first {
+	margin-bottom: 20px;
+}
+
 .block-region {
   color: black;
 }
@@ -169,7 +173,7 @@ header form {
 }
 
 .product-display-content .field-items {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .product-display-content .commerce-product-field {
