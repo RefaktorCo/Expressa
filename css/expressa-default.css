@@ -536,17 +536,7 @@ footer {
 	margin-bottom: 0px;
 }
 
-.pane-portfolio-carousel .pane-title:before {
-	content: "\f0b1";
-	font-family: FontAwesome;
-	margin-right: 8px;
-}
 
-.pane-store-carousel .pane-title:before {
-	content: "\f07a";
-	font-family: FontAwesome;
-	margin-right: 8px;
-} 
 
 /* 
 ' SIDEBAR
