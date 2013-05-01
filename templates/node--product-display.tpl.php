@@ -21,12 +21,11 @@
 		  
 		  <?php print render($content['field_reference']); ?>		 
     </div>
-		  
-		 
-		  
-		   <?php hide($content['comments']); print render($content); ?>
-
-		  
+		
+		<div class="product-display-content">  
+		  <?php hide($content['comments']); print render($content); ?>
+		</div> 
+     
 		</div>
   </div>
     </div>

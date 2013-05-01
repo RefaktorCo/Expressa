@@ -161,7 +161,19 @@ header form {
 }
 
 .product-display-cart-line .form-item-quantity input[type="text"]{
-	width: 25px;
+	width: 20px;
+}
+
+.product-display-content .field-label, .product-display-content .field-items {
+	float: left;
+}
+
+.product-display-content .field-items {
+  margin-right: 5px;
+}
+
+.product-display-content .commerce-product-field {
+  display: inline-block;
 }
 
 .commerce-add-to-cart input[type="submit"] {
