@@ -847,7 +847,7 @@ span.accordion-head-image {
 /* 
 ' CAROUSELS
 */
-.projects_carousel, .store-carousel {
+.projects_carousel, .store-carousel, .store-featured-carousel {
 	 margin-left: -20px !important;
 }
 
@@ -889,7 +889,7 @@ span.accordion-head-image {
 	text-decoration: none;
 }
 
-.portfolio-carousel-navigation, .store-carousel-navigation {
+.portfolio-carousel-navigation, .store-carousel-navigation, .store-featured-carousel-navigation {
 	margin-left: 20px;
 	margin-top: -44px;
 	font-size: 10px;
@@ -900,11 +900,11 @@ span.accordion-head-image {
 	width: 85px;
 }
 
-#recent_projects, #store-carousel-list-wrap {
+#recent_projects, #store-carousel-list-wrap, #store-featured-carousel-list-wrap  {
   margin: 0px 0px 20px 0px;
 }
 
-#recent_projects li, #store-carousel-list-wrap li {
+#recent_projects li, #store-carousel-list-wrap li, #store-featured-carousel-list-wrap li  {
 	width: 250px;
 	float: left;
 	margin-left: 20px;
@@ -1302,17 +1302,17 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	box-shadow: none;
 }
 
-.store-carousel-navigation a, .portfolio-carousel-navigation a {
+.store-carousel-navigation a, .store-featured-carousel-navigation a, .portfolio-carousel-navigation a {
 	padding: 10px 12px 8px 12px;
 	color: white;
 }
 
-.store-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
+.store-carousel-navigation a:hover, .store-featured-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
 	text-decoration: none;
 	color: whitesmoke;
 }
 
-.carousel_navigation i, .store-carousel-navigation i {
+.carousel_navigation i, .store-carousel-navigation i, .store-featured-carousel-navigation i {
 	 color: white;
 	 -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
@@ -1320,14 +1320,14 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
    transition: all 0.3s ease-in-out;
 }
 
-.store-carousel-navigation a, .portfolio-carousel-navigation a {
+.store-carousel-navigation a, .store-featured-carousel-navigation a, .portfolio-carousel-navigation a {
    -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
 
-.store-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
+.store-carousel-navigation a:hover, .store-featured-carousel-navigation a:hover, .portfolio-carousel-navigation a:hover {
 	background: #393737;
 }
 

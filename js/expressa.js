@@ -115,6 +115,8 @@ jQuery(document).ready(function ($) {
 		}
 	});
   
+ 
+  
   $('input[type="submit"]').addClass('btn');
   
   $('ul.menu').superfish({delay	: 100});
@@ -190,5 +192,33 @@ jQuery(document).ready(function ($) {
 	      }
 	    }
 	  });
+	  
+	  $('#store-featured-carousel-list-wrap').carouFredSel({
+	    width: '100%',
+	    responsive: true,
+	    circular : false,
+	    infinite : false,
+	    auto: false,
+	    next : {
+	      button : "#store-featured-next",
+	      key	: "right"
+	    },
+	    prev : {
+	      button : "#store-featured-prev",
+	      key	: "left"
+	    },
+	    swipe: {
+	      onMouse: true,
+	      onTouch: false
+	    },
+	    items: {
+	      
+	      visible: {
+	        min: 1,
+	        max: 4
+	      }
+	    }
+	  });
+
 });
 
