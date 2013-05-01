@@ -2,6 +2,12 @@
 ' SLIDER
 */
 
+.flexslider {
+	border: none;
+	box-shadow: none;
+	margin: 0 0 18px;
+}
+
 .flex-caption {
 	width: 275px;
 	position: absolute;
