@@ -279,7 +279,7 @@ function expressa_preprocess_html(&$vars){
   
   $wide_layout = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; padding: 0px; } #footer-wrap {max-width: 100%;}</style> ",
+    '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; padding: 20px 0px 0px 0px; } #footer-wrap {max-width: 100%;}</style> ",
     '#weight' => 6,
   );
 
