@@ -1,20 +1,34 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div class="product-display-node">
   
   <div class="row">
+  
     <div class="span5">
-
-  <a href="<?php print $node_url; ?>"><?php echo $title; ?></a>
-
-  <?php print render($content['product:field_image']); ?>
-  
+      <div class="product-display-image">
+        <?php print render($content['product:field_image']); ?>
+      </div>
     </div>
+    
     <div class="span4">
-  
-  <?php print render($content['product:commerce_price']); ?>
-  
-  <?php print render($content['field_reference']); ?>
-  
-  <?php print render($content); ?>
+    
+		  <h3><?php echo $title; ?></h3>  
+		    
+		  <?php print render($content['body']); ?>  
+		  
+		  <div class="product-display-cart-line">
+		  
+		 <?php print render($content['product:commerce_price']); ?>  <?php print render($content['field_reference']); ?>		 
     </div>
+		  
+		  <?php print render($content['field_rating']); ?>
+		  
+		   <?php hide($content['comments']); print render($content); ?>
+
+		  
+		</div>
+  </div>
+    </div>
+	
+	<?php  print render($content['comments']); ?>  
 
 </article>

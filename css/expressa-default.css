@@ -134,6 +134,36 @@ header form {
   color: black;
 }
 
+.product-display-image {
+	margin-top: 15px;
+}
+
+.product-display-cart-line.form-item{
+	display: inline-block;
+}
+
+.product-display-cart-line .field {
+	display: inline-block;
+}
+
+.product-display-cart-line .form-item-quantity {
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+}
+
+.product-display-cart-line .form-item-quantity label {
+	display: none;
+}
+
+.product-display-cart-line .form-item-quantity input[type="text"]{
+	width: 25px;
+}
+
+.product-display-cart-line .commerce-product-field-commerce-price {
+	display: inline;
+	float: left;
+}
+
 /* 
 ' HEADER ADD TO CART
 */
