@@ -15,12 +15,14 @@
 		    
 		  <?php print render($content['body']); ?>  
 		  
+		  <?php print render($content['product:commerce_price']); ?>  <?php print render($content['field_rating']); ?>
+		  
 		  <div class="product-display-cart-line">
 		  
-		 <?php print render($content['product:commerce_price']); ?>  <?php print render($content['field_reference']); ?>		 
+		  <?php print render($content['field_reference']); ?>		 
     </div>
 		  
-		  <?php print render($content['field_rating']); ?>
+		 
 		  
 		   <?php hide($content['comments']); print render($content); ?>
 
