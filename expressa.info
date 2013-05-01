@@ -40,6 +40,7 @@ regions[menu_social] = Menu Social
 regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
+regions[after_content] = After Content
 
 ; Define footer block regions.
 regions[footer_col_1] = Footer Column 1

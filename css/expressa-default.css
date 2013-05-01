@@ -131,7 +131,7 @@ header form {
 }
 
 .region-sidebar-first {
-	margin-bottom: 20px;
+	margin: -20px 0px 20px 0px;
 }
 
 .block-region {
@@ -139,7 +139,12 @@ header form {
 }
 
 .product-display-image {
-	margin-top: 15px;
+
+}
+
+.product-display-node h3 {
+	margin: 0;
+	line-height: 1em;
 }
 
 .product-display-node .form-item{

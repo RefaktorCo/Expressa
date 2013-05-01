@@ -168,6 +168,13 @@
 	    <?php endif; ?>
 	    
 	  </div><!-- end page content row -->  
+	  
+	  <div class="row">
+	    <div class="span12">
+	      <?php print render($page['after_content']); ?>
+	    </div>
+	  </div>  
+
   <?php print $messages; ?>
   </div>
 </div> <!-- End Content Wrap -->
