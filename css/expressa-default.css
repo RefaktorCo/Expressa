@@ -283,7 +283,10 @@ header form {
   background: url('../images/search.png') center center no-repeat, linear-gradient(to bottom, #FFF, #e6e6e6); 
 }
 
-
+.add-to-cart .dropdown-menu {
+  min-width: 315px;
+  padding: 15px;
+}
 
 .header-cart-wrap .commerce-line-item-views-form table {
 	margin-bottom: 10px; 
@@ -293,10 +296,6 @@ header form {
 
 .header-cart-wrap .commerce-line-item-views-form tbody {
 	border-top: none;
-}
-
-.header-cart-wrap .commerce-line-item-views-form td {
-	padding: 2px 6px;
 }
 
 .cart-empty-block .icon-shopping-cart {
@@ -313,6 +312,10 @@ header form {
 
 .show {
   display: block;
+}
+
+.checkout-buttons input[type="submit"].btn {
+  margin-right: 10px;
 }
 
 /* 

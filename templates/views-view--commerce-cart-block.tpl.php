@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?> dropdown">
+<div class="<?php print $classes; ?> add-to-cart dropdown">
  
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
