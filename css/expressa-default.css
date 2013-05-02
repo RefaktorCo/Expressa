@@ -129,6 +129,8 @@ a:hover {
 
 #page-wrap {
 	padding-bottom: 20px;
+	position: relative;
+	overflow: hidden;
 }
 
 /* 
@@ -1228,13 +1230,15 @@ margin-left: 80px !important;
 	text-align: right;
 }
 
+.range-slider {
+	width: 94%;
+}
+
 .yui3-u.range-box.range-box-left {
-	width: 100px;
 	float: left;
 }
 
 .yui3-u.range-box.range-box-right {
-	width: 100px;
 	float: right;
 	text-align: right;
 }
@@ -1441,6 +1445,22 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   #flickr_widget li img {
     height: 72px;
     width: 72px;
+  }
+  
+   .store-item-price-rating {
+    padding: 5px 15px;
+  }
+  
+  #content-wrap {
+	  margin-top: 0px !important;
+  }
+  
+  #footer-wrap {
+	  margin-bottom: 0px;
+  }
+  
+  .range-slider {
+	  width: 92%;
   }
   
 }
