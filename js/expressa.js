@@ -184,7 +184,7 @@ jQuery(document).ready(function ($) {
 	      
 	      visible: {
 	        min: 1,
-	        max: 4
+	        max: 3
 	      }
 	    }
 	  });
@@ -211,7 +211,7 @@ jQuery(document).ready(function ($) {
 	      
 	      visible: {
 	        min: 1,
-	        max: 4
+	        max: 3
 	      }
 	    }
 	  });
