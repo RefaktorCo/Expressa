@@ -318,6 +318,10 @@ header form {
   margin-right: 10px;
 }
 
+.checkout-review tr.odd, .checkout-review tr.even {
+  background-color: transparent;
+}
+
 /* 
 ' SCROLL MENU
 */

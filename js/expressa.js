@@ -116,6 +116,9 @@ jQuery(document).ready(function ($) {
 			$(window).unbind('scroll');
 		}
 	});
+	
+	
+	$('.checkout-review').addClass('table');
   
   $('.dropdown-toggle').dropdown()
   
