@@ -8,7 +8,3 @@
 .ei-title h2 {
 	background: #f45721;
 }
-
-.store-item:hover {
-	border-bottom: 2px solid #f45721 !important;
-}
