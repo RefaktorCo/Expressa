@@ -1268,7 +1268,37 @@ margin-left: 80px !important;
 .store-item {
 	margin-bottom: 25px;
 	border: 1px solid rgb(219, 219, 219);
+	 -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   
 }
+
+.store-item img {
+ -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+	filter:  contrast(1);
+	-webkit-filter:  contrast(1);
+	-moz-filter:  contrast(1);
+	-o-filter:  contrast(1);
+	-ms-filter:  contrast(1);
+}
+
+.store-item:hover img {
+	
+  filter:  contrast(.5);
+	-webkit-filter:  contrast(.5);
+	-moz-filter:  contrast(.5);
+	-o-filter:  contrast(.5);
+	-ms-filter:  contrast(.5);
+	max-width: 100%;
+  position: relative;
+  z-index: 900;
+}
+
 
 .store-item-content {
 	text-align: center;
