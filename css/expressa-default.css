@@ -91,11 +91,11 @@ RESPONSIVE STYLES
 ' BASE
 */
 body {
-
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	font-size: 14px;
+	padding: 0px 20px;
 }
 
 ul, ol {
@@ -1407,6 +1407,11 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   .caroufredsel_wrapper { 
     min-height: 275px;
   }
+  
+  
+  .store-item-price-rating {
+    padding: 5px 35px;
+  }
 }
 
 @media screen and (max-width: 979px) {   
@@ -1436,6 +1441,7 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
     height: 72px;
     width: 72px;
   }
+  
 }
 
 @media screen and (max-width: 767px) { 
