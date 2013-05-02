@@ -41,6 +41,7 @@ regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[after_content] = After Content
+regions[highlight] = Highlight
 
 ; Define footer block regions.
 regions[footer_col_1] = Footer Column 1

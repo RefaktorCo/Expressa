@@ -174,12 +174,22 @@
 	      <?php print render($page['after_content']); ?>
 	    </div>
 	  </div>  
+	  
+	  
 
   <?php print $messages; ?>
   </div>
 </div> <!-- End Content Wrap -->
 
 <div id="footer-wrap">
+  <?php if (isset($page['highlight'])) : ?>
+    
+    <div class="arrow-down"></div>
+    <div id="highlight">
+      <?php print render($page['highlight']); ?>
+    </div>
+
+  <?php endif; ?>
   <footer>  
     <div id="primary-footer" class="container">
     
