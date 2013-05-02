@@ -1,3 +1,13 @@
+.view-commerce-cart-form td {
+	width: 24%;
+	padding: 15px;
+}
+
+.view-commerce-cart-summary td {
+	width: 32%;
+	padding: 15px;
+}
+
 /* 
 ' SERVICES
 */

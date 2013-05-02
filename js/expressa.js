@@ -12,7 +12,8 @@ jQuery(document).ready(function ($) {
 
   $('.node-wrap .flexslider').flexslider({
     controlNav: false, 
-    animation: "slide"
+    animation: "slide",
+    touch: true
   });
   
    $('.flexslider').flexslider({
