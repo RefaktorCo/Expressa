@@ -95,7 +95,7 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	font-size: 14px;
-	padding: 0px 20px;
+
 }
 
 ul, ol {
@@ -538,6 +538,7 @@ footer {
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-top: -5px;
+	clear: both;
 }
 
 #primary-footer p {
