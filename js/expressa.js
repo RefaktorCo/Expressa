@@ -16,7 +16,8 @@ jQuery(document).ready(function ($) {
   });
   
    $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    touch: true
   });
      
   var $container = $('#isotope_test');

@@ -48,6 +48,12 @@
   margin-top: -15px;
 }
 
+.flex-direction-nav a {; opacity: 1;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: 5px; }
+.flex-direction-nav .flex-prev {left: 5px;}
+.flexslider:hover .flex-next {opacity: 1; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 1; left: 5px;}
+
 
 /* 
 ' FEATURED PRODUCT BLOCK
