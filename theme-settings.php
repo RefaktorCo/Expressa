@@ -93,7 +93,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
         'noisy_grid' => 'item',
         'dark_wood' => 'item',
         'cartographer' => 'item',
-        'bedge' => 'item',
+        'grunge_wall' => 'item',
         'illusion' => 'item',
         'nistri' => 'item',
       ),
