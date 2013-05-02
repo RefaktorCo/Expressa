@@ -9,3 +9,6 @@
 	background: #f45721;
 }
 
+.store-item {
+	border-bottom: 2px solid #f45721 !important;
+}
