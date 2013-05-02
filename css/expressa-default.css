@@ -283,15 +283,7 @@ header form {
   background: url('../images/search.png') center center no-repeat, linear-gradient(to bottom, #FFF, #e6e6e6); 
 }
 
-.header-cart-wrap .commerce-line-item-views-form {
-	position: absolute;  
-	border-radius: 5px; 
-	z-index: 3000; 
-	background: white; 
-	border: 1px solid #999; 
-	padding: 10px; 
-	margin-left: -206px; 
-}
+
 
 .header-cart-wrap .commerce-line-item-views-form table {
 	margin-bottom: 10px; 

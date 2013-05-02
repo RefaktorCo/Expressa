@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
+<div class="<?php print $classes; ?> dropdown">
  
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -35,9 +35,9 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   <?php if ($header): ?>
-    <div class="view-header btn btn-small view-cart">
+    <button class="dropdown-toggle btn btn-small view-cart" data-toggle="dropdown" href="#">
       <?php print $header; ?>
-    </div>
+    </button>
   <?php endif; ?>
 
   <?php if ($exposed): ?>
@@ -53,9 +53,9 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content">
+     <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
       <?php print $rows; ?>
-    </div>
+     </ul>
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>

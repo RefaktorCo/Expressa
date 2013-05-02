@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
   
- 
+  $('.dropdown-toggle').dropdown()
   
   $('input[type="submit"]').addClass('btn');
   
@@ -127,17 +127,8 @@ jQuery(document).ready(function ($) {
 
   $("a[rel^='prettyPhoto']").prettyPhoto();
 
-  $('header .header-cart-wrap .commerce-line-item-views-form').hide();
   
-  $('header .view-cart').click(function(){
-    $('header .header-cart-wrap .commerce-line-item-views-form').slideToggle();
-  });
-  
-   $('#scroll-menu .header-cart-wrap .commerce-line-item-views-form').hide();
-  
-  $('#scroll-menu .view-cart').click(function(){
-    $('#scroll-menu .header-cart-wrap .commerce-line-item-views-form').slideToggle();
-  });
+ 
   
 
   
