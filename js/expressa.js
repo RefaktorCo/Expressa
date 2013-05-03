@@ -179,7 +179,7 @@ jQuery(document).ready(function ($) {
 	    },
 	    swipe: {
 	      onMouse: true,
-	      onTouch: false
+	      onTouch: true
 	    },
 	    items: {
 	      
@@ -206,7 +206,7 @@ jQuery(document).ready(function ($) {
 	    },
 	    swipe: {
 	      onMouse: true,
-	      onTouch: false
+	      onTouch: true
 	    },
 	    items: {
 	      

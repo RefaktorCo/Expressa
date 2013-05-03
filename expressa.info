@@ -22,6 +22,7 @@ scripts[] = js/jquery.ui.totop.js
 scripts[] = js/jquery.prettyPhoto.js
 scripts[] = js/mobile-menu.js
 scripts[] = js/jquery.nicescroll.min.js
+scripts[] = js/jquery.touchSwipe.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
 scripts[] = js/jquery.isotope.js
