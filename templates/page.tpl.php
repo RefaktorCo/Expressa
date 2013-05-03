@@ -128,9 +128,9 @@
 	</header>
 	
 	<?php if ($breadcrumb): ?>
-	<div class="row">
+	<div id="page-heading" class="row">
 	  <div class="span12">
-	    <h2><?php print $title; ?>
+	    <h2><?php  print drupal_get_title(); ?></h2>
 	    <div id="breadcrumbs"><?php print $breadcrumb; ?> </div>		   
 	    <hr>
 	  </div>

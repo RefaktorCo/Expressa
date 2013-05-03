@@ -198,6 +198,15 @@ header form {
 	float: right;
 }
 
+#page-heading hr {
+	margin: 0;
+}
+
+#page-heading h2 {
+	display: inline-block;
+	margin: 15px 0px;
+}
+
 .region-sidebar-first {
 	margin: 20px 0px 20px 0px;
 }
@@ -814,7 +823,7 @@ span.accordion-head-image {
 	width: 100%;
 	list-style-type:none;
 	padding:0;
-	margin: 10px 0px;  
+	margin: 20px 0px 5px 0px;  
 }	
 
 .breadcrumbs ul{
@@ -1354,6 +1363,10 @@ margin-left: 80px !important;
 
 .search-api-sorts {
 	margin: 0;
+}
+
+#block-search-api-sorts-search-sorts {
+	margin: 10px 0px;
 }
 
 .search-api-sorts .last {
