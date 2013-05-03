@@ -21,7 +21,11 @@
 	float: left;
 	font-size: 32px;
 	margin-right: 10px;
-	color: #555
+	color: #555;
+	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #services h4 {
@@ -195,7 +199,7 @@ header form {
 }
 
 .region-sidebar-first {
-	margin: -20px 0px 20px 0px;
+	margin: 20px 0px 20px 0px;
 }
 
 .block-region {
@@ -599,9 +603,8 @@ footer {
 ' SIDEBAR
 */
 .region-sidebar-first h2 {
-	font-size: 20px;
+	font-size: 16px;
 	clear: both;
-	border-top: 1px solid #ddd;
 }
 
 /* 
@@ -800,6 +803,12 @@ span.accordion-head-image {
 /* 
 ' BREADCRUMBS
 */
+
+#breadcrumbs {
+	display: inline-block;
+	float: right;
+}
+
 .breadcrumbs{
 	overflow: hidden;
 	width: 100%;
@@ -986,7 +995,7 @@ article p {
 }
 
 .node-title a {
-	color: #333;
+	color: #555;
 	font-size: 22px;
 }
 

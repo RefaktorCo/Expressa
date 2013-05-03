@@ -130,7 +130,9 @@
 	<?php if ($breadcrumb): ?>
 	<div class="row">
 	  <div class="span12">
+	    <h2><?php print $title; ?>
 	    <div id="breadcrumbs"><?php print $breadcrumb; ?> </div>		   
+	    <hr>
 	  </div>
 	</div>       
 	<?php endif; ?>
