@@ -119,6 +119,8 @@ jQuery(document).ready(function ($) {
 	
 	$("html").niceScroll();
 	
+	$('.search-api-sorts a').removeClass('active');
+	
 	$('.checkout-review').addClass('table');
   
   $('.dropdown-toggle').dropdown()

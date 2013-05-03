@@ -215,8 +215,8 @@ header form {
   color: black;
 }
 
-.product-display-image {
-
+.product-display-node {
+  margin-top: 20px;
 }
 
 .product-display-node h3 {
@@ -979,6 +979,11 @@ span.accordion-head-image {
   min-height: 400px;
 }
 
+#block-views-portfolio-carousel-block h2, #block-views-store-carousel-block h2 {
+	font-size: 16px;
+  margin-bottom: 0px;
+}
+
 /* 
 ' NODE
 */
@@ -1477,12 +1482,17 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 */
 
 @media screen and (max-width: 1200px) {   
+
+  body {
+	  padding: 0px 20px;
+  }
+
   #highlight-content {
     font-size: 29px;
   }
   
   .caroufredsel_wrapper { 
-    min-height: 275px;
+    min-height: 350px;
   }
   
   
