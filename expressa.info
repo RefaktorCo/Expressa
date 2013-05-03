@@ -11,7 +11,9 @@ stylesheets[all][] = css/flexslider.css
 stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 
+
 scripts[] = bootstrap/js/bootstrap.min.js
+scripts[] = js/easing.js
 scripts[] = js/jquery.carouFredSel-6.1.0.js
 scripts[] = js/mobile-map.js
 scripts[] = js/jflickrfeed.min.js
@@ -19,7 +21,7 @@ scripts[] = js/jquery.tweet.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/jquery.prettyPhoto.js
 scripts[] = js/mobile-menu.js
-scripts[] = js/easing.js
+scripts[] = js/jquery.nicescroll.min.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
 scripts[] = js/jquery.isotope.js
