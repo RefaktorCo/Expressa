@@ -1,5 +1,12 @@
+<?php
+/**
+ * @file
+ * Expressa's comment wrapper template.
+ */
+?>
+
 <section id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-<div class="clearfix"></div>
+  <div class="clearfix"></div>
   <?php if ($content['comments'] && $node->type != 'forum'): ?>
     <?php print render($title_prefix); ?>
     <h4 class="comments_title"><?php print t('Comments'); ?></h4>

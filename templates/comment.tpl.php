@@ -1,4 +1,12 @@
-<?php global $root;?>
+<?php
+/**
+ * @file
+ * Expressa's comment template.
+ */
+ 
+global $root; // call $root.
+?>
+
 <article class="<?php print $classes . ' ' . $zebra; ?>"<?php print $attributes; ?>>
   <div class="comment_avatar">
     <?php 

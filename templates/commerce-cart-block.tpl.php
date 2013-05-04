@@ -1,8 +1,7 @@
 <?php
-
 /**
  * @file
- * Default implementation of the shopping cart block template.
+ * Expressa's implementation of the shopping cart block template.
  *
  * Available variables:
  * - $contents_view: A rendered View containing the contents of the cart.

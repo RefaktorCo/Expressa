@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Default implementation of a line item summary template.
+ * Expressa's implementation of a line item summary template.
  *
  * Available variables:
  * - $quantity_raw: The number of items in the cart.
@@ -22,16 +22,12 @@
  */
 ?>
 
-
-  <?php if ($quantity_raw): ?>
-
-<?php print $quantity_raw; ?><span class="line-item-quantity-label"> Item<?php if ($quantity_raw > '1'){print "s";}?></span>
-
-  <?php endif; ?>
-  <?php if ($total): ?>
-
-<?php print $total_label; ?><?php print $total; ?>
-
-  <?php endif; ?>
+<?php if ($quantity_raw): ?>
+  <?php print $quantity_raw; ?><span class="line-item-quantity-label"> Item<?php if ($quantity_raw > '1'){print "s";}?></span>
+<?php endif; ?>
   
-  <?php print $links; ?>
+<?php if ($total): ?>
+  <?php print $total_label; ?><?php print $total; ?>
+<?php endif; ?>
+  
+<?php print $links; ?>
