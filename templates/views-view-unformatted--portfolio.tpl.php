@@ -7,9 +7,7 @@
  * @ingroup views_templates
  */
 ?>
-
-<?php foreach ($rows as $id => $row): ?>
-
-    <?php print $row; ?>
-
-<?php endforeach; ?>
+	
+	<?php foreach ($rows as $id => $row): ?>
+	  <?php print $row; ?>
+	<?php endforeach; ?>
