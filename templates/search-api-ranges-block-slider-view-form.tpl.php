@@ -3,6 +3,7 @@
  * @file custom Search API ranges Min/Max UI slider widget
  */
 ?>
+
 <?php print drupal_render($form['text-range']); ?>
 <div class="yui3-g">
   <div class="yui3-u range-box range-box-left">

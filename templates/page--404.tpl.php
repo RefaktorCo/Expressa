@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Expressa's theme implementation to display a single Drupal page.
+ * Expressa's 404 template.
  */
 ?>
-  <div id="content-wrap">
+<div id="content-wrap">
 <div id="page-wrap" class="container">
 
 	<header>

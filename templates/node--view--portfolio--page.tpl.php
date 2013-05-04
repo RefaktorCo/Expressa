@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file
+ * Expressa's node template for the Portfolio page.
+ */
+?>
+
 <div class="span3 switch <?php print render($content['field_portfolio_category']); ?>" style="margin-bottom: 20px;">
   <div class="portfolio-item"> 
     <figure>

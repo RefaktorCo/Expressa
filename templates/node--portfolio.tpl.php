@@ -41,41 +41,41 @@ if ($prev != NULL) {
 <div class="row">
   <div class="span8">
 
-  <?php if (render($content['field_portfolio_slider'])): ?>  
-  <div class="flexslider">
-    <ul class="slides">
-    <?php print render($content['field_portfolio_slider']); ?>
-    </ul>
-  </div>  
-  <?php endif; ?>
-  
-  <?php if($teaser): ?>
-  <div class="read-more"> 
-  	<a class="btn" href="<?php print $node_url;?>">Read More</a>
-  </div>	
-  <?php endif;?>
-
-  </div>
-  <div class="span4">
-  
-  <div class="node-content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-  
-      hide($content['field_portfolio_image']);
-      hide($content['field_portfolio_url']);
-      hide($content['field_tags']);
-      print render($content);
-      
-    ?>
-    
-    <?php if (render($content['field_portfolio_url'])): ?>  
-    <br /><br />
-    <a class="btn btn-large" href="<?php print render($content['field_portfolio_url']); ?>"><?php print t('Launch Project')?></a>
-    <?php endif; ?>
-    
-  </div>
+	  <?php if (render($content['field_portfolio_slider'])): ?>  
+	  <div class="flexslider">
+	    <ul class="slides">
+	    <?php print render($content['field_portfolio_slider']); ?>
+	    </ul>
+	  </div>  
+	  <?php endif; ?>
+	  
+	  <?php if($teaser): ?>
+	  <div class="read-more"> 
+	  	<a class="btn" href="<?php print $node_url;?>">Read More</a>
+	  </div>	
+	  <?php endif;?>
+	
+	  </div>
+	  <div class="span4">
+	  
+	  <div class="node-content"<?php print $content_attributes; ?>>
+	    <?php
+	      // We hide the comments and links now so that we can render them later.
+	      hide($content['comments']);
+	  
+	      hide($content['field_portfolio_image']);
+	      hide($content['field_portfolio_url']);
+	      hide($content['field_tags']);
+	      print render($content);
+	      
+	    ?>
+	    
+	    <?php if (render($content['field_portfolio_url'])): ?>  
+	    <br /><br />
+	    <a class="btn btn-large" href="<?php print render($content['field_portfolio_url']); ?>"><?php print t('Launch Project')?></a>
+	    <?php endif; ?>
+	    
+	  </div>
 
   </div>
 </div>

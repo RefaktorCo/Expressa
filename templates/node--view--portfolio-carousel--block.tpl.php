@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file
+ * Expressa's node template for the Portfolio Carousel block.
+ */
+?>
+
 <li>
   <div class="portfolio-item"> 
     <figure>

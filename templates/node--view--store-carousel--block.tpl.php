@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file
+ * Expressa's node template for the Store Carousel block.
+ */
+?>
+
 <li>
   <div class="store-item">
   
