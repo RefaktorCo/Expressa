@@ -50,36 +50,8 @@ label[for=edit-background-select-nistri] {
 	background-image: url('../images/backgrounds/nistri.png');
 }
 
-label[for=edit-heading-background-select-shattered] {
-	background-image: url('../images/heading-backgrounds/shattered.png');
-}
-
-label[for=edit-heading-background-select-tile] {
-	background-image: url('../images/heading-backgrounds/tile.png');
-}
-
-label[for=edit-heading-background-select-checkered] {
-	background-image: url('../images/heading-backgrounds/checkered.png');
-}
-
-label[for=edit-heading-background-select-bullseyes] {
-	background-image: url('../images/heading-backgrounds/bullseyes.png');
-}
-
-label[for=edit-heading-background-select-gplaypattern] {
-	background-image: url('../images/heading-backgrounds/gplaypattern.png');
-}
-
-label[for=edit-heading-background-select-cartographer] {
-	background-image: url('../images/heading-backgrounds/cartographer.png');
-}
-
-label[for=edit-heading-background-select-linen] {
-	background-image: url('../images/heading-backgrounds/linen.png');
-}
-
-label[for=edit-heading-background-select-dark-wood] {
-	background-image: url('../images/heading-backgrounds/dark_wood.png');
+label[for=edit-background-select-dark-wood] {
+	background-image: url('../images/backgrounds/dark_wood.png');
 }
 
 .form-wrapper {min-height: 20px;}

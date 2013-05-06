@@ -88,12 +88,12 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title' => 'Select a background pattern:',
       '#default_value' => theme_get_setting('background_select'),
       '#options' => array(
+        'grunge_wall' => 'item',
         'brushed_alu' => 'item',
         'retina_wood' => 'item',
         'noisy_grid' => 'item',
         'dark_wood' => 'item',
         'cartographer' => 'item',
-        'grunge_wall' => 'item',
         'illusion' => 'item',
         'nistri' => 'item',
       ),

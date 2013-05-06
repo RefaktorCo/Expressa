@@ -208,6 +208,7 @@ function expressa_pagination($node, $mode = 'n') {
   }
  
   if ($n_nid) {
+    $n_node = '';
     $n_node = node_load($n_nid);
 		
     switch($n_node->type) {	
@@ -359,7 +360,10 @@ function expressa_preprocess_html(&$vars){
   
   drupal_add_html_head( $viewport, 'viewport');
   drupal_add_html_head( $headings, 'headings');
-  drupal_add_html_head( $background_color, 'background_color');
+  
+  if (theme_get_setting('body_background') == "custom_background_color") {
+    drupal_add_html_head( $background_color, 'background_color');
+  }
   
   drupal_add_html_head( $color, 'color_style' );
   

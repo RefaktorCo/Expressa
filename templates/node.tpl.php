@@ -71,7 +71,7 @@ if ($items = field_get_items('node', $node, 'field_image')) {
   </div>	
   <?php endif;?>
   
-  <?php if($page && module_exists('prev_next')): ?>
+  <?php if(!drupal_is_front_page() && $page && module_exists('prev_next')): ?>
   <ul class="node-pagination">
     <?php if (expressa_pagination($node, 'n') != NULL): ?><li class="next-node"><?php print expressa_pagination($node, 'n'); ?> &rarr;</li><?php endif; ?>
     <?php if (expressa_pagination($node, 'p') != NULL): ?><li class="previous-node">&larr; <?php print expressa_pagination($node, 'p'); ?></li><?php endif; ?>
@@ -83,4 +83,6 @@ if ($items = field_get_items('node', $node, 'field_image')) {
   <?php print render($content['comments']); ?>
 
 </article>
+<?php if (!$page): ?>
 <hr class="post-hr">
+<?php endif; ?>
