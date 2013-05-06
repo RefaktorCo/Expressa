@@ -1,90 +1,3 @@
-.view-commerce-cart-form td {
-	width: 24%;
-	padding: 15px;
-}
-
-.view-commerce-cart-summary td {
-	width: 32%;
-	padding: 15px;
-}
-
-/* 
-' SERVICES
-*/
-
-#services {
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-#services i {
-	float: left;
-	font-size: 32px;
-	margin-right: 10px;
-	color: #555;
-	-moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-#services h4 {
-	font-size: 18px;
-	color: #555;
-}
-
-/* 
-' SLIDER
-*/
-
-.flexslider {
-	border: none;
-	box-shadow: none;
-	margin: 0 0 18px;
-}
-
-.flex-caption {
-	width: 275px;
-	position: absolute;
-	bottom: 0;
-	margin: 0px 0px 20px 20px;
-	padding: 20px;
-	background: #393737;
-	opacity: .9;
-	color: white;
-}
-
-.flex-caption h3 {
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-
-.flex-control-nav {
-  bottom: 0px;
-  margin-top: -15px;
-}
-
-.flex-direction-nav a {; opacity: 1;}
-.flex-direction-nav .flex-next {background-position: 100% 0; right: 5px; }
-.flex-direction-nav .flex-prev {left: 5px;}
-.flexslider:hover .flex-next {opacity: 1; right: 5px;}
-.flexslider:hover .flex-prev {opacity: 1; left: 5px;}
-
-
-/* 
-' FEATURED PRODUCT BLOCK
-*/
-.featured-product-picture {
-	width: 120px;
-	float: left;
-	margin-right: 15px;
-}
-
-.featured-products form.fivestar-widget {
-	clear: none;
-	
-}
-
 /* ==
 
 ### CONTENT ###
@@ -99,6 +12,9 @@ FOOTER
 PANELS
 SIDEBAR
 POPULAR TAGS
+FEATURED PRODUCT BLOCK
+SLIDER
+SERVICES
 HIGHLIGHT
 ISOTOPE FILTERS
 ACCORDION
@@ -269,6 +185,16 @@ header form {
 	margin-bottom: 10px;
 }
 
+.view-commerce-cart-form td {
+	width: 24%;
+	padding: 15px;
+}
+
+.view-commerce-cart-summary td {
+	width: 32%;
+	padding: 15px;
+}
+
 .product-display-node .commerce-add-to-cart input[type="submit"] {
 	padding: 5px;
   margin-top: -8px;
@@ -290,7 +216,7 @@ header form {
 .region-header-right-bottom input[type="submit"].btn {
   padding: 4px 17px;
   background-color: #e6e6e6; 
-  background-image: url('../images/search.png') center center no-repeat;
+  background: url('../images/search.png') center center no-repeat;
   background: url('../images/search.png') center center no-repeat, -moz-linear-gradient(top, #FFF, #e6e6e6); 
   background: url('../images/search.png') center center no-repeat, -webkit-linear-gradient(top, #FFF, #e6e6e6); 
   background: url('../images/search.png') center center no-repeat, -o-linear-gradient(top, #FFF, #e6e6e6); 
@@ -651,6 +577,74 @@ footer {
 }
 
 /* 
+' FEATURED PRODUCT BLOCK
+*/
+.featured-product-picture {
+	width: 120px;
+	float: left;
+	margin-right: 15px;
+}
+
+.featured-products form.fivestar-widget {
+	clear: none;
+	
+}
+
+/* 
+' SLIDER
+*/
+
+.flexslider {
+	border: none;
+	box-shadow: none;
+	margin: 0 0 18px;
+}
+
+.flex-caption {
+	width: 275px;
+	position: absolute;
+	bottom: 0;
+	margin: 0px 0px 20px 20px;
+	padding: 20px;
+	background: #393737;
+	opacity: .9;
+	color: white;
+}
+
+.flex-caption h3 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.flex-control-nav {
+  bottom: 0px;
+  margin-top: -15px;
+}
+
+.flex-direction-nav a {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-next {
+  background-position: 100% 0; 
+  right: 5px; 
+}
+
+.flex-direction-nav .flex-prev {
+  left: 5px;
+}
+
+.flexslider:hover .flex-next {
+  opacity: 1; 
+  right: 5px;
+}
+
+.flexslider:hover .flex-prev {
+  opacity: 1; 
+  left: 5px;
+}
+
+/* 
 ' HIGHLIGHT
 */
 #highlight {
@@ -700,6 +694,32 @@ footer {
 #header-right-top {
 	margin: 2px 0 10px 10px;
 }
+
+/* 
+' SERVICES
+*/
+
+#services {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#services i {
+	float: left;
+	font-size: 32px;
+	margin-right: 10px;
+	color: #555;
+	-moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#services h4 {
+	font-size: 18px;
+	color: #555;
+}
+
 
 /* 
 ' ISOTOPE FILTERS
@@ -1636,6 +1656,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 @media screen and (max-width: 480px) { 
   .caroufredsel_wrapper { 
-    min-height: 225px;
+    min-height: 235px;
   }
 }
