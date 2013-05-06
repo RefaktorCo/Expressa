@@ -22,7 +22,7 @@
   <![endif]-->
   
 <?php expressa_user_css(); ?>  
-
+<link rel="stylesheet" type="text/css" href="<?php global $root; echo $root;?>/css/switch.css">
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

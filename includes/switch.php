@@ -19,8 +19,8 @@
             
     <h6 class="switch_heading">Layout</h6>  
       <ul id="layout-nav">
-        <li class="switch_wide"><a class="tiny secondary button">Wide</a></li>
         <li class="switch_boxed"><a class="tiny secondary button">Boxed</a></li>
+        <li class="switch_wide"><a class="tiny secondary button">Wide</a></li>
       </ul>  
 
     <div class="bg_patterns_wrap">

@@ -113,15 +113,12 @@
     
     $(".switch_wide").click(function() {
       $('#main_wrapper').css({ 'max-width': '100%', 'margin': '0 auto' });
-      $('header').css({ 'max-width': '100%'});
-      $('#heading_wrapper').css({'box-shadow': '0px 0px 3px 0px black'});
       $('.bg_patterns_wrap').css({ 'display': 'none'});
     });
 
     $(".switch_boxed").click(function() {
-      $('#main_wrapper').css({ 'max-width': '1120px', 'margin': '0 auto'});
-      $('#heading_wrapper').css({'box-shadow': 'none'});
-      $('header').css({ 'max-width': '1120px'});
+      $('#content-wrap').css({ 'max-width': '1200px', 'margin': '0 auto', 'margin-top': '20px', 'padding': '20px 20px 0px 20px'});
+      $('#footer-wrapp').css({ 'max-width': '1240px'});
       $('.bg_patterns_wrap').css({ 'display': 'block'});
 
     });
