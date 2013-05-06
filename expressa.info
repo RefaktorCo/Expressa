@@ -12,7 +12,6 @@ stylesheets[all][] = css/prettyPhoto.css
 stylesheets[all][] = css/expressa-default.css
 stylesheets[all][] = css/switch.css
 
-
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/easing.js
 scripts[] = js/jquery.carouFredSel-6.1.0.js
