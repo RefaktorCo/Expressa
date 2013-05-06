@@ -6,13 +6,13 @@
 #menu .menu ul li:hover,
 .portfolio-project-button,
 .ei-title h2 {
-	background: #f45721;
+	background: #000;
 }
 
 .caroufredsel_wrapper .store-item:hover {
-	border-bottom: 2px solid #f45721 !important;
+	border-bottom: 2px solid #000 !important;
 }
 
 #services .span3:hover i {
-	color: #f45721;
+	color: #000;
 }

@@ -3,14 +3,6 @@
  * Implements hook_form_system_theme_settings_alter()
  */
 function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
-
-
-
-   // Default path for image
-  $bg_path = theme_get_setting('bg_path');
-  if (file_uri_scheme($bg_path) == 'public') {
-    $bg_path = file_uri_target($bg_path);
-  }
   
   // Main settings wrapper
   $form['options'] = array(
@@ -141,6 +133,7 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
           'purple' => t('Purple'),
           'orange' => t('Orange (default)'),
           'red' => t('Red'),
+          'black' => t('Black'),
           'custom' => t('Custom'),
         ),
       );
