@@ -223,6 +223,17 @@ function expressa_pagination($node, $mode = 'n') {
 }
 
 /**
+ * User CSS function. Separate from blocks_preprocess_html so function can be called directly before </head> tag.
+ */
+function expressa_user_css() {
+  echo "<!-- User defined CSS -->";
+  echo "<style type='text/css'>";
+  echo theme_get_setting('user_css');
+  echo "</style>";
+  echo "<!-- End user defined CSS -->";	
+}
+
+/**
  * Add various META tags to HTML head..
  */
 function expressa_preprocess_html(&$vars){

@@ -16,8 +16,8 @@
 			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav> 
       </div>
-     
-            <div id="header-right" class="span2" style="float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;">
+      
+      <div id="header-right" class="span2">
         <?php print render($page['header_right_top_right']); ?>
       </div>
     </div>
@@ -131,7 +131,9 @@
 	<div id="page-heading" class="row">
 	  <div class="span12">
 	    <h2><?php  print drupal_get_title(); ?></h2>
-	    <div id="breadcrumbs"><?php print $breadcrumb; ?> </div>		   
+	    <?php if (theme_get_setting('breadcrumbs') == '1'): ?>
+	      <div id="breadcrumbs"><?php print $breadcrumb; ?> </div>	
+	    <?php endif; ?>  	   
 	    <hr>
 	  </div>
 	</div>       

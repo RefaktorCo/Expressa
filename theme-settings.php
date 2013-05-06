@@ -237,8 +237,23 @@ function expressa_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title' => t('Keywords'),
       '#default_value' => theme_get_setting('seo_keywords'),
     );
+    
+  // CSS
+  $form['options']['css'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('CSS'),
+  ); 
   
-   // Tracking
+    // User CSS
+    $form['options']['css']['user_css'] = array(
+      '#type' => 'textarea',
+      '#title' => t('User CSS'),
+      '#description' => t('Add your own custom CSS.'),
+      '#default_value' => theme_get_setting('user_css'),
+    );
+  
+  
+  // Tracking
   $form['options']['tracking'] = array(
     '#type' => 'fieldset',
     '#title' => t('Tracking'),

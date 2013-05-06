@@ -350,6 +350,10 @@ header form {
   opacity: .95;
 } 
 
+#scroll-menu .header-right {
+	float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;
+}
+
 #scroll-menu-wrap {
 	position: relative;
 	max-width: 1200px;
@@ -979,7 +983,7 @@ span.accordion-head-image {
   min-height: 400px;
 }
 
-#block-views-portfolio-carousel-block h2, #block-views-store-carousel-block h2 {
+#block-views-portfolio-carousel-block h2, #block-views-store-carousel-block h2, #block-multiblock-1 h2, #block-views-store-featured-carousel-block h2 {
 	font-size: 16px;
   margin-bottom: 0px;
 }
