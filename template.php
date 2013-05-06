@@ -5,6 +5,8 @@
 global $root, $theme_path;
 $root = base_path() . path_to_theme();
 
+include_once(drupal_get_path('theme', 'expressa').'/includes/switch.php');
+
 /**
  * Assign theme hook suggestions for custom templates.
  */  

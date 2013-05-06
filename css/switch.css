@@ -62,32 +62,32 @@
 	background-image: url('../images/backgrounds/grunge_wall.png');
 }
 
-.grey-bg {
-	background-image: url('../images/backgrounds/grey.png');
+.brushed-alu {
+	background-image: url('../images/backgrounds/brushed_alu.png');
 }
 
-.wood-bg {
+.retina-wood {
 	background-image: url('../images/backgrounds/retina_wood.png');
 }
 
-.grid-bg {
+.noisy-grid {
 	background-image: url('../images/backgrounds/noisy_grid.png');
 }
 
-.nistri-bg {
+.nistri{
 	background-image: url('../images/backgrounds/nistri.png');
 }
 
-.cartographer-bg {
+.cartographer {
 	background-image: url('../images/backgrounds/cartographer.png');
 }
 
-.illusion-bg {
+.illusion {
 	background-image: url('../images/backgrounds/illusion.png');
 }
 
-.bedge-bg {
-	background-image: url('../images/backgrounds/bedge.png');
+.dark-wood {
+	background-image: url('../images/backgrounds/dark_wood.png');
 }
 
 #slideout {
