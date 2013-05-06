@@ -4,79 +4,41 @@
       $("link.switch").attr("href",$(this).attr('rel'));
     });
    
-	  $('#slideout').hover(function() {
-	    $(this).animate({left:'0px'}, {queue:false, duration: 500});
-	  }, 
-	  function() {
-	    $(this).animate({left:'-150px'}, {queue:false, duration: 500});
-	  });
 	  
     $("#color-nav li").click(function() { 
       $("link.switch").attr("href",$(this).attr('class'));
     });
     
-    $(".grey-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/grey.png)");
+    $(".grunge-wall").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/grunge_wall.png)");
     });
     
-    $(".grid-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/noisy_grid.png)");
+    $(".brushed-alu").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/brushed_alu.png)");
     });
     
-    $(".wood-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/retina_wood.png)");
+    $(".retina-wood").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/retina_wood.png)");
     });
     
-    $(".gplay-bg").click(function() {
-      $('body').css("background-image", "urlhttp://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/gplaypattern.png)");
+    $(".noisy-grid").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/noisy_grid.png)");
     });
     
-    $(".nistri-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/nistri.png)");
+    $(".nistri").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/nistri.png)");
     });
     
-    $(".bedge-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/bedge.png)");
+    $(".cartographer").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/cartographer.png)");
     });
     
-    $(".cartographer-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/cartographer.png)");
+    $(".illusion").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/illusion.png)");
     });
-    
-    $(".illusion-bg").click(function() {
-      $('body').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/backgrounds/illusion.png)");
-    });
-    
-    $(".shattered-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/shattered.png)");
-    });
-    
-    $(".tile-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/tile.png)");
-    });
-    
-    $(".checkered-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/checkered.png)");
-    });
-    
-    $(".gplay-head").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/gplaypattern.png)");
-    });
-    
-    $(".bullseyes-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/bullseyes.png)");
-    });
-    
-    $(".cartographer-head").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/cartographer.png)");
-    });
-    
-    $(".linen-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/linen.png)");
-    });
-    
-    $(".dark-wood-bg").click(function() {
-      $('#heading_wrapper').css("background-image", "url(http://refaktor.co/blocks-demo/sites/all/themes/blocks-drupal/images/heading-backgrounds/dark_wood.png)");
+
+    $(".dark-wood").click(function() {
+      $('body').css("background-image", "url(http://refaktorthemes.com/expressa/sites/all/themes/expressa/images/backgrounds/dark_wood.png)");
     });
     
     $(".blue-bg").click(function() {
@@ -112,13 +74,14 @@
     });
     
     $(".switch_wide").click(function() {
-      $('#main_wrapper').css({ 'max-width': '100%', 'margin': '0 auto' });
+      $('#content-wrap').css({ 'max-width': '100%', 'margin': '0 auto', 'margin-top': '0px', 'padding': '20px 20px 0px 20px' });
+      $('#footer-wrap').css({ 'max-width': '100%', 'margin-bottom': '0px'});
       $('.bg_patterns_wrap').css({ 'display': 'none'});
     });
 
     $(".switch_boxed").click(function() {
       $('#content-wrap').css({ 'max-width': '1200px', 'margin': '0 auto', 'margin-top': '20px', 'padding': '20px 20px 0px 20px'});
-      $('#footer-wrapp').css({ 'max-width': '1240px'});
+      $('#footer-wrap').css({ 'max-width': '1240px'});
       $('.bg_patterns_wrap').css({ 'display': 'block'});
 
     });

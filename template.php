@@ -287,13 +287,13 @@ function expressa_preprocess_html(&$vars){
   
   $box_layout = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#content-wrap { max-width: 1200px; margin: 0 auto; margin-top: 20px !important; padding: 20px 20px 0px 20px; } #footer-wrap {max-width: 1240px;} </style> ",
+    '#markup' => "<style type='text/css'>#content-wrap { max-width: 1200px; margin: 0 auto; margin-top: 20px; padding: 20px 20px 0px 20px; } #footer-wrap {max-width: 1240px;} </style> ",
     '#weight' => 5,
   );
   
   $wide_layout = array(
     '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; padding: 20px 0px 0px 0px; } #footer-wrap {max-width: 100%;}</style> ",
+    '#markup' => "<style type='text/css'>#content-wrap { max-width: 100%; margin: 0 auto; margin-top: 0px; padding: 20px 0px 0px 0px; } #footer-wrap {max-width: 100%; margin-bottom: 0px;}</style> ",
     '#weight' => 6,
   );
 

@@ -33,7 +33,7 @@
 	      <li class="cartographer"><div class="switch_tile cartographer"></div></li>
 	      <li class="dark-wood"><div class="switch_tile dark-wood"></div></li>
 	      <li class="illusion"><div class="switch_tile illusion"></div></li>
-	      <li class="nistri"><div class="switch_tile nistrig"></div></li>
+	      <li class="nistri"><div class="switch_tile nistri"></div></li>
 	    </ul>
 	   </div>
 	  
