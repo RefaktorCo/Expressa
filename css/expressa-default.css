@@ -349,7 +349,7 @@ header form {
   opacity: .95;
 } 
 
-#scroll-menu .header-right {
+#scroll-menu-wrap #header-right {
 	float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;
 }
 
@@ -1591,8 +1591,20 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   }
   
   .region-header-right-bottom input[type="submit"].btn {
-    margin-right: 20px;
-    margin-left: -33px;
+   margin-right: 42px;
+   margin-left: -55px;
+  }
+  
+  #services {
+	  text-align: center;
+  }
+  
+  #services .span3 {
+	  margin-bottom: 20px;
+  }
+  
+  #services i {
+	  float: none;
   }
   
   #highlight-content {
@@ -1614,6 +1626,10 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   
   .menu-social-icons {
 	  display: none;
+  }
+  
+  #footer-wrap {
+	  text-align: center;
   }
   
 }
