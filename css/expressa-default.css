@@ -1506,6 +1506,11 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 
 @media screen and (max-width: 979px) {   
 
+   body {
+	  padding: 0px;
+  }
+
+
   #site-slogan {
 	  font-size: 11px;
   }
