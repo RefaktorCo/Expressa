@@ -20,43 +20,44 @@
 }
 
 .switch_tile {
-  height: 18px;
-	width: 18px;
+  height: 25px;
+	width: 25px;
 	float: left;
-	margin: 5px;
 }
 
-.blue {
-	background: #2f88f0;
+.light-blue {
+	background: rgb(40, 171, 233);
+}
+
+
+.dark-blue {
+	background: rgb(0, 73, 153);
 }
 
 .black {
 	background: #000;
 }
 
-.teal {
-	background: #64ADB5;
+.brown {
+	background: rgb(129, 85, 61);
 }
 
 .green {
-	background: #8fad30;
+	background: rgb(33, 143, 46);
 }
 
 .orange {
-	background: #DB8916;
+	background: #f45721;
 }
 
 .purple {
-	background: #5f419b;
+	background: rgb(148, 71, 219);
 }
 
 .red {
-	background: #c95d3b;
+	background: rgb(228, 56, 56);
 }
 
-.yellow {
-	background: #dab800;
-}
 
 .grunge-wall {
 	background-image: url('../images/backgrounds/grunge_wall.png');
@@ -91,14 +92,14 @@
 }
 
 #slideout {
-  background: #666;
+  background: #fefefe;
   position:fixed;
   width:185px;
-  height:440px;
+  height:330px;
   top:15%;
   left: -185px;
   z-index: 40000;
-  
+  border: 1px solid #999;
 }
 
 #clickme {
@@ -112,7 +113,7 @@
 
 .switch_heading {
   text-align: center; 
-  color: #fff;	
+  color: #555;	
   clear: both;
 }
 

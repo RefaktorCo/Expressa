@@ -19,8 +19,8 @@
             
     <h6 class="switch_heading">Layout</h6>  
       <ul id="layout-nav">
-        <li class="switch_boxed"><a class="tiny secondary button">Boxed</a></li>
-        <li class="switch_wide"><a class="tiny secondary button">Wide</a></li>
+        <li class="switch_boxed"><a class="btn btn-small">Boxed</a></li>
+        <li class="switch_wide"><a class="btn btn-small">Wide</a></li>
       </ul>  
 
     <div class="bg_patterns_wrap">
@@ -37,20 +37,7 @@
 	    </ul>
 	   </div>
 	  
-	   <div class="bg_patterns_wrap">
-	    <h6 class="switch_heading">Background Colors</h6>
-	    <ul class="bg-nav">
-	      <li class="blue-bg"><div class="switch_tile blue"></div></li>
-	      <li class="black-bg"><div class="switch_tile black"></div></li>
-	      <li class="green-bg"><div class="switch_tile green"></div></li>
-	      <li class="orange-bg"><div class="switch_tile orange"></div></li>
-	      <li class="red-bg"><div class="switch_tile red"></div></li>
-	      <li class="teal-bg"><div class="switch_tile teal"></div></li>
-	      <li class="purple-bg"><div class="switch_tile purple"></div></li>
-	      <li class="yellow-bg"><div class="switch_tile yellow"></div></li>
-	    </ul>
-    </div>
-    
+	       
   </div>
 
   <div id="clickme">
