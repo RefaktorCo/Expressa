@@ -1,5 +1,5 @@
 ==Expressa==
-A Multi-Purpose Drupal 7 theme powered by Twitter Bootstrap and Font Awesome. Expressa features a fully responsive design, easy to use theme settings and follows Drupal coding standards. For theme support that cannot be found in this documentation, please visit our support forum(http://refaktorthemes.com/support). Once you have registered please contact us via our ThemeForest author page with your forum username so you can be granted posting rights.
+A Multi-Purpose Drupal 7 eCommerce theme powered by Twitter Bootstrap and Font Awesome. Expressa features a fully responsive design, easy to use theme settings and follows Drupal coding standards. For theme support that cannot be found in this documentation, please visit our support forum(http://refaktorthemes.com/support). Once you have registered please contact us via our ThemeForest author page with your forum username so you can be granted posting rights.
 
 ==Libraries and Resources==
 Twitter Bootstrap(https://github.com/twitter/bootstrap) released under the Apache License(1).

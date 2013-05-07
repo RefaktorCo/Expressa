@@ -1247,6 +1247,11 @@ margin-left: 80px !important;
 	margin: 0;
 }
 
+.node-portfolio .field-label {
+	float: left;
+	font-weight: bold;
+}
+
 .portfolio-item img{
   -webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
