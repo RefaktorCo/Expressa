@@ -743,6 +743,13 @@ footer {
 
 #header-right-top {
 	margin: 2px 0 10px 10px;
+	float: right;
+}
+ 
+#header-right-top li {
+  list-style: none;
+  display: inline;
+  margin-left: 5px;
 }
 
 /* 
