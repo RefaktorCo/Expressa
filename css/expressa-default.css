@@ -99,12 +99,12 @@ header form {
 	margin: 0px 0px 0px 0px;
 }
 
-#header-right {
+.header-right {
 	text-align: right;
 	margin-bottom: 10px;
 }
 
-#header-right .form-wrapper{
+.header-right .form-wrapper{
 	float: right;
 	background: transparent;
 	border-top: none;
@@ -273,7 +273,7 @@ header form {
   opacity: .95;
 } 
 
-#scroll-menu-wrap #header-right {
+#scroll-menu-wrap .header-right {
 	float: right; margin-bottom: 0px; height: 33px; margin-top: 8px;
 }
 
@@ -742,7 +742,7 @@ footer {
 	float: right;
 }
  
-#header-right-top li {
+.header-right-top li {
   list-style: none;
   display: inline;
   margin-left: 5px;
@@ -1651,11 +1651,11 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	  margin-bottom: 10px;
   }
   
-  #header-right {
+  .header-right {
 	  text-align: center;
   }
     
-  #header-right-top {
+  .header-right-top {
 		font-size: 14px;
 		margin: 0px 0px 10px 0px;
 		float: none !important;

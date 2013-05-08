@@ -17,7 +17,7 @@
 			  </nav> 
       </div>
       
-      <div id="header-right" class="span2">
+      <div class="span2 header-right">
         <?php print render($page['header_right_top_right']); ?>
       </div>
     </div>
@@ -71,7 +71,7 @@
 	      <!-- /branding --> 
 	       
 	    </div>
-	    <div id="header-right" class="span8">
+	    <div class="span8 header-right">
 	    
 	      <div class="row">
 	        <div class="span8">
