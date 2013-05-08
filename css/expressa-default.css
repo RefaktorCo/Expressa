@@ -14,6 +14,7 @@ SIDEBAR
 UI TO TOP
 POPULAR TAGS
 FEATURED PRODUCT BLOCK
+404
 SLIDER
 SERVICES
 HIGHLIGHT
@@ -623,9 +624,25 @@ footer {
 }
 
 /* 
-' SLIDER
+' 404
 */
 
+.error-title {
+	text-align: center;
+	font-size: 50px;
+	padding-top: 20px;
+}
+
+.error-icon {
+	text-align: center;
+	font-size: 180px;
+	padding: 30px;
+	color: rgb(219, 47, 47);
+}
+
+/* 
+' SLIDER
+*/
 .flexslider {
 	border: none;
 	box-shadow: none;

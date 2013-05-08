@@ -126,7 +126,7 @@
 	    </div>  
 	  </div>  
 	  
-	<?php expressa_style_switch(); ?>  
+	<?php //expressa_style_switch(); ?>  
 	</header>
 	
 	<?php if ($breadcrumb): ?>
