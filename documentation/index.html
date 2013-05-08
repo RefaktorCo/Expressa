@@ -78,6 +78,8 @@
 					<li><a href="#search_api_span_style"color_rgb_0,_0,_0_font_family_'helvetica_neue',_helvetica,_arial,_sans_serif_font_size_medium_line_height_24px_webkit_text_size_adjust_none"store_view_page_span">Store View Page</a>
 				</ol>
 			</li>
+			<li><a href="#image_slider">Image Slider</a></li>
+			<li><a href="#highlight">Highlight </a></li>
 			<li><a href="#portfolio">Portfolio</a>
 				<ol>
 					<li><a href="#portfolio_span_style"color_rgb_0,_0,_0_font_family_'helvetica_neue',_helvetica,_arial,_sans_serif_font_size_medium_line_height_24px_webkit_text_size_adjust_none"portfolio_categories_span">Portfolio Categories</a>
@@ -167,6 +169,7 @@
 	<h3>Block Regions</h3><hr class="notop">
 <p>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; -webkit-text-size-adjust: none;">Expressa features 14 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press &quot;Add Block&quot; to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</span></p>
+<img src="./images/block-regions.png">
 </section>
 <section id="menu">
 	<h3>Menu</h3><hr class="notop">
@@ -276,6 +279,9 @@
 <p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; -webkit-text-size-adjust: none;">
 	<font color="#000000" face="Helvetica Neue, Helvetica, Arial, sans-serif" size="3"><span style="line-height: 24px;">All of the Commerce administration links you will need can be found under /admin/commerce. There you can manage customer profiles and orders, add/edit/remove products, and set global options. Under the &quot;Products&quot; link you will see a tab that reads &quot;Product Types&quot; which is where you can create your own product types.&nbsp;</span></font></p>
 <h4 id="commerce_span_style"color_rgb_0,_0,_0_font_family_'helvetica_neue',_helvetica,_arial,_sans_serif_font_size_medium_line_height_24px"product_display_span"><span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px;">Product Display</span></h4>
+
+<img src="./images/product-display-fields.png">
+
 <p>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">In order to display your products as node content, a custom content type with a product reference field type has to be used. We recommend using the &quot;Inline Entity Form - Multiple Values&quot; widget type with the Product Reference field as this allows you to create multiple variations of the same product. For example, you can have a single item called Men&#39;s T-Shirt and have several varations with different colors and sizes.&nbsp;</span></p>
 <p>
@@ -337,6 +343,29 @@
 <p>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">The final step is to create your store view page. We recommend you use the code found inside the /views_exports folder to import the view with the correct settings.&nbsp;</span></p>
 </section>
+<section id="image_slider">
+	<h3>Image Slider</h3><hr class="notop">
+<p>
+	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Expressa&#39;s Image Slider is powered by Flexslider and is easy to configure. It uses a custom content type called &quot;Image Slider&quot; with two fields: field_slider_image (image field) and field_slider_caption (long text). </span></p>
+<p>
+	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">The slider itself is a view block which you can import using the /views_exports/image_slider.txt export code.&nbsp;</span></p>
+</section>
+<section id="highlight">
+	<h3>Highlight </h3><hr class="notop">
+<p>
+	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Expressa also includes support for a side-wide highlight section. To use this, simply use the following syntax inside a block and place it inside the Highlight block region:</span></p>
+<pre class="brush: html">
+&lt;div class=&quot;container&quot;&gt; 
+ &lt;div class=&quot;row-fluid&quot;&gt;
+    &lt;div id=&quot;highlight-content&quot; class=&quot;span9&quot;&gt;
+      This is a site-wide call to action block region!
+    &lt;/div&gt;
+    &lt;div id=&quot;highlight-button&quot; class=&quot;span3&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;div class=&quot;button-wrap&quot;&gt;BUY NOW&lt;/div&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>	
+</section>
 <section id="portfolio">
 	<h3>Portfolio</h3><hr class="notop">
 <p>
@@ -351,6 +380,9 @@
 <h4 id="portfolio_span_style"color_rgb_0,_0,_0_font_family_'helvetica_neue',_helvetica,_arial,_sans_serif_font_size_medium_line_height_24px_webkit_text_size_adjust_none"content_type_and_fields_span"><span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Content Type and Fields</span></h4>
 <p>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">The theme utilizes a content type called &quot;Portfolio&quot; so if you are configuring everything manually make sure you use the same content type name. Reference the image below for all the fields that are required:</span></p>
+	
+<img src="./images/portfolio-fields.png">
+	
 <h4 id="portfolio_span_style"color_rgb_0,_0,_0_font_family_'helvetica_neue',_helvetica,_arial,_sans_serif_font_size_medium_line_height_24px_webkit_text_size_adjust_none"views_span"><span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Views</span></h4>
 <p>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">The Expressa demo uses three separate views for the portfolio: a page view, a block view for the filters and a block view for the related items carousel that appears on the single portfolio items page. If you are setting up your views manually, please use the export code found inside the /views_exports folder in the root of the theme/download files. The Portfolio Filters view is called in the Header of the Portfolio page view as a global view area.&nbsp;</span></p>
