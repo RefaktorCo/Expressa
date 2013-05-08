@@ -1,20 +1,20 @@
-.menu-wrap, #menu, #highlight, #scroll-menu,
+.menu-wrap, .main-menu-nav, #highlight, #scroll-menu,
 .view-popular-tags a:hover,
 .store-carousel-navigation a, 
 .portfolio-carousel-navigation a,
-#menu .menu ul li:hover,
+.main-menu-nav .menu ul li:hover,
 .portfolio-project-button,
 .store-item input[type="submit"],
 .ei-title h2 {
 	background: rgb(228, 56, 56);
 }
 
-.menu-wrap, #menu, #highlight, #scroll-menu,
+.menu-wrap, .main-menu-nav, #highlight, #scroll-menu,
 .view-popular-tags a:hover,
 .store-carousel-navigation a,
 .store-featured-carousel-navigation a,  
 .portfolio-carousel-navigation a,
-#menu .menu ul li:hover,
+.main-menu-nav .menu ul li:hover,
 .portfolio-project-button,
 .ei-title h2 {
 	background: rgb(228, 56, 56);

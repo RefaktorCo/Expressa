@@ -12,7 +12,7 @@
     <div class="row">
     
       <div class="span10">
-		    <nav id="menu">
+		    <nav class="main-menu-nav">
 			    <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 			  </nav> 
       </div>
@@ -113,7 +113,7 @@
 	      <div class="menu-wrap">
 	        <div class="row">
 				    <div class="span9">    
-						  <nav id="menu">
+						  <nav class="main-menu-nav">
 							  <?php if (isset($page['menu'])) { print render($page['menu']); } ?>
 						  </nav>
 				    </div>

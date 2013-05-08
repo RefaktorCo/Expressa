@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
 	});
 	
 
-  $('header #menu').mobileMenu();
+  $('header .main-menu-nav').mobileMenu();
 
   var flag = true;
 
