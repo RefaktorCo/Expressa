@@ -381,75 +381,55 @@
 <h3>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Flickr</span></h3>
 <pre class="brush: html">
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function ($) {
+$('#flickr_widget').jflickrfeed({
+  limit: 6,
+  qstrings: {
+    id: '39415781@N06'
+  },
+  itemTemplate: '&lt;li&gt;&lt;a href=&quot;{{image_b}}&quot;&gt;&lt;img src=&quot;{{image_s}}&quot; alt=&quot;{{title}}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;'
+});
+});
+&lt;/script&gt;  
+
+&lt;ul id=&quot;flickr_widget&quot; class=&quot;thumbs&quot;&gt;&lt;/ul&gt;
 </pre>
-<div>
-	<pre class="brush: html">
-&lt;script type=&quot;text/javascript&quot;&gt;</pre>
-</div>
-<div>
-	$(&#39;#flickr_widget&#39;).jflickrfeed({</div>
-<div>
-	&nbsp; limit: 6,</div>
-<div>
-	&nbsp; qstrings: {</div>
-<div>
-	&nbsp; &nbsp; id: &#39;39415781@N06&#39;</div>
-<div>
-	&nbsp; },</div>
-<div>
-	&nbsp; itemTemplate: &#39;&lt;li&gt;&lt;a href=&quot;{{image_b}}&quot;&gt;&lt;img src=&quot;{{image_s}}&quot; alt=&quot;{{title}}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;&#39;</div>
-<div>
-	});</div>
-<div>
-	&lt;/script&gt;</div>
-<div>
-	&nbsp;&nbsp;</div>
-<div>
-	&lt;ul id=&quot;flickr_widget&quot; class=&quot;thumbs&quot;&gt;&lt;/ul&gt;</div>
+
 <h3>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Google Maps</span></h3>
 <pre class="brush: html">
 </pre>
 <div>
 	<pre class="brush: html">
-&lt;div id=&quot;google_map&quot;&gt;</pre>
-</div>
-<div>
-	&nbsp;&lt;iframe width=&quot;1170&quot; height=&quot;370&quot; src=&quot;https://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=900+Bagby+St+Houston,+TX+77002&amp;amp;sll=33.687,-117.774252&amp;amp;sspn=0.324522,0.682526&amp;amp;t=m&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=900+Bagby+St,+Houston,+Harris,+Texas+77002&amp;amp;ll=29.761779,-95.370008&amp;amp;spn=0.003725,0.012864&amp;amp;z=17&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt; &nbsp; &nbsp; &nbsp;</div>
-<div>
-	&lt;/div&gt;</div>
+&lt;div id=&quot;google_map&quot;&gt;
+  &lt;iframe width=&quot;1080&quot; height=&quot;370&quot; src=&quot;https://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=900+Bagby+St+Houston,+TX+77002&amp;amp;sll=33.687,-117.774252&amp;amp;sspn=0.324522,0.682526&amp;amp;t=m&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=900+Bagby+St,+Houston,+Harris,+Texas+77002&amp;amp;ll=29.761779,-95.370008&amp;amp;spn=0.003725,0.012864&amp;amp;z=17&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;      
+&lt;/div&gt;
+	</pre>	
 <h3>
 	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Accordion</span></h3>
 <pre class="brush: html">
 </pre>
 <div>
 	<pre class="brush: html">
-&lt;ul class=&quot;faq&quot;&gt;</pre>
-</div>
-<div>
-	&nbsp; &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;faq-head title-color gdl-title&quot;&gt;&lt;span class=&quot;faq-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;</div>
-<div>
-	&nbsp; &nbsp; &lt;div class=&quot;faq-content&quot;&gt;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; faq Text</div>
-<div>
-	&nbsp; &nbsp; &lt;/div&gt;</div>
-<div>
-	&nbsp; &lt;/li&gt;</div>
-<div>
-	&nbsp; &nbsp; &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;faq-head title-color gdl-title&quot;&gt;&lt;span class=&quot;faq-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;</div>
-<div>
-	&nbsp; &nbsp; &lt;div class=&quot;faq-content&quot;&gt;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; faq Text</div>
-<div>
-	&nbsp; &nbsp; &lt;/div&gt;</div>
-<div>
-	&nbsp; &lt;/li&gt;</div>
-<div>
-	&lt;/ul&gt;</div>
-<p>
-	&nbsp;</p>
+&lt;script type=&quot;text/javascript&quot;&gt;	
+  jQuery(document).ready(function ($) {
+    $('ul#quotes').quote_rotator();
+  });
+&lt;/script&gt; 
+
+&lt;ul id=&quot;quotes&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quote text goes here&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here's another quote&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+	</pre>
 </section>
 <section id="thank_you">
 	<h3>Thank You</h3><hr class="notop">
