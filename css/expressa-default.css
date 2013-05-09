@@ -390,6 +390,7 @@ ul.menu {
 .menu li.expanded li.leaf a {
   background: none; 
   color: #FFF;
+  font-size: 12px;
 }
 
 .menu ul li a:hover,.menu ul li a:visited:hover {

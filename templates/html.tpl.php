@@ -23,10 +23,10 @@
   
 <?php expressa_user_css(); ?>  
 
-<!-- Style switcher  -->
+<!-- Style switcher  
 <link rel="stylesheet" type="text/css" href="<?php global $root; echo $root;?>/css/switch.css">
 <link rel="stylesheet" class="switch" type="text/css" href="<?php global $root; echo $root;?>/css/colors/default.css">
-
+-->
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

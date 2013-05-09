@@ -1,8 +1,8 @@
 name = Expressa
-description = A Multi-Purpose Drupal 7 eCommerce Theme. 
+description = A Multi-Purpose Drupal Commerce Theme. 
 core = 7.x
 engine = phptemplate
-version = 1.x BETA
+version = 1.x 
 
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
