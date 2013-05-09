@@ -27,8 +27,8 @@
  * @ingroup views_templates
  */
 ?>
-  <div class="slider">
-   <div class="flexslider flex-loading">
+
+ <div class="flexslider flex-loading">
 	   
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -54,15 +54,10 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-  
- 
-          <ul class="slides">
-     
-	         <?php print $rows; ?>
-	         
-         </ul>
-  
-    
+    <ul class="slides">
+      <?php print $rows; ?>
+	  </ul>
+
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
@@ -94,5 +89,4 @@
       <?php print $feed_icon; ?>
     </div>
   <?php endif; ?>
-     </div>    
-    </div>  </div>
+ </div>    
