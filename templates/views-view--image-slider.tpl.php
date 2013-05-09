@@ -27,8 +27,8 @@
  * @ingroup views_templates
  */
 ?>
-
-   <div class="flexslider">
+  <div class="slider">
+   <div class="flexslider flex-loading">
 	   
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -95,4 +95,4 @@
     </div>
   <?php endif; ?>
      </div>    
-    </div>  
+    </div>  </div>

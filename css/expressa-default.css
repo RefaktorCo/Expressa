@@ -645,6 +645,11 @@ footer {
 	margin: 0 0 18px;
 }
 
+.flex-loading {
+  height: 400px;
+  background: url('../images/load.gif') no-repeat center center;	
+}
+
 .flex-caption {
 	width: 275px;
 	position: absolute;
@@ -1577,10 +1582,14 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
     min-height: 350px;
   }
   
-  
   .store-item-price-rating {
     padding: 5px 35px;
   }
+  
+  .flex-loading {
+    height: 400px;
+  }
+  
 }
 
 @media screen and (max-width: 979px) {   
@@ -1588,7 +1597,6 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
    body {
 	  padding: 0px;
   }
-
 
   #site-slogan {
 	  font-size: 11px;
@@ -1616,7 +1624,7 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
     width: 72px;
   }
   
-   .store-item-price-rating {
+  .store-item-price-rating {
     padding: 5px 15px;
   }
   
@@ -1630,6 +1638,10 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
   
   .range-slider {
 	  width: 92%;
+  }
+  
+  .flex-loading {
+    height: 248px;
   }
   
 }
@@ -1711,10 +1723,18 @@ label[for="edit-range-from"], label[for="edit-range-to"] { display:none; }
 	  text-align: center;
   }
   
+  .flex-loading {
+    height: 248px;
+  }
+  
 }
 
 @media screen and (max-width: 480px) { 
   .caroufredsel_wrapper { 
     min-height: 235px;
+  }
+  
+  .flex-loading {
+    height: 123px;
   }
 }

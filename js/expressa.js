@@ -2,63 +2,68 @@ jQuery(document).ready(function ($) {
 
   $(window).load(function(){
 
-  $('.search-api-sorts li a').addClass('btn');
-  
-  $('header input[type="submit"]').addClass('btn');
-  
-  $('#scroll-menu input[type="submit"]').addClass('btn');
-  
-  $('.search-api-sort-active a:last').removeClass('btn');
-
-  $('.node-wrap .flexslider').flexslider({
-    controlNav: false, 
-    animation: "slide",
-    touch: true
-  });
-  
-   $('.flexslider').flexslider({
-    animation: "slide",
-    touch: true
-  });
-     
-  var $container = $('#isotope_test');
-
-  $container.isotope({
-    itemSelector : '.switch'
-  });
-  
-  var $optionSets = $('#options .option-set'),
-      $optionLinks = $optionSets.find('a');
-
-  $optionLinks.click(function(){
-    var $this = $(this);
-    // don't proceed if already selected
-    if ( $this.hasClass('selected') ) {
-      return false;
-    }
-    var $optionSet = $this.parents('.option-set');
-    $optionSet.find('.selected').removeClass('selected');
-    $this.addClass('selected');
-
-    // make option object dynamically, i.e. { filter: '.my-filter-class' }
-    var options = {},
-        key = $optionSet.attr('data-option-key'),
-        value = $this.attr('data-option-value');
-    // parse 'false' as false boolean
-    value = value === 'false' ? false : value;
-    options[ key ] = value;
-    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-      // changes in layout modes need extra logic
-      changeLayoutMode( $this, options )
-    } else {
-      // otherwise, apply new options
-      $container.isotope( options );
-    }
-    
-    return false;
-  });
-  
-});  
+	  $('.search-api-sorts li a').addClass('btn');
+	  
+	  $('header input[type="submit"]').addClass('btn');
+	  
+	  $('#scroll-menu input[type="submit"]').addClass('btn');
+	  
+	  $('.search-api-sort-active a:last').removeClass('btn');
+	
+	  $('.node-wrap .flexslider').flexslider({
+	    controlNav: false, 
+	    animation: "slide",
+	    touch: true
+	  });
+	  
+	  $('.flexslider').flexslider({
+	    animation: "slide",  
+	    touch: true,
+	    controlsContainer: ".slider",
+	
+	    start: function(slider) {
+	      slider.removeClass('flex-loading');
+	    }  
+	  });
+	 
+	  var $container = $('#isotope_test');
+	
+	  $container.isotope({
+	    itemSelector : '.switch'
+	  });
+	  
+	  var $optionSets = $('#options .option-set'),
+	      $optionLinks = $optionSets.find('a');
+	
+	  $optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+	
+	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	    var options = {},
+	        key = $optionSet.attr('data-option-key'),
+	        value = $this.attr('data-option-value');
+	    // parse 'false' as false boolean
+	    value = value === 'false' ? false : value;
+	    options[ key ] = value;
+	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+	      // changes in layout modes need extra logic
+	      changeLayoutMode( $this, options )
+	    } else {
+	      // otherwise, apply new options
+	      $container.isotope( options );
+	    }
+	    
+	    return false;
+	  });
+	  
+	});  
   
   jQuery("ul.accordion li").each(function(){
 	  if(jQuery(this).index() > 0){
@@ -78,9 +83,6 @@ jQuery(document).ready(function ($) {
 	  jQuery(this).parent().siblings("li").find(".active").removeClass("active");
 	  });
 	});
-	
-
-  $('header .main-menu-nav').mobileMenu();
 
   var flag = true;
 
@@ -112,6 +114,8 @@ jQuery(document).ready(function ($) {
 			$(window).unbind('scroll');
 		}
 	});
+	
+	$('header .main-menu-nav').mobileMenu();
 	
 	$("html").niceScroll();
 	
