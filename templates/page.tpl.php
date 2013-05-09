@@ -182,8 +182,8 @@
   </div>  
 	 
   <?php print $messages; ?>
-
-</div> <!-- End Content Wrap --></div>
+  </div>
+</div> <!-- End Content Wrap -->
 
 <div id="footer-wrap">
   <?php if (isset($page['highlight'])) : ?>
