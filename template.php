@@ -3,7 +3,7 @@
  * Define $root global variable.
  */
 global $root, $theme_path;
-$root = drupal_get_path('theme', 'expressa');
+$root = base_path() . drupal_get_path('theme', 'expressa');
 
 include_once(drupal_get_path('theme', 'expressa').'/includes/switch.php');
 
