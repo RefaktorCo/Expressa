@@ -183,7 +183,7 @@
 	 
   <?php print $messages; ?>
 
-</div> <!-- End Content Wrap -->
+</div> <!-- End Content Wrap --></div>
 
 <div id="footer-wrap">
   <?php if (isset($page['highlight'])) : ?>
