@@ -328,7 +328,7 @@ function expressa_preprocess_html(&$vars){
   
   $tracking_code = array(
     '#type' => 'markup',
-    '#markup' => "<script type='text/javascript'>".theme_get_setting('tracking_code')."</script> ",
+    '#markup' => "".theme_get_setting('tracking_code')."",
     '#weight' => 11,
   );
   

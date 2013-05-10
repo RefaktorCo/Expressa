@@ -1,0 +1,9 @@
+===Expressa Changelog===
+
+1.0.1 (05/10/13)
+  *Fixed issue with header tracking code setting.
+
+1.0 (05/09/13)
+  *Initial release.
+  
+
