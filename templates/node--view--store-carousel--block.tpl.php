@@ -3,6 +3,9 @@
  * @file
  * Expressa's node template for the Store Carousel block.
  */
+
+$sku = $content['product:commerce_price']['#object']->sku;
+$product = commerce_product_load_by_sku($sku);
 ?>
 
 <li>
@@ -19,7 +22,7 @@
 	  	<?php print render($content['product:commerce_price']); ?>
 	   	
 	   	<div class="clearfix"></div>
-	    <?php print render($content['field_reference']); ?>
+	    <?php print ($product->product_id); ?>
 	  </div>
 	  
   </div> 
