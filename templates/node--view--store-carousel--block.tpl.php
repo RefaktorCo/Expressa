@@ -9,7 +9,7 @@
   <div class="store-item">
   
 	  <div class="store-item-picture">
-	    <?php print render($content['product:field_image']); ?>
+	    <a href="<?php print $node_url; ?>"><?php print render($content['product:field_image']); ?></a>
 	  </div>
   
 	  <div class="store-item-content">

@@ -93,9 +93,7 @@ jQuery(document).ready(function ($) {
 				var totalH = $('.before-content').offset().top;
 				var finalSize = totalH - vPos;
 				var scrolled = $(window).scrollTop(); //Parallax window scroll height
-				
-				console.log("if failed!");
-				
+					
 				if(finalSize <= 10) {
 					if(flag){
 					$('#scroll-menu').animate({'top':'0'},150);

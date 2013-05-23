@@ -182,10 +182,6 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
     // Alternative (HTML5) placeholder attribute instead of using the javascript
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
   }
-  
-  if (commerce_form_callback($form_id, $form_state) == "commerce_cart_add_to_cart_form") {
-    $form['submit']['#attributes']['title'] = $form['submit']['#attributes']['value'] = t('Add to Cart');
-  }
 } 
 
 

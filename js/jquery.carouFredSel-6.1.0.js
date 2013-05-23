@@ -4287,7 +4287,7 @@
 
 		if (window.console && window.console.log)
 		{
-			window.console.log(m);
+			
 		}
 		return false;
 	}
