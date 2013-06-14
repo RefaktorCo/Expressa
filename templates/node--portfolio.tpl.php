@@ -79,4 +79,9 @@ if ($prev != NULL) {
 
   </div>
 </div>
+<div class="row">
+  <div class="span12">
+  <?php print render($content['comments']); ?>
+  </div>
+</div>  
 </article>

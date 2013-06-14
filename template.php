@@ -274,12 +274,6 @@ function expressa_preprocess_html(&$vars){
       'content' => theme_get_setting('seo_keywords')
     )
   );
-
-  $headings = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>h1 {font-size:" .theme_get_setting('h1')." ;} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
-    '#weight' => 4,
-  );
   
   $box_layout = array(
     '#type' => 'markup',
@@ -357,7 +351,6 @@ function expressa_preprocess_html(&$vars){
   } 
   
   drupal_add_html_head( $viewport, 'viewport');
-  drupal_add_html_head( $headings, 'headings');
   
   if (theme_get_setting('body_background') == "custom_background_color") {
     drupal_add_html_head( $background_color, 'background_color');
