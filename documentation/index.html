@@ -1,4 +1,4 @@
-<!doctype html>  
+f<!doctype html>  
 <!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
 <!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
 <!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
@@ -390,24 +390,25 @@
 <section id="widgets">
 	<h3>Widgets</h3><hr class="notop">
 <p>
-	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Expressa has built-in support for several widgets, below is the markup you will need to use them on your site in blocks and node content:</span></p>
+	<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;">Expressa has built-in support for several widgets, below is the markup you will need to use them on your site in blocks and node content.</span>
+<br>
+<br>	
+<span style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; line-height: 24px; -webkit-text-size-adjust: none;"><strong>Update:</strong> As of June 13th the old 1.0 version of the Twitter API was discontinued. Because of this some changes had to be made to this section and some additional settings are needed for it to function correctly. Visit <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a> and login with your Twitter account. You will have to make an App in order to receive the necessary OAuth keys required for the Twitter feed. Once you have them you can enter them into the theme settings under the Twitter tab.</span>	
+</p>
 <h3>
 	<font color="#000000" face="Helvetica Neue, Helvetica, Arial, sans-serif" size="3"><span style="line-height: 24px; -webkit-text-size-adjust: none;">Twitter</span></font></h3>
 <pre class="brush: html">
 &lt;div class='tweet query'&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-                        
-    jQuery(document).ready(function ($) {
-      
-      $(&quot;.tweet&quot;).tweet({
-        username: &quot;envato&quot;,
-        avatar_size: 34,
-        count: 3,
-        loading_text: &quot;loading tweets...&quot;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+     jQuery(document).ready(function ($) {
+	$(&quot;.tweet&quot;).tweet({
+        modpath: '&lt;?php global $root; echo $root;?&gt;/includes/twitter/',
+	username: &quot;envato&quot;,
+	avatar_size: 34,
+	count: 3,
+	loading_text: &quot;loading tweets...&quot;
       });
-    
     });
-    
   &lt;/script&gt;
 </pre>
 <h3>
