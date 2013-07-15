@@ -14,7 +14,7 @@ $id = $product->product_id;
   <div class="store-item">
   
 	  <div class="store-item-picture">
-	    <a href="<?php print $node_url; ?>"><?php print render($content['product:field_image']); ?></a>
+	    <a href="<?php print $node_url; ?>"><?php print render($content['field_main_image']); ?></a>
 	  </div>
   
 	  <div class="store-item-content">
@@ -24,7 +24,7 @@ $id = $product->product_id;
 	  	<?php print render($content['product:commerce_price']); ?>
 	   	
 	   	<div class="clearfix"></div>
-	    <?php print render($content['field_reference']); ?>
+	   
 	  </div>
 	  
   </div> 

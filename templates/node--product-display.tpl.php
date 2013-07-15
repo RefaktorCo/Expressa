@@ -30,7 +30,7 @@
 	    </div>
 			
 			<div class="product-display-content">  
-			  <?php hide($content['comments']); print render($content); ?>
+			  <?php hide($content['comments']); hide($content['field_main_image']); print render($content); ?>
 			</div> 
 	     
 			</div>
