@@ -1061,7 +1061,7 @@ span.accordion-head-image {
   min-height: 400px;
 }
 
-#block-views-portfolio-carousel-block h2, #block-views-store-carousel-block h2, #block-multiblock-1 h2, #block-views-store-featured-carousel-block h2 {
+#block-views-portfolio-carousel-block h2, #block-views-store-carousel-block h2, #block-views-more-items-block h2, #block-views-store-featured-carousel-block h2 {
 	font-size: 16px;
   margin-bottom: 0px;
 }

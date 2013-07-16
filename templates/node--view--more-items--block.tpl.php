@@ -25,7 +25,7 @@ $id = $product->product_id;
 	   	
 	   	<div class="clearfix"></div>
 	   	<div class="store-carousel-field-reference">
-	    <?php print render($content['field_reference']); ?>
+	    
 	   	</div>
 	  </div>
 	  
