@@ -365,9 +365,16 @@ header form {
   padding: 0; 
   position: absolute; 
   top: 2.8em; 
-  left: -1px; 
+  left: -1px;
   z-index: 1000; 
   display: none;
+}
+
+.main-menu-nav .menu ul li ul {
+  	z-index: 1001; 
+	margin: 0; 
+	left: 14.15em; 
+	top: -1px;
 }
 
 .main-menu-nav .menu ul li {
@@ -420,10 +427,7 @@ ul.menu {
 }
 
 .menu ul ul {
-	z-index: 1001; 
-	margin: 0; 
-	left: 15.15em; 
-	top: -46px;
+
 }
 
 ul.menu li { 
