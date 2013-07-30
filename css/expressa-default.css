@@ -358,6 +358,7 @@ header form {
   border-right: none;
   border-left: none;
   display: block;
+  	border-bottom: solid 1px #1e1e1e; 
 }
 
 .main-menu-nav .menu ul { 
@@ -373,7 +374,7 @@ header form {
 .main-menu-nav .menu ul li ul {
   	z-index: 1001; 
 	margin: 0; 
-	left: 14.15em; 
+	left: 14.2em; 
 	top: -1px;
 }
 
@@ -381,7 +382,7 @@ header form {
 	background: #393737;
 }
 
-.main-menu-nav .menu ul li.last a {
+.main-menu-nav .menu ul li.last {
   border-bottom: none;
 }
 
@@ -405,7 +406,7 @@ ul.menu {
 }
 
 .menu ul li a, .menu ul li a:visited, .menu li.active-trail ul li a, .menu .sfHover ul li a {
-	border-bottom: solid 1px #1e1e1e; 
+
 	color: #555; 
 	display: block; 
 	font-size: 0.9em; 
