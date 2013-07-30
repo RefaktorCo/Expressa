@@ -1440,6 +1440,8 @@ margin-left: 80px !important;
 	display: none;
 }
 
+.store-item .form-item {display: none !important; }
+
 .store-item-price-rating {
 	padding: 5px 60px;
 	margin: 3px 0px;
