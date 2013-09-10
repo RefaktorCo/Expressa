@@ -21,7 +21,7 @@ $id = $product->product_id;
 	    <a href="<?php print $node_url; ?>"><?php echo $title; ?></a>
 	  
 	    <div class="clearfix"></div>
-	  	<?php print render($content['product:commerce_price']); ?>
+
 	   	
 	   	<div class="clearfix"></div>
 	   	<div class="store-carousel-field-reference">
