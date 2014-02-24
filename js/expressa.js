@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
 	
 	$('.checkout-review').addClass('table');
   
-  $('.dropdown-toggle').dropdown()
+  $('.dropdown-toggle').dropdown();
   
   $('input[type="submit"]').addClass('btn');
   

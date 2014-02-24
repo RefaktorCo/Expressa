@@ -23,7 +23,7 @@
 ?>
 
 <?php if ($quantity_raw): ?>
-  <?php print $quantity_raw; ?><span class="line-item-quantity-label"> Item<?php if ($quantity_raw > '1'){print "s";}?></span>
+  <?php print $quantity_raw; ?><span class="line-item-quantity-label"> <?php if ($quantity_raw > '1'): ?><?php print t('Items');?> <?php endif; ?> <?php if ($quantity_raw = '1'): ?><?php print t('Item');?> <?php endif; ?> </span>
 <?php endif; ?>
   
 <?php if ($total): ?>
