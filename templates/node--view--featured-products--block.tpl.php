@@ -7,7 +7,7 @@
 <div class="featured-products">
 
   <div class="featured-product-picture">
-    <?php print render($content['field_main_image']); ?>
+    <?php print render($content['product:field_image']); ?>
   </div>
 
   <div class="featured-product-content">

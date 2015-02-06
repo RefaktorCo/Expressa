@@ -5,7 +5,33 @@
  */
 
 ?>
+<?php if ($teaser): ?>
+<div class="span3">
+  <div class="store-item">
+	  <div class="store--item-picture">
+	    <?php print render($content['field_main_image']); ?>
+	  </div>
+	  
+	  <div class="store-item-content">
+	    <a href="<?php print $node_url; ?>"><?php echo $title; ?></a>
+	  
+	    <div class="clearfix"></div>
+	    <div class="store-item-price-rating">
+	    <div style="float:left;">
+	      <?php print render($content['product:commerce_price']); ?>
+	    </div>
+	    <div style="float: right;">
+	      <?php print render($content['field_rating']); ?>
+	    </div>
+	    </div>
+	    <div class="clearfix"></div>
+	    <?php print render($content['field_reference']); ?>
+	  </div>
+  </div>
+</div>
+<?php endif; ?>
 
+<?php if (!$teaser): ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="product-display-node">
     <div class="row">
@@ -40,3 +66,4 @@
 	<?php  print render($content['comments']); ?>  
 
 </article>
+<?php endif; ?>

@@ -7,6 +7,14 @@ $root = base_path() . drupal_get_path('theme', 'expressa');
 
 include_once(drupal_get_path('theme', 'expressa').'/includes/switch.php');
 
+
+/**
+ * Themes an empty shopping cart block's contents.
+ */
+function expressa_commerce_cart_empty_block() {
+  return '<div class="cart-empty-block"><button class="btn btn-small"><i class="icon-shopping-cart"></i>' . t('0 Items') . '</button></div>';
+}
+
 /**
  * Assign theme hook suggestions for custom templates.
  */  
@@ -22,11 +30,6 @@ function expressa_preprocess_page(&$vars, $hook) {
   }
 }
 
-function expressa_preprocess_node(&$vars) {
-  if (request_path() == 'store') {
-    $vars['theme_hook_suggestions'][] = 'node__store';
-  }
-}
 
 /**
  * Define some variables for use in theme templates.

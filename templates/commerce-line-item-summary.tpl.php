@@ -27,7 +27,9 @@
 <?php endif; ?>
   
 <?php if ($total): ?>
-  <?php print $total_label; ?><?php print $total; ?>
-<?php endif; ?>
+  <div class="line-item-total">
+    <span class="line-item-total-label"><?php print $total_label; ?></span> <span class="line-item-total-raw"><?php print $total; ?></span>
+  </div>
+  <?php endif; ?>
   
 <?php print $links; ?>

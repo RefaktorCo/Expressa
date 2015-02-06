@@ -8,7 +8,7 @@
 <div class="span3">
   <div class="store-item">
 	  <div class="store--item-picture">
-	    <?php print render($content['product:field_image']); ?>
+	    <?php print render($content['field_main_image']); ?>
 	  </div>
 	  
 	  <div class="store-item-content">

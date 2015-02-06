@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php global $user; if (!$user->uid && theme_get_setting('scroll_menu') == '1') { // Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
+<?php global $user; if (!in_array('administrator', array_values($user->roles)) && theme_get_setting('scroll_menu') == '1') { // Will not display for logged in users to avoid conflicts with admin menu/toolbar. ?>
 <div id="scroll-menu">
   <div id="scroll-menu-wrap">
     <div class="container">

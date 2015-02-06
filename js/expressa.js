@@ -126,8 +126,6 @@ jQuery(document).ready(function ($) {
   $('input[type="submit"]').addClass('btn');
   
   $('ul.menu').superfish({delay	: 100});
-  
-  $(".cart-empty-block").html("<button class='btn btn-small'><i class='icon-shopping-cart'></i>0 Items</div>");
 
   $("a[rel^='prettyPhoto']").prettyPhoto();
   
