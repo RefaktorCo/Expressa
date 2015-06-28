@@ -30,10 +30,6 @@ RESPONSIVE STYLES
 /* 
 ' BASE
 */
-
-
-.commerce-line-item-views-form {text-align: right;}
-
 body {
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	line-height: 1.5;
@@ -109,13 +105,6 @@ header form {
 }
 
 .header-right .form-wrapper{
-	float: right;
-	background: transparent;
-	border-top: none;
-	padding: 0px 0px 0px 5px;
-}
-
-.block-search .form-wrapper{
 	float: right;
 	background: transparent;
 	border-top: none;
@@ -226,7 +215,7 @@ header form {
 /* 
 ' HEADER ADD TO CART
 */
-.block-search input[type="submit"].btn {
+.region-header-right-bottom input[type="submit"].btn {
   padding: 4px 17px;
   background-color: #e6e6e6; 
   background: url('../images/search.png') center center no-repeat;
@@ -353,9 +342,8 @@ header form {
 
 .main-menu-nav li a {
   color: #FFF;  
-  padding:12px 25px 14px 25px; 
+  padding:16px 25px 14px 25px; 
   font-size: 12px; 
-  display: inline-block;
 }
 
 .main-menu-nav .menu li.first {
@@ -404,6 +392,7 @@ header form {
 
 ul.menu {
   margin: 0; 
+  padding: 10px 0px;
 }
 
 .menu li.expanded li.leaf a {
@@ -452,7 +441,7 @@ ul.menu li.active a {
 }
 
 .menu-wrap {
-  height: 42px;
+	height: 42px;
 }
 
 .mobile-menu {
@@ -1457,6 +1446,8 @@ margin-left: 80px !important;
 }
 
 .store-item .form-item {display: none !important; }
+
+.fivestar-form-item .form-item {display: block !important;}
 
 .store-item-price-rating {
 	padding: 5px 60px;
