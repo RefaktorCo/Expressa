@@ -187,41 +187,36 @@ function expressa_form_alter(&$form, &$form_state, $form_id) {
   }
 } 
 
-
-function expressa_pagination($node, $mode = 'n') {
-  if (!function_exists('prev_next_nid')) {
-    return NULL;
+/**
+ * Theme node pagination function().
+ */
+function expressa_node_pagination($node, $mode = 'n') {
+  $query = new EntityFieldQuery();
+	$query
+    ->entityCondition('entity_type', 'node')
+    ->propertyCondition('status', 1)
+    ->entityCondition('bundle', $node->type);
+  $result = $query->execute();
+  $nids = array_keys($result['node']);
+  
+  while ($node->nid != current($nids)) {
+    next($nids);
   }
- 
+  
   switch($mode) {
     case 'p':
-      $n_nid = prev_next_nid($node->nid, 'prev');
-      $link_text = "Previous post";
+      prev($nids);
     break;
 		
     case 'n':
-      $n_nid = prev_next_nid($node->nid, 'next');
-      $link_text = "Next post";
+      next($nids);
     break;
 		
     default:
     return NULL;
   }
- 
-  if ($n_nid) {
-    $n_node = '';
-    $n_node = node_load($n_nid);
-		
-    switch($n_node->type) {	
-      case 'portfolio': 
-        $id =  $n_node->nid; 
-      return $id; 
-      
-      case 'article': 
-        $html = l($link_text, 'node/'.$n_node->nid); 
-      return $html;
-    }
-  }
+  
+  return current($nids);
 }
 
 /**

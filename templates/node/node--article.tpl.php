@@ -71,10 +71,10 @@ if ($items = field_get_items('node', $node, 'field_image')) {
   </div>	
   <?php endif;?>
   
-  <?php if(!drupal_is_front_page() && $page && module_exists('prev_next')): ?>
+  <?php if(!drupal_is_front_page() && !$teaser): ?>
   <ul class="node-pagination">
-    <?php if (expressa_pagination($node, 'n') != NULL): ?><li class="next-node"><?php print expressa_pagination($node, 'n'); ?> &rarr;</li><?php endif; ?>
-    <?php if (expressa_pagination($node, 'p') != NULL): ?><li class="previous-node">&larr; <?php print expressa_pagination($node, 'p'); ?></li><?php endif; ?>
+    <?php if ( expressa_node_pagination($node, 'n') != NULL ) : ?><li class="next-node"><a href="<?php print url('node/' . expressa_node_pagination($node, 'n'), array('absolute' => TRUE)); ?>"><?php print t('Next post');?> &rarr;</a></li><?php endif; ?>
+    <?php if ( expressa_node_pagination($node, 'p') != NULL ) : ?><li class="previous-node"><a href="<?php print url('node/' . expressa_node_pagination($node, 'p'), array('absolute' => TRUE)); ?>">&larr; <?php print t('Previous post');?></a></li><?php endif; ?>
   </ul>
   <?php endif; ?>
   

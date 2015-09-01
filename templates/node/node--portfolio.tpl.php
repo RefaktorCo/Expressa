@@ -4,17 +4,6 @@
  * Expressa's theme implementation to display a single Drupal node.
  */
 global $base_url; 
-$next = expressa_pagination($node, 'n');
-$prev = expressa_pagination($node, 'p');
-
-if ($next != NULL) { 
-  $next_url = url('node/' . $next, array('absolute' => TRUE));
-}
-
-if ($prev != NULL) { 
-  $prev_url = url('node/' . $prev, array('absolute' => TRUE));
-}
-
 ?>
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -25,14 +14,14 @@ if ($prev != NULL) {
     <?php print render($title_suffix); ?>
   </div>
   <div class="portfolio-pagination span6">
-  <?php if($page && module_exists('prev_next')): ?>
+  <?php if($page): ?>
     <ul class="portfolio-pagination-links">
-      <?php if ($prev != NULL): ?>
-        <li><a href="<?php echo $prev_url; ?>"><i class="icon-caret-left"></i></a></li>
+      <?php if ( expressa_node_pagination($node, 'p') != NULL ) : ?>
+        <li><a href="<?php print url('node/' . expressa_node_pagination($node, 'p'), array('absolute' => TRUE)); ?>"><i class="icon-caret-left"></i></a></li>
       <?php endif; ?>
         <li><a href="<?php echo $base_url; ?>/portfolio"><i class="icon-th"></i></a></li>
-      <?php if ($next != NULL): ?>
-        <li><a href="<?php echo $next_url; ?>"><i class="icon-caret-right"></i></a></li>
+      <?php if ( expressa_node_pagination($node, 'n') != NULL ) : ?>
+        <li><a href="<?php print url('node/' . expressa_node_pagination($node, 'n'), array('absolute' => TRUE)); ?>"><i class="icon-caret-right"></i></a></li>
       <?php endif; ?>
     </ul>
     <?php endif; ?>
